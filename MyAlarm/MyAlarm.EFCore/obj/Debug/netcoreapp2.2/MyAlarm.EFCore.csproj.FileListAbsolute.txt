@@ -1,0 +1,11 @@
+D:\MyAlarm\MyAlarm.EFCore\bin\Debug\netcoreapp2.2\MyAlarm.EFCore.deps.json
+D:\MyAlarm\MyAlarm.EFCore\bin\Debug\netcoreapp2.2\MyAlarm.EFCore.dll
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.csprojAssemblyReference.cache
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.csproj.CoreCompileInputs.cache
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.AssemblyInfoInputs.cache
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.AssemblyInfo.cs
+D:\MyAlarm\MyAlarm.EFCore\bin\Debug\netcoreapp2.2\MyAlarm.EFCore.runtimeconfig.json
+D:\MyAlarm\MyAlarm.EFCore\bin\Debug\netcoreapp2.2\MyAlarm.EFCore.runtimeconfig.dev.json
+D:\MyAlarm\MyAlarm.EFCore\bin\Debug\netcoreapp2.2\MyAlarm.EFCore.pdb
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.dll
+D:\MyAlarm\MyAlarm.EFCore\obj\Debug\netcoreapp2.2\MyAlarm.EFCore.pdb

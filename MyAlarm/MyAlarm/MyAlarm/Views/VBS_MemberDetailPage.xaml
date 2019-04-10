@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_MemberDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:Pos.Xam"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    BackgroundColor="#DDDDDD"
+    NavigationPage.HasNavigationBar="False">
+    <Grid Style="{StaticResource GridRoot}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="Orange" Style="{StaticResource StlPopupHeader}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ffImageSvg:SvgCachedImage
+                    HeightRequest="40"
+                    Source="resource://MyAlarm.Images.icon_back_arrow.svg"
+                    Style="{StaticResource StlPopupHeaderCancel}"
+                    WidthRequest="40">
+                    <ffImageSvg:SvgCachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#FFFFFF" />
+                    </ffImageSvg:SvgCachedImage.Transformations>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoBackCommand, Mode=OneWay}" NumberOfTapsRequired="1" />
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
+                </ffImageSvg:SvgCachedImage>
+                <Label
+                    FontSize="50"
+                    Style="{StaticResource StlPopupHeaderTitle}"
+                    Text="VBS"
+                    TextColor="White" />
+                <Label
+                    Style="{StaticResource StlPopupHeaderSave}"
+                    Text="Scrum"
+                    TextColor="White" />
+            </Grid>
+            <ffImageSvg:SvgCachedImage
+                Grid.Row="1"
+                HeightRequest="70"
+                Source="resource://MyAlarm.Images.icon_book.svg"
+                Style="{StaticResource StlPopupHeaderCancel}"
+                WidthRequest="70">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#FFFFFF" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+            </ffImageSvg:SvgCachedImage>
+            <Label
+                Grid.Row="2"
+                Margin="0,10,0,0"
+                FontSize="50"
+                HorizontalOptions="CenterAndExpand">
+                Member detail
+            </Label>
+            <tlrPrimitives:RadBorder
+                Grid.Row="3"
+                Padding="5"
+                HeightRequest="70"
+                HorizontalOptions="CenterAndExpand"
+                Style="{StaticResource StlRadBorder}"
+                StyleClass="TelerikTheme"
+                WidthRequest="500">
+                <Label>Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting 1Meeting Meeting 1Meeting 1Meeting 1</Label>
+            </tlrPrimitives:RadBorder>
+        </Grid>
+        <!--<tlrPrimitives:RadBusyIndicator Style="{x:StaticResource LoadingIndicator}" StyleClass="TelerikTheme" />-->
+    </Grid>
+</ContentPage>

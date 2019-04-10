@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_AddMemberPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:MyAlarm"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    BackgroundColor="#DDDDDD"
+    NavigationPage.HasNavigationBar="False">
+    <Grid Style="{StaticResource GridRoot}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="Orange" Style="{StaticResource StlPopupHeader}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ffImageSvg:SvgCachedImage
+                    HeightRequest="40"
+                    Source="resource://MyAlarm.Images.icon_back_arrow.svg"
+                    Style="{StaticResource StlPopupHeaderCancel}"
+                    WidthRequest="40">
+                    <ffImageSvg:SvgCachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#FFFFFF" />
+                    </ffImageSvg:SvgCachedImage.Transformations>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoBackCommand, Mode=OneWay}" NumberOfTapsRequired="1" />
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
+                </ffImageSvg:SvgCachedImage>
+                <Label
+                    FontSize="50"
+                    Style="{StaticResource StlPopupHeaderTitle}"
+                    Text="VBS"
+                    TextColor="White" />
+                <Label
+                    Style="{StaticResource StlPopupHeaderSave}"
+                    Text="Scrum"
+                    TextColor="White" />
+            </Grid>
+            <Label
+                Grid.Row="1"
+                Margin="0,20,0,0"
+                FontSize="40"
+                HorizontalOptions="CenterAndExpand"
+                Text="ADD MEMBER"
+                TextColor="#000000" />
+            <StackLayout Grid.Row="2" Margin="70,0,70,15">
+                <StackLayout
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Name:"
+                        VerticalTextAlignment="Center" />
+                    <tlrPrimitives:RadBorder
+                        Grid.Column="1"
+                        Padding="5"
+                        HeightRequest="70"
+                        Style="{StaticResource StlRadBorder}"
+                        StyleClass="TelerikTheme">
+                        <local1:CustomEntry
+                            Placeholder="Name"
+                            StyleClass="TelerikTheme"
+                            Text="{Binding NameMemberBindProp, Mode=TwoWay}"
+                            VerticalOptions="CenterAndExpand" />
+                    </tlrPrimitives:RadBorder>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Gender:"
+                        VerticalTextAlignment="Center" />
+                    <tlrPrimitives:RadBorder
+                        Grid.Column="1"
+                        Padding="5"
+                        HeightRequest="70"
+                        Style="{StaticResource StlRadBorder}"
+                        StyleClass="TelerikTheme">
+                        <local1:CustomEntry
+                            Placeholder="Gender"
+                            StyleClass="TelerikTheme"
+                            Text="{Binding GenderMemberBindProp, Mode=TwoWay}"
+                            VerticalOptions="CenterAndExpand" />
+                    </tlrPrimitives:RadBorder>
+                </Grid>
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Phone number:"
+                        VerticalTextAlignment="Center" />
+                    <tlrPrimitives:RadBorder
+                        Grid.Column="1"
+                        Padding="5"
+                        HeightRequest="70"
+                        Style="{StaticResource StlRadBorder}"
+                        StyleClass="TelerikTheme">
+                        <local1:CustomEntry
+                            Placeholder="Phone number"
+                            StyleClass="TelerikTheme"
+                            Text="{Binding PhoneNumberMemberBindProp, Mode=TwoWay}"
+                            VerticalOptions="CenterAndExpand" />
+                    </tlrPrimitives:RadBorder>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Email:"
+                        VerticalTextAlignment="Center" />
+                    <tlrPrimitives:RadBorder
+                        Grid.Column="1"
+                        Padding="5"
+                        HeightRequest="70"
+                        Style="{StaticResource StlRadBorder}"
+                        StyleClass="TelerikTheme">
+                        <local1:CustomEntry
+                            Placeholder="Email"
+                            StyleClass="TelerikTheme"
+                            Text="{Binding EmailMemberBindProp, Mode=TwoWay}"
+                            VerticalOptions="CenterAndExpand" />
+                    </tlrPrimitives:RadBorder>
+                </Grid>
+
+                <tlrInput:RadButton
+                    Margin="5"
+                    HeightRequest="50"
+                    HorizontalOptions="EndAndExpand"
+                    Style="{StaticResource buttonListview}"
+                    Text="Save"
+                    WidthRequest="100" />
+
+            </StackLayout>
+        </Grid>
+        <!--<tlrPrimitives:RadBusyIndicator Style="{x:StaticResource LoadingIndicator}" StyleClass="TelerikTheme" />-->
+    </Grid>
+</ContentPage>

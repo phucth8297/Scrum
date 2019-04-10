@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_01Page"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    BackgroundImage="#DDDDDD"
+    NavigationPage.HasNavigationBar="False">
+
+
+    <Grid Style="{StaticResource GridRoot}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid BackgroundColor="Orange" Style="{StaticResource StlPopupHeader}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <ffImageSvg:SvgCachedImage
+                    HeightRequest="50"
+                    Source="resource://MyAlarm.Images.icon_menu1.svg"
+                    Style="{StaticResource StlPopupHeaderCancel}"
+                    WidthRequest="50">
+                    <ffImageSvg:SvgCachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#919191" />
+                    </ffImageSvg:SvgCachedImage.Transformations>
+                </ffImageSvg:SvgCachedImage>
+
+                <Label
+                    FontSize="50"
+                    Style="{StaticResource StlPopupHeaderTitle}"
+                    Text="VBS"
+                    TextColor="White" />
+                <Label
+                    Style="{StaticResource StlPopupHeaderSave}"
+                    Text="Scrum"
+                    TextColor="White" />
+            </Grid>
+            <Label
+                Grid.Row="1"
+                Margin="0,20,0,0"
+                FontSize="50"
+                HorizontalOptions="CenterAndExpand"
+                Text="Future Light" />
+            <StackLayout Grid.Row="2">
+                <StackLayout
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+                    <tlrInput:RadButton
+                        Margin="5"
+                        BorderRadius="80"
+                        Command="{Binding GoToMemberCommand, Mode=OneWay}"
+                        HeightRequest="150"
+                        Style="{StaticResource buttonListview}"
+                        Text="Member"
+                        WidthRequest="150" />
+
+                    <tlrInput:RadButton
+                        Margin="5"
+                        BorderRadius="80"
+                        Command="{Binding GoToWorkCommand, Mode=OneWay}"
+                        HeightRequest="150"
+                        Style="{StaticResource buttonListview}"
+                        Text="Work"
+                        WidthRequest="150" />
+                </StackLayout>
+
+                <StackLayout
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+                    <tlrInput:RadButton
+                        Margin="5"
+                        BorderRadius="80"
+                        HeightRequest="150"
+                        Style="{StaticResource buttonListview}"
+                        Text="Rollen"
+                        WidthRequest="150" />
+
+                    <tlrInput:RadButton
+                        Margin="5"
+                        BorderRadius="80"
+                        HeightRequest="150"
+                        Style="{StaticResource buttonListview}"
+                        Text="Meeting"
+                        WidthRequest="150" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        <!--<tlrPrimitives:RadBusyIndicator Style="{x:StaticResource LoadingIndicator}" StyleClass="TelerikTheme" />-->
+    </Grid>
+
+
+</ContentPage>

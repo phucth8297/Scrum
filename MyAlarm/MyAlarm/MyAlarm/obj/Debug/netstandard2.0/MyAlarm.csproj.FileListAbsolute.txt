@@ -1,0 +1,92 @@
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.deps.json
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.dll
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.pdb
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csprojAssemblyReference.cache
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CoreCompileInputs.cache
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfoInputs.cache
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfo.cs
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.dll
+D:\Projects\New folder\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.pdb
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.deps.json
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.dll
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.pdb
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csprojAssemblyReference.cache
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CoreCompileInputs.cache
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfoInputs.cache
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfo.cs
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.dll
+C:\Users\PhucTH\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.pdb
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.deps.json
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.pdb
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csprojAssemblyReference.cache
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CoreCompileInputs.cache
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfoInputs.cache
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfo.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.dll
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.pdb
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.EFStandard.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CopyComplete
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_TrangChuPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Logic.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Logic.pdb
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.Documents.SpreadsheetStreaming.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Barcode.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Chart.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Common.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.ConversationalUI.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataControls.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataGrid.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataVisualization.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Input.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Primitives.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.SkiaSharp.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.Zip.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Barcode.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Chart.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Common.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.ConversationalUI.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataControls.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataGrid.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataGrid.dll.config
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataVisualization.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.DataVisualization.dll.config
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Input.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Input.dll.config
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Primitives.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.Primitives.dll.config
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.SkiaSharp.xml
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.SkiaSharp.dll.config
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\XamlC.stamp
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\File\data.db
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_01Page.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_AddMemberPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_MemberDetailPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_MemberPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_WorkPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_LoginPage.xaml.g.cs
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Domain.dll
+D:\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Domain.pdb
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csprojAssemblyReference.cache
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_01Page.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_AddMemberPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_LoginPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_MemberDetailPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_MemberPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_TrangChuPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\Views\VBS_WorkPage.xaml.g.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CoreCompileInputs.cache
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfoInputs.cache
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.AssemblyInfo.cs
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.dll
+D:\CNPM\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.pdb
