@@ -16,3 +16,12 @@ D:\CNPM\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.A
 D:\CNPM\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfo.cs
 D:\CNPM\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.dll
 D:\CNPM\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.deps.json
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.dll
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.csprojAssemblyReference.cache
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.csproj.CoreCompileInputs.cache
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfoInputs.cache
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfo.cs
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.dll
+D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.pdb

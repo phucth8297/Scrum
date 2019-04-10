@@ -4201,11 +4201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj",
+      "projectUniqueName": "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj",
       "projectName": "MyAlarm.EFStandard",
-      "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj",
+      "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj",
       "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\obj\\",
+      "outputPath": "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

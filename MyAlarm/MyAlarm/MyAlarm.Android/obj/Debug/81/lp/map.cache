@@ -96,3 +96,4 @@ System.IO.FileSystem
 System.ComponentModel.Annotations
 System.IO.FileSystem.Primitives
 System.Linq.Queryable
+Domain

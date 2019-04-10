@@ -4894,11 +4894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj",
+      "projectUniqueName": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj",
       "projectName": "MyAlarm",
-      "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj",
+      "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj",
       "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm\\obj\\",
+      "outputPath": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4917,11 +4917,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\CNPM\\MyAlarm\\Logic\\Logic.csproj": {
-              "projectPath": "D:\\CNPM\\MyAlarm\\Logic\\Logic.csproj"
+            "D:\\Scrum\\MyAlarm\\Logic\\Logic.csproj": {
+              "projectPath": "D:\\Scrum\\MyAlarm\\Logic\\Logic.csproj"
             },
-            "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj": {
-              "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj"
+            "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj": {
+              "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj"
             }
           }
         }

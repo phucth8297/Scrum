@@ -1,4 +1,5 @@
 ﻿using MyAlarm.Model;
+using MyAlarm.Views;
 using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
@@ -76,6 +77,15 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
+        #region EmailBindProp
+        private string _EmailBindProp = "";
+        public string EmailBindProp
+        {
+            get { return _EmailBindProp; }
+            set { SetProperty(ref _EmailBindProp, value); }
+        }
+        #endregion
+
         public bool IsNotBusyBindProp { get { return !_IsBusyBindProp; } }
 
 
@@ -133,7 +143,42 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
+        #region LogoutCommand
 
+        public DelegateCommand<object> LogoutCommand { get; private set; }
+        private bool CanLogout(object obj)
+        {
+            if(IsNotBusyBindProp && string.IsNullOrWhiteSpace(EmailBindProp) == false)
+            {
+                return false;
+            }
+            return true;
+        }
+        private async void OnLogout(object obj)
+        {
+            if (CanLogout(obj) == true)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            await NavigationService.NavigateAsync(nameof(VBS_LoginPage));
+
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitLogoutCommand()
+        {
+            LogoutCommand = new DelegateCommand<object>(OnLogout, CanLogout);
+            LogoutCommand.ObservesProperty(() => IsNotBusyBindProp);
+            LogoutCommand.ObservesProperty(() => EmailBindProp);
+
+        }
+
+        #endregion
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {

@@ -3626,11 +3626,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm.Android\\MyAlarm.Android.csproj",
+      "projectUniqueName": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm.Android\\MyAlarm.Android.csproj",
       "projectName": "MyAlarm.Android",
-      "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm.Android\\MyAlarm.Android.csproj",
+      "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm.Android\\MyAlarm.Android.csproj",
       "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm.Android\\obj\\",
+      "outputPath": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3647,8 +3647,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj": {
-              "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj"
+            "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj": {
+              "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm\\MyAlarm\\MyAlarm.csproj"
             }
           }
         }

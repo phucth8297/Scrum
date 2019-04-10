@@ -199,6 +199,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Logic.dll",
 		"MyAlarm.EFStandard.dll",
+		"Domain.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

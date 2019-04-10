@@ -42,14 +42,7 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
-        #region EmailBindProp
-        private string _EmailBindProp = "";
-        public string EmailBindProp
-        {
-            get { return _EmailBindProp; }
-            set { SetProperty(ref _EmailBindProp, value); }
-        }
-        #endregion
+        
 
         #region ModeNewBindProp
         private bool _ModeNewBindProp = false;
@@ -74,19 +67,29 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            var member = await logic.GetMember(EmailBindProp);
-            var role =  logic.CheckRole(member);
-            if (role == ConstRole.SCRUM_MASTER.ToString() || role == ConstRole.PRODUCT_OWER.ToString())
+            if (EmailBindProp == null)
             {
-                ModeNewBindProp = true;
-                var param = new NavigationParameters();
-                param.Add(Param.PARAM_MODE,ModeNewBindProp);
-                await NavigationService.NavigateAsync(nameof(VBS_AddMemberPage));
+                await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn cần phải đăng nhập để thực hiện chức năng này", "Đồng ý");
+                await NavigationService.NavigateAsync(nameof(VBS_LoginPage));
+
             }
             else
             {
-                await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn không có quyền thực hiện chức năng này", "Đồng ý");
+                var member = await logic.GetMember(EmailBindProp);
+                var role = logic.CheckRole(member);
+                if (role == ConstRole.SCRUM_MASTER.ToString() || role == ConstRole.PRODUCT_OWER.ToString())
+                {
+                    ModeNewBindProp = true;
+                    var param = new NavigationParameters();
+                    param.Add(Param.PARAM_MODE, ModeNewBindProp);
+                    await NavigationService.NavigateAsync(nameof(VBS_AddMemberPage), param);
+                }
+                else
+                {
+                    await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn không có quyền thực hiện chức năng này", "Đồng ý");
+                }
             }
+            
 
             IsBusyBindProp = false;
         }
@@ -142,7 +145,7 @@ namespace MyAlarm.ViewModels
             // Thuc hien cong viec tai day
             if (obj is Member member)
             {
-                var resultConfirm = await PageDialogService.DisplayAlertAsync("Xác nhận", "Bạn có chắc muốn xóa đơn vị này không?", "Có", "Không");
+                var resultConfirm = await PageDialogService.DisplayAlertAsync("Xác nhận", "Bạn có chắc muốn xóa thành viên này không?", "Có", "Không");
                 if (resultConfirm)
                 {
                     var item = logic.DeleteMember(member.Id);
@@ -162,6 +165,62 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
+        #region GoToEditMemberCommand
+
+        public DelegateCommand<object> GoToEditMemberCommand { get; private set; }
+        private async void OnEdit(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            if (EmailBindProp == null)
+            {
+                await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn cần phải đăng nhập để thực hiện chức năng này", "Đồng ý");
+                await NavigationService.NavigateAsync(nameof(VBS_LoginPage));
+
+            }
+            else
+            {
+                var member = await logic.GetMember(EmailBindProp);
+                var role = logic.CheckRole(member);
+                if (role == ConstRole.SCRUM_MASTER.ToString() || role == ConstRole.PRODUCT_OWER.ToString())
+                {
+                    ModeNewBindProp = false;
+
+                    if (obj is Member mem)
+                    {
+                        var param = new NavigationParameters();
+                        param.Add(Param.PARAM_MODE, ModeNewBindProp);
+                        param.Add(Param.PARAM_EDIT_MEMBER, mem);
+                        await NavigationService.NavigateAsync(nameof(VBS_AddMemberPage), param);
+                    }
+                    
+                }
+                else
+                {
+                    await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn không có quyền thực hiện chức năng này", "Đồng ý");
+                }
+            }
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitEditCommand()
+        {
+            GoToEditMemberCommand = new DelegateCommand<object>(OnEdit);
+            GoToEditMemberCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
+
+        
+
+
         public override async void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
@@ -180,6 +239,12 @@ namespace MyAlarm.ViewModels
                     if (parameters.ContainsKey(Param.PARAM_MEMBER_EMAIL))
                     {
                         EmailBindProp = parameters[Param.PARAM_MEMBER_EMAIL] as string;
+
+                    }
+                    if (parameters.ContainsKey(Param.PARAM_ADD_MEMBER))
+                    {
+                        var member = parameters[Param.PARAM_ADD_MEMBER] as Member;
+                        ListMemberBindProp.Add(member);
 
                     }
 

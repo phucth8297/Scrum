@@ -4741,11 +4741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CNPM\\MyAlarm\\GenEf\\GenEf.csproj",
+      "projectUniqueName": "D:\\Scrum\\MyAlarm\\GenEf\\GenEf.csproj",
       "projectName": "GenEf",
-      "projectPath": "D:\\CNPM\\MyAlarm\\GenEf\\GenEf.csproj",
+      "projectPath": "D:\\Scrum\\MyAlarm\\GenEf\\GenEf.csproj",
       "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\CNPM\\MyAlarm\\GenEf\\obj\\",
+      "outputPath": "D:\\Scrum\\MyAlarm\\GenEf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4764,8 +4764,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj": {
-              "projectPath": "D:\\CNPM\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj"
+            "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj": {
+              "projectPath": "D:\\Scrum\\MyAlarm\\MyAlarm.EFStandard\\MyAlarm.EFStandard.csproj"
             }
           }
         }

@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CNPM\\MyAlarm\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Scrum\\MyAlarm\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\CNPM\\MyAlarm\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Scrum\\MyAlarm\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\CNPM\\MyAlarm\\Domain\\obj\\",
+      "outputPath": "D:\\Scrum\\MyAlarm\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

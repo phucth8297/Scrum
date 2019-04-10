@@ -6,6 +6,7 @@ using MyAlarm.Helpers;
 using MyAlarm.Model;
 using MyAlarm.Views;
 using Prism.Commands;
+using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -50,14 +51,7 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
-        #region EmailMemberBindProp
-        private string _EmailMemberBindProp = "";
-        public string EmailMemberBindProp
-        {
-            get { return _EmailMemberBindProp; }
-            set { SetProperty(ref _EmailMemberBindProp, value); }
-        }
-        #endregion
+        
 
         #region ModeNewBindProp
         private bool _ModeNewBindProp = false;
@@ -65,6 +59,15 @@ namespace MyAlarm.ViewModels
         {
             get { return _ModeNewBindProp; }
             set { SetProperty(ref _ModeNewBindProp, value); }
+        }
+        #endregion
+
+        #region ModelBindProp
+        private Member _ModelBindProp = null;
+        public Member ModelBindProp
+        {
+            get { return _ModelBindProp; }
+            set { SetProperty(ref _ModelBindProp, value); }
         }
         #endregion
 
@@ -78,7 +81,7 @@ namespace MyAlarm.ViewModels
         private bool CanAdd(object b)
         {
             if (IsNotBusyBindProp && string.IsNullOrWhiteSpace(NameMemberBindProp) == false && string.IsNullOrWhiteSpace(GenderMemberBindProp) == false
-                && string.IsNullOrWhiteSpace(PhoneNumberMemberBindProp) == false && string.IsNullOrWhiteSpace(EmailMemberBindProp) == false)
+                && string.IsNullOrWhiteSpace(PhoneNumberMemberBindProp) == false && string.IsNullOrWhiteSpace(EmailBindProp) == false)
             {
                 return true;
             }
@@ -101,7 +104,7 @@ namespace MyAlarm.ViewModels
                 Name = NameMemberBindProp,
                 NumPhone = PhoneNumberMemberBindProp,
                 Gender = GenderMemberBindProp,
-                Email = EmailMemberBindProp,
+                Email = EmailBindProp,
                 FkRole = "R03"
             };
             try
@@ -109,10 +112,17 @@ namespace MyAlarm.ViewModels
                 if (ModeNewBindProp)
                 {
                     var createMember = await logic.CreateMember(member);
+                    var param = new NavigationParameters();
+                    param.Add(Param.PARAM_ADD_MEMBER, createMember);
+                    await NavigationService.NavigateAsync(nameof(VBS_MemberPage), param);
                 }
                 else
                 {
-                    var editMember = await logic.CreateMember(member);
+                    var editMember = await logic.EditMember(ModelBindProp);
+                    editMember.RaisePropertyChange(nameof(Member.NumPhone));
+                    editMember.RaisePropertyChange(nameof(Member.Name));
+                    editMember.RaisePropertyChange(nameof(Member.Email));
+                    await NavigationService.GoBackAsync();
                 }
             }
             catch (Exception e )
@@ -137,7 +147,7 @@ namespace MyAlarm.ViewModels
             AddMemberCommand.ObservesProperty(() => NameMemberBindProp);
             AddMemberCommand.ObservesProperty(() => GenderMemberBindProp);
             AddMemberCommand.ObservesProperty(() => PhoneNumberMemberBindProp);
-            AddMemberCommand.ObservesProperty(() => EmailMemberBindProp);
+            AddMemberCommand.ObservesProperty(() => EmailBindProp);
 
         }
 
@@ -185,7 +195,10 @@ namespace MyAlarm.ViewModels
                     if (parameters.ContainsKey(Param.PARAM_MODE))
                     {
                         ModeNewBindProp = (bool)parameters[Param.PARAM_MODE];
-
+                    }
+                    if (parameters.ContainsKey(Param.PARAM_EDIT_MEMBER))
+                    {
+                        ModelBindProp = (Member)parameters[Param.PARAM_MODE];
                     }
 
                     break;

@@ -23,7 +23,7 @@ namespace Logic
         {
 
             IQueryable<Member> query = _DbContext.Member;
-            query = query.AsNoTracking();
+            query = query.AsNoTracking().OrderBy(h => h.Name);
             return query;
         }
         
@@ -97,16 +97,37 @@ namespace Logic
             return await _DbContext.Member.FirstOrDefaultAsync(h => h.Email == email);
         }
 
-        //public async Task<Member> EditMember(Member member)
-        //{
-        //    try
-        //    {
+        public async Task<Member> EditMember(Member member)
+        {
+            try
+            {
+                var item = await _DbContext.Member.FirstOrDefaultAsync(h => h.Id == member.Id);
+                item.Email = member.Email;
+                item.Name = member.Name;
+                item.NumPhone = member.NumPhone;
+                await _DbContext.SaveChangesAsync().ConfigureAwait(false);
+                return item;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        throw e;
-        //    }
-        //}
+        public async Task<bool> ChangePass(Member member)
+        {
+            try
+            {
+                var item = await _DbContext.Member.FirstOrDefaultAsync(h => h.Id == member.Id);
+                item.Password = member.Password;
+                await _DbContext.SaveChangesAsync().ConfigureAwait(false);
+                return true;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
     }
 }

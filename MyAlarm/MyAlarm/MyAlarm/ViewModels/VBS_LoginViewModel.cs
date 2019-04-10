@@ -20,14 +20,7 @@ namespace MyAlarm.ViewModels
 
         }
 
-        #region EmailBindProp
-        private string _EmailBindProp = "";
-        public string EmailBindProp
-        {
-            get { return _EmailBindProp; }
-            set { SetProperty(ref _EmailBindProp, value); }
-        }
-        #endregion
+        
 
         #region PassBindProp
         private string _PassBindProp = "";

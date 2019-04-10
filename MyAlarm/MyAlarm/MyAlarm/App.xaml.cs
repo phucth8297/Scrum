@@ -57,6 +57,7 @@ namespace MyAlarm
             containerRegistry.RegisterForNavigation<VBS_MemberDetailPage>();
             containerRegistry.RegisterForNavigation<VBS_MemberPage>();
             containerRegistry.RegisterForNavigation<VBS_WorkPage>();
+            containerRegistry.RegisterForNavigation<VBS_LoginPage>();
 
         }
     }
