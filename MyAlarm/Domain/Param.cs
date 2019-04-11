@@ -8,7 +8,9 @@ namespace Domain
         public static string PARAM_ADD_MEMBER = "PARAM_ADD_MEMBER";
         public static string PARAM_EDIT_MEMBER = "PARAM_EDIT_MEMBER";
         public static string PARAM_CHANGE_PASS = "PARAM_CHANGE_PASS";
+        public static string PARAM_TITLE = "PARAM_TITLE";
 
         
+
     }
 }

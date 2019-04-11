@@ -7,10 +7,18 @@
   <ItemGroup>
     <None Remove="File\data.db" />
     <None Remove="Images\3d-modeling.svg" />
+    <None Remove="Images\add.svg" />
+    <None Remove="Images\delete.svg" />
+    <None Remove="Images\edit.svg" />
+    <None Remove="Images\employee.svg" />
+    <None Remove="Images\help.svg" />
     <None Remove="Images\icon_menu.svg" />
     <None Remove="Images\icon_menu1.svg" />
+    <None Remove="Images\interview.svg" />
+    <None Remove="Images\left-arrow.svg" />
     <None Remove="Images\menu.png" />
     <None Remove="Images\modeling.svg" />
+    <None Remove="Images\role.svg" />
     <None Remove="Images\scrum.png" />
   </ItemGroup>
 
@@ -19,10 +27,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\3d-modeling.svg" />
+    <EmbeddedResource Include="Images\add.svg" />
+    <EmbeddedResource Include="Images\delete.svg" />
+    <EmbeddedResource Include="Images\edit.svg" />
+    <EmbeddedResource Include="Images\employee.svg" />
+    <EmbeddedResource Include="Images\help.svg" />
     <EmbeddedResource Include="Images\icon_menu.svg" />
     <EmbeddedResource Include="Images\icon_menu1.svg" />
+    <EmbeddedResource Include="Images\interview.svg" />
+    <EmbeddedResource Include="Images\left-arrow.svg" />
     <EmbeddedResource Include="Images\menu.png" />
     <EmbeddedResource Include="Images\modeling.svg" />
+    <EmbeddedResource Include="Images\role.svg" />
     <EmbeddedResource Include="Images\scrum.png" />
   </ItemGroup>
 

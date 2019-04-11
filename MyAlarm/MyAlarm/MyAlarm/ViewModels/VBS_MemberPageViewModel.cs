@@ -53,6 +53,14 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
+        #region TitleBindProp
+        private string _TitleBindProp = "";
+        public string TitleBindProp
+        {
+            get { return _TitleBindProp; }
+            set { SetProperty(ref _TitleBindProp, value); }
+        }
+        #endregion
 
         #region GoToAddMemberCommand
 
@@ -89,7 +97,7 @@ namespace MyAlarm.ViewModels
                     await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn không có quyền thực hiện chức năng này", "Đồng ý");
                 }
             }
-            
+
 
             IsBusyBindProp = false;
         }
@@ -199,7 +207,7 @@ namespace MyAlarm.ViewModels
                         param.Add(Param.PARAM_EDIT_MEMBER, mem);
                         await NavigationService.NavigateAsync(nameof(VBS_AddMemberPage), param);
                     }
-                    
+
                 }
                 else
                 {
@@ -218,7 +226,7 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
-        
+
 
 
         public override async void OnNavigatedTo(INavigationParameters parameters)
@@ -239,6 +247,11 @@ namespace MyAlarm.ViewModels
                     if (parameters.ContainsKey(Param.PARAM_MEMBER_EMAIL))
                     {
                         EmailBindProp = parameters[Param.PARAM_MEMBER_EMAIL] as string;
+
+                    }
+                    if (parameters.ContainsKey(Param.PARAM_TITLE))
+                    {
+                        TitleBindProp = parameters[Param.PARAM_TITLE] as string;
 
                     }
                     if (parameters.ContainsKey(Param.PARAM_ADD_MEMBER))
