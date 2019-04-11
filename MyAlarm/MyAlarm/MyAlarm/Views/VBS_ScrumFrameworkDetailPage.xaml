@@ -1,12 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyAlarm.Views.VBS_ScrumFrameworkDetailPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_ScrumFrameworkDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:MyAlarm"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    Title="ScrumDetail"
+    BackgroundColor="Black"
+    NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
+            <ffImageSvg:SvgCachedImage
+                HeightRequest="30" WidthRequest="30"
+                Margin="50,15,0,15" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+
+                <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                Text="Scrum detail" TextColor="White"
+                FontSize="40" />
         </StackLayout>
-    </ContentPage.Content>
+
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <tlrPrimitives:RadBorder
+                HeightRequest="80" WidthRequest="80"
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red" />
+            <ffImageSvg:SvgCachedImage
+                HeightRequest="50" WidthRequest="50"
+                HorizontalOptions="CenterAndExpand"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                Grid.Row="1"
+                HorizontalOptions="CenterAndExpand"
+                Text="Scrum Detail" TextColor="White"
+                FontSize="30" FontAttributes="Bold" />
+        </Grid>
+
+        <StackLayout Grid.Row="2" Margin="50">
+            <tlrPrimitives:RadBorder HeightRequest="400" BorderColor="White" CornerRadius="5">
+                <ScrollView>
+                    <Label Margin="5,0,5,0" Text="Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên" TextColor="White" />
+                </ScrollView>
+            </tlrPrimitives:RadBorder>
+
+        </StackLayout>
+    </Grid>
 </ContentPage>

@@ -79,10 +79,10 @@ namespace MyAlarm.ViewModels
                 case NavigationMode.Back:
                     break;
                 case NavigationMode.New:
-                    var logic = new ScrumFrameworkLogic(Helper.GetConnectionString());
-                    var listScrumFramework = logic.GetAllAsync();
+                    //var logic = new ScrumFrameworkLogic(Helper.GetConnectionString());
+                    //var listScrumFramework = logic.GetAllAsync();
 
-                    ListScrumFrameworkBindProp = new ObservableCollection<ScrumFramework>(listScrumFramework);
+                    //ListScrumFrameworkBindProp = new ObservableCollection<ScrumFramework>(listScrumFramework);
 
                     break;
                 case NavigationMode.Forward:

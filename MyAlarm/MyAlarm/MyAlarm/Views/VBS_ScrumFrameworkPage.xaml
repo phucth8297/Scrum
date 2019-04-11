@@ -1,12 +1,118 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyAlarm.Views.VBS_ScrumFrameworkPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_ScrumFrameworkPage"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:MyAlarm"
+    xmlns:telerikListViewCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
+    xmlns:tlrDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    Title="ScrumDetail"
+    BackgroundColor="Black"
+    NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
+            <ffImageSvg:SvgCachedImage
+                HeightRequest="30" WidthRequest="30"
+                Margin="50,15,0,15" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+
+                <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                Text="Scrum detail" TextColor="White"
+                FontSize="40" />
         </StackLayout>
-    </ContentPage.Content>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <tlrPrimitives:RadBorder
+                HeightRequest="80" WidthRequest="80"
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red" />
+            <ffImageSvg:SvgCachedImage
+                HeightRequest="50" WidthRequest="50"
+                HorizontalOptions="CenterAndExpand"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                Grid.Row="1"
+                HorizontalOptions="CenterAndExpand"
+                Text="Scrum" TextColor="White"
+                FontSize="30" FontAttributes="Bold" />
+        </Grid>
+
+        <tlrDataControls:RadListView
+            Grid.Row="2"
+            Margin="50"
+            StyleClass="TelerikTheme"
+            ItemsSource="{Binding ListScrumFrameworkBindProp, Mode=OneWay}">
+            <!--<tlrDataControls:RadListView.Commands>
+                    <telerikListViewCommands:ListViewUserCommand Command="{Binding TranferLibraryCommand, Mode=OneWay}" Id="ItemTap" />
+                </tlrDataControls:RadListView.Commands>-->
+            <tlrDataControls:RadListView.ItemTemplate>
+                <DataTemplate>
+                    <tlrListView:ListViewTemplateCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+
+                            <ffImageSvg:SvgCachedImage
+                                HeightRequest="40" WidthRequest="40"
+                                Margin="5,5,0,5" HorizontalOptions="Start"
+                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                                <ffImageSvg:SvgCachedImage.Transformations>
+                                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#cccccc" />
+                                </ffImageSvg:SvgCachedImage.Transformations>
+                            </ffImageSvg:SvgCachedImage>
+
+                            <Label
+                                Grid.Column="1"
+                                VerticalOptions="Center"
+                                Text="{Binding Name, Mode=OneWay}"
+                                FontSize="15" />
+                            <ffImageSvg:SvgCachedImage
+                                Grid.Column="2"
+                                HeightRequest="25" WidthRequest="25"
+                                HorizontalOptions="End"
+                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                                <ffImageSvg:SvgCachedImage.Transformations>
+                                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#000000" />
+                                </ffImageSvg:SvgCachedImage.Transformations>
+                            </ffImageSvg:SvgCachedImage>
+                        </Grid>
+                    </tlrListView:ListViewTemplateCell>
+                </DataTemplate>
+            </tlrDataControls:RadListView.ItemTemplate>
+        </tlrDataControls:RadListView>
+    </Grid>
 </ContentPage>
