@@ -82,7 +82,7 @@
                     </ffImageSvg:SvgCachedImage.Transformations>
 
                     <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer Command="{Binding GoToScrumFrameworkCommand}" NumberOfTapsRequired="1" />
                     </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
                 </ffImageSvg:SvgCachedImage>
@@ -138,7 +138,7 @@
                     </ffImageSvg:SvgCachedImage.Transformations>
 
                     <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer Command="{Binding GoToWorkCommand}" NumberOfTapsRequired="1" />
                     </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
                 </ffImageSvg:SvgCachedImage>

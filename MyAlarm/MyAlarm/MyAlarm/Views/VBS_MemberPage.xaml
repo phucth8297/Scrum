@@ -17,6 +17,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions />
@@ -38,7 +39,7 @@
                 </ffImageSvg:SvgCachedImage.Transformations>
 
                 <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding GoBackCommand}" NumberOfTapsRequired="1" />
                 </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
             </ffImageSvg:SvgCachedImage>
@@ -52,7 +53,7 @@
                 VerticalOptions="CenterAndExpand" />
 
             <ffImageSvg:SvgCachedImage
-                Margin="50,15,0,15"
+                Margin="0,15,50,15"
                 Aspect="AspectFit"
                 DownsampleToViewSize="true"
                 HeightRequest="30"
@@ -64,67 +65,91 @@
                 </ffImageSvg:SvgCachedImage.Transformations>
 
                 <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding GoToAddMemberCommand}" NumberOfTapsRequired="1" />
                 </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
             </ffImageSvg:SvgCachedImage>
 
         </StackLayout>
+        <Label
+            Grid.Row="1"
+            FontSize="17"
+            HorizontalOptions="EndAndExpand"
+            Text="{Binding EmailBindProp, Mode=OneWay}"
+            TextColor="White" />
         <tlrDataControls:RadListView
+            Grid.Row="2"
             ItemsSource="{Binding ListMemberBindProp, Mode=OneWay}"
             SelectedItem="{Binding SelectedMemberBindProp, Mode=TwoWay}"
             StyleClass="TelerikTheme">
             <tlrDataControls:RadListView.ItemTemplate>
                 <DataTemplate>
                     <tlrListView:ListViewTemplateCell>
-                        <Grid>
+                        <Grid Margin="20,20">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+
                             </Grid.ColumnDefinitions>
 
                             <Label
-                                HorizontalOptions="StartAndExpand"
-                                Text="{Binding CategoryName, Mode=OneWay}"
-                                VerticalOptions="Center" />
-                            <ffImageSvg:SvgCachedImage
+                                FontSize="17"
+                                Text="{Binding Name, Mode=OneWay}"
+                                TextColor="White" />
+                            <Label
                                 Grid.Column="1"
-                                Margin="5"
-                                Aspect="AspectFit"
-                                DownsampleToViewSize="true"
-                                HeightRequest="50"
-                                Source="resource://MyAlarm.Images.delete.svg"
-                                WidthRequest="50">
-                                <ffImageSvg:SvgCachedImage.Transformations>
-                                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ff0000" />
-                                </ffImageSvg:SvgCachedImage.Transformations>
-                                <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                                    <TapGestureRecognizer
-                                        Command="{Binding BindingContext.DeleteCommand, Source={x:Reference MemberPage}, Mode=OneWay}"
-                                        CommandParameter="{Binding Mode=OneWay}"
-                                        NumberOfTapsRequired="1" />
-                                </ffImageSvg:SvgCachedImage.GestureRecognizers>
-                            </ffImageSvg:SvgCachedImage>
-                            <ffImageSvg:SvgCachedImage
+                                FontSize="17"
+                                Text="{Binding Gender, Mode=OneWay}"
+                                TextColor="White" />
+                            <Label
                                 Grid.Column="2"
-                                Margin="5"
-                                Aspect="AspectFit"
-                                DownsampleToViewSize="true"
-                                HeightRequest="50"
-                                Source="resource://MyAlarm.Images.edit.svg"
-                                WidthRequest="50">
-                                <ffImageSvg:SvgCachedImage.Transformations>
-                                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#00ff00" />
-                                </ffImageSvg:SvgCachedImage.Transformations>
-                                <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                                    <TapGestureRecognizer
-                                        Command="{Binding BindingContext.GoToEditMemberCommand, Source={x:Reference MemberPage}, Mode=OneWay}"
-                                        CommandParameter="{Binding Mode=OneWay}"
-                                        NumberOfTapsRequired="1" />
-                                </ffImageSvg:SvgCachedImage.GestureRecognizers>
-                            </ffImageSvg:SvgCachedImage>
-
+                                FontSize="17"
+                                Text="{Binding NumPhone, Mode=OneWay}"
+                                TextColor="White" />
+                            <Label
+                                Grid.Column="3"
+                                FontSize="17"
+                                Text="{Binding Email, Mode=OneWay}"
+                                TextColor="White" />
+                            <StackLayout Grid.Column="4" Orientation="Horizontal">
+                                <ffImageSvg:SvgCachedImage
+                                    Margin="5"
+                                    Aspect="AspectFit"
+                                    DownsampleToViewSize="true"
+                                    HeightRequest="30"
+                                    Source="resource://MyAlarm.Images.delete.svg"
+                                    WidthRequest="30">
+                                    <ffImageSvg:SvgCachedImage.Transformations>
+                                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ff0000" />
+                                    </ffImageSvg:SvgCachedImage.Transformations>
+                                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding BindingContext.DeleteCommand, Source={x:Reference MemberPage}, Mode=OneWay}"
+                                            CommandParameter="{Binding Mode=OneWay}"
+                                            NumberOfTapsRequired="1" />
+                                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
+                                </ffImageSvg:SvgCachedImage>
+                                <ffImageSvg:SvgCachedImage
+                                    Margin="5"
+                                    Aspect="AspectFit"
+                                    DownsampleToViewSize="true"
+                                    HeightRequest="30"
+                                    Source="resource://MyAlarm.Images.edit.svg"
+                                    WidthRequest="30">
+                                    <ffImageSvg:SvgCachedImage.Transformations>
+                                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#00ff00" />
+                                    </ffImageSvg:SvgCachedImage.Transformations>
+                                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding BindingContext.GoToEditMemberCommand, Source={x:Reference MemberPage}, Mode=OneWay}"
+                                            CommandParameter="{Binding Mode=OneWay}"
+                                            NumberOfTapsRequired="1" />
+                                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
+                                </ffImageSvg:SvgCachedImage>
+                            </StackLayout>
 
                         </Grid>
                     </tlrListView:ListViewTemplateCell>

@@ -11,11 +11,11 @@ using System.Text;
 
 namespace MyAlarm.ViewModels
 {
-    class VBS_LoginViewModel : BaseViewModel
+    class VBS_LoginPageViewModel : BaseViewModel
     {
         private MemberLogic logic;
 
-        public VBS_LoginViewModel(InitParamVm initParamVm) : base(initParamVm) {
+        public VBS_LoginPageViewModel(InitParamVm initParamVm) : base(initParamVm) {
             logic = new MemberLogic(Helper.GetConnectionString());
 
         }
@@ -57,6 +57,7 @@ namespace MyAlarm.ViewModels
                 {
                     var param = new NavigationParameters();
                     param.Add(Param.PARAM_MEMBER_EMAIL, EmailBindProp);
+                    param.Add(Param.PARAM_TITLE, TitleBindProp);
                     await NavigationService.NavigateAsync(nameof(VBS_MemberPage), param);
 
                 }
@@ -90,6 +91,32 @@ namespace MyAlarm.ViewModels
         }
 
         #endregion
+        public override async void OnNavigatedTo(INavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
 
+            switch (parameters.GetNavigationMode())
+            {
+                case NavigationMode.Back:
+                    break;
+                case NavigationMode.New:
+
+                  
+                    if (parameters.ContainsKey(Param.PARAM_TITLE))
+                    {
+                        TitleBindProp = parameters[Param.PARAM_TITLE] as string;
+                        TitleBindProp = "Login";
+                    }
+                    
+
+                    break;
+                case NavigationMode.Forward:
+                    break;
+                case NavigationMode.Refresh:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

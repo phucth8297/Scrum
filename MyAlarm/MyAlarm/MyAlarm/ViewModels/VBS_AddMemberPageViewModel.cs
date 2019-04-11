@@ -113,6 +113,7 @@ namespace MyAlarm.ViewModels
                 {
                     var createMember = await logic.CreateMember(member);
                     var param = new NavigationParameters();
+                    param.Add(Param.PARAM_TITLE, TitleBindProp);
                     param.Add(Param.PARAM_ADD_MEMBER, createMember);
                     await NavigationService.NavigateAsync(nameof(VBS_MemberPage), param);
                 }
@@ -200,7 +201,20 @@ namespace MyAlarm.ViewModels
                     {
                         ModelBindProp = (Member)parameters[Param.PARAM_MODE];
                     }
+                    if (parameters.ContainsKey(Param.PARAM_TITLE))
+                    {
+                        TitleBindProp = parameters[Param.PARAM_TITLE] as string;
+                        if (ModeNewBindProp)
+                        {
+                            TitleBindProp = "Add member";
 
+                        }
+                        else
+                        {
+                            TitleBindProp = "Edit member";
+
+                        }
+                    }
                     break;
                 case NavigationMode.Forward:
                     break;
