@@ -18,15 +18,17 @@
         <Grid.ColumnDefinitions />
         <StackLayout
             BackgroundColor="Red"
-            HeightRequest="60"
+            HeightRequest="80"
             Orientation="Horizontal">
 
             <ffImageSvg:SvgCachedImage
+                Margin="50,15,0,15"
                 Aspect="AspectFit"
                 DownsampleToViewSize="true"
-                HeightRequest="25"
+                HeightRequest="30"
+                HorizontalOptions="Start"
                 Source="resource://MyAlarm.Images.icon_menu.svg"
-                WidthRequest="25">
+                WidthRequest="30">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>
@@ -38,25 +40,186 @@
             </ffImageSvg:SvgCachedImage>
 
             <Label
-                FontSize="20"
-                HorizontalOptions="Center"
+                Margin="0,0,50,0"
+                FontSize="40"
+                HorizontalOptions="CenterAndExpand"
                 Text="Scrum Axon"
                 TextColor="White"
-                VerticalOptions="Center" />
+                VerticalOptions="CenterAndExpand" />
 
         </StackLayout>
-        <!--<Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="50,30">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            <!--  Row 0  -->
+            <tlrPrimitives:RadBorder
+                Grid.ColumnSpan="2"
+                BackgroundColor="Red"
+                BorderThickness="1"
+                CornerRadius="100"
+                HorizontalOptions="CenterAndExpand">
+                <ffImageSvg:SvgCachedImage
+                    Margin="20"
+                    Aspect="AspectFit"
+                    DownsampleToViewSize="true"
+                    HeightRequest="70"
+                    Source="resource://MyAlarm.Images.3d-modeling.svg"
+                    WidthRequest="70">
+                    <ffImageSvg:SvgCachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                    </ffImageSvg:SvgCachedImage.Transformations>
 
-            <tlrInput:RadButton />
-        </Grid>-->
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+                </ffImageSvg:SvgCachedImage>
+            </tlrPrimitives:RadBorder>
+            <!--  Row 1  -->
+            <Label
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                FontSize="20"
+                HorizontalOptions="CenterAndExpand"
+                Text="Scrum Framework"
+                TextColor="White" />
+            <!--  Row 2  -->
+            <tlrPrimitives:RadBorder
+                Grid.Row="2"
+                BackgroundColor="Red"
+                BorderThickness="1"
+                CornerRadius="15"
+                StyleClass="TelerikTheme">
+                <ffImage:CachedImage
+                    Margin="10"
+                    Aspect="AspectFit"
+                    DownsampleToViewSize="true"
+                    HeightRequest="25"
+                    HorizontalOptions="Start"
+                    Source="resource://MyAlarm.Images.scrum.png"
+                    WidthRequest="25">
+                    <ffImage:CachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                    </ffImage:CachedImage.Transformations>
+
+                    <ffImage:CachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    </ffImage:CachedImage.GestureRecognizers>
+
+                </ffImage:CachedImage>
+            </tlrPrimitives:RadBorder>
+
+            <tlrPrimitives:RadBorder
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="Red"
+                BorderThickness="1"
+                CornerRadius="15"
+                StyleClass="TelerikTheme">
+                <ffImage:CachedImage
+                    Margin="10"
+                    Aspect="AspectFit"
+                    DownsampleToViewSize="true"
+                    HeightRequest="25"
+                    HorizontalOptions="Start"
+                    Source="resource://MyAlarm.Images.scrum.png"
+                    WidthRequest="25">
+                    <ffImage:CachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                    </ffImage:CachedImage.Transformations>
+
+                    <ffImage:CachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    </ffImage:CachedImage.GestureRecognizers>
+
+                </ffImage:CachedImage>
+            </tlrPrimitives:RadBorder>
+            <!--  Row 3  -->
+            <Label
+                Grid.Row="3"
+                FontSize="20"
+                Text="Scrum Framework"
+                TextColor="White" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                FontSize="20"
+                Text="Scrum Framework"
+                TextColor="White" />
+            <!--  Row 4  -->
+            <tlrPrimitives:RadBorder
+                Grid.Row="4"
+                BackgroundColor="Red"
+                BorderThickness="1"
+                CornerRadius="15"
+                StyleClass="TelerikTheme">
+                <ffImage:CachedImage
+                    Margin="10"
+                    Aspect="AspectFit"
+                    DownsampleToViewSize="true"
+                    HeightRequest="25"
+                    HorizontalOptions="Start"
+                    Source="resource://MyAlarm.Images.scrum.png"
+                    WidthRequest="25">
+                    <ffImage:CachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                    </ffImage:CachedImage.Transformations>
+
+                    <ffImage:CachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    </ffImage:CachedImage.GestureRecognizers>
+
+                </ffImage:CachedImage>
+            </tlrPrimitives:RadBorder>
+
+            <tlrPrimitives:RadBorder
+                Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="Red"
+                BorderThickness="1"
+                CornerRadius="15"
+                StyleClass="TelerikTheme">
+                <ffImage:CachedImage
+                    Margin="10"
+                    Aspect="AspectFit"
+                    DownsampleToViewSize="true"
+                    HeightRequest="25"
+                    HorizontalOptions="Start"
+                    Source="resource://MyAlarm.Images.scrum.png"
+                    WidthRequest="25">
+                    <ffImage:CachedImage.Transformations>
+                        <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                    </ffImage:CachedImage.Transformations>
+
+                    <ffImage:CachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    </ffImage:CachedImage.GestureRecognizers>
+
+                </ffImage:CachedImage>
+            </tlrPrimitives:RadBorder>
+            <!--  Row 5  -->
+            <Label
+                Grid.Row="5"
+                FontSize="20"
+                Text="Scrum Framework"
+                TextColor="White" />
+            <Label
+                Grid.Row="5"
+                Grid.Column="1"
+                FontSize="20"
+                Text="Scrum Framework"
+                TextColor="White" />
+        </Grid>
     </Grid>
 </ContentPage>

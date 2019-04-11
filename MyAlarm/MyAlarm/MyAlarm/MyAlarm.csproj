@@ -6,18 +6,24 @@
 
   <ItemGroup>
     <None Remove="File\data.db" />
+    <None Remove="Images\3d-modeling.svg" />
     <None Remove="Images\icon_menu.svg" />
     <None Remove="Images\icon_menu1.svg" />
     <None Remove="Images\menu.png" />
+    <None Remove="Images\modeling.svg" />
+    <None Remove="Images\scrum.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="File\data.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\3d-modeling.svg" />
     <EmbeddedResource Include="Images\icon_menu.svg" />
     <EmbeddedResource Include="Images\icon_menu1.svg" />
     <EmbeddedResource Include="Images\menu.png" />
+    <EmbeddedResource Include="Images\modeling.svg" />
+    <EmbeddedResource Include="Images\scrum.png" />
   </ItemGroup>
 
   <ItemGroup>
