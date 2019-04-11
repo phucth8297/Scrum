@@ -8,6 +8,7 @@
     xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
     xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    BackgroundColor="Black"
     NavigationPage.HasNavigationBar="False">
     <Grid>
         <Grid.RowDefinitions>
@@ -16,24 +17,35 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions />
         <StackLayout
-            Margin="20,10"
-            BackgroundColor="#CA5100"
+            BackgroundColor="Red"
+            HeightRequest="60"
             Orientation="Horizontal">
-            <Label
-                FontSize="20"
-                HorizontalTextAlignment="Start"
-                Text="Helper"
-                TextColor="White" />
+
+            <ffImageSvg:SvgCachedImage
+                Aspect="AspectFit"
+                DownsampleToViewSize="true"
+                HeightRequest="25"
+                Source="resource://MyAlarm.Images.icon_menu.svg"
+                WidthRequest="25">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+
+                <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+            </ffImageSvg:SvgCachedImage>
 
             <Label
                 FontSize="20"
-                HorizontalTextAlignment="End"
-                Text="Contact"
+                HorizontalOptions="Center"
+                Text="Scrum Axon"
                 TextColor="White"
-                VerticalTextAlignment="End" />
+                VerticalOptions="Center" />
 
         </StackLayout>
-        <Grid Grid.Row="1" Margin="70,30">
+        <!--<Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -44,67 +56,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <tlrInput:RadButton
-                BackgroundColor="#007ACC"
-                BorderColor="Black"
-                BorderThickness="2"
-                FontSize="40"
-                Text="Scrum"
-                TextColor="White" />
-
-            <tlrPrimitives:RadBorder
-                Grid.Row="1"
-                BackgroundColor="#007ACC"
-                BorderColor="Yellow"
-                BorderThickness="1">
-                <Label
-                    FontSize="Large"
-                    HorizontalTextAlignment="Center"
-                    Text="Scrum"
-                    TextColor="White"
-                    VerticalTextAlignment="Center" />
-            </tlrPrimitives:RadBorder>
-
-            <tlrPrimitives:RadBorder
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="#007ACC"
-                BorderColor="Yellow"
-                BorderThickness="1">
-                <Label
-                    FontSize="Large"
-                    HorizontalTextAlignment="Center"
-                    Text="Scrum"
-                    TextColor="White"
-                    VerticalTextAlignment="Center" />
-            </tlrPrimitives:RadBorder>
-
-            <tlrPrimitives:RadBorder
-                Grid.Row="2"
-                BackgroundColor="#007ACC"
-                BorderColor="Yellow"
-                BorderThickness="1">
-                <Label
-                    FontSize="Large"
-                    HorizontalTextAlignment="Center"
-                    Text="Scrum"
-                    TextColor="White"
-                    VerticalTextAlignment="Center" />
-            </tlrPrimitives:RadBorder>
-
-            <tlrPrimitives:RadBorder
-                Grid.Row="2"
-                Grid.Column="1"
-                BackgroundColor="#007ACC"
-                BorderColor="Yellow"
-                BorderThickness="1">
-                <Label
-                    FontSize="Large"
-                    HorizontalTextAlignment="Center"
-                    Text="Scrum"
-                    TextColor="White"
-                    VerticalTextAlignment="Center" />
-            </tlrPrimitives:RadBorder>
-        </Grid>
+            <tlrInput:RadButton />
+        </Grid>-->
     </Grid>
 </ContentPage>

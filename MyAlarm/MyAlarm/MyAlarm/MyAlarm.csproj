@@ -6,12 +6,18 @@
 
   <ItemGroup>
     <None Remove="File\data.db" />
+    <None Remove="Images\icon_menu.svg" />
+    <None Remove="Images\icon_menu1.svg" />
+    <None Remove="Images\menu.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="File\data.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\icon_menu.svg" />
+    <EmbeddedResource Include="Images\icon_menu1.svg" />
+    <EmbeddedResource Include="Images\menu.png" />
   </ItemGroup>
 
   <ItemGroup>

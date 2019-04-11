@@ -19,9 +19,9 @@ D:\CNPM\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.pdb
 D:\Scrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.deps.json
 D:\Scrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.dll
 D:\Scrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.pdb
-D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
 D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
 D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
 D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
 D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.dll
 D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.pdb
+D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
