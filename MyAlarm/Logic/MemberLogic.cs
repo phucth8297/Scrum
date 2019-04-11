@@ -26,30 +26,30 @@ namespace Logic
             query = query.AsNoTracking().OrderBy(h => h.Name);
             return query;
         }
-        
+
         public async Task<Member> CreateMember(Member member)
         {
-            
-                var item = new Member
-                {
-                    Id = member.Id,
-                    Email = member.Email,
-                    FkRole = member.FkRole,
-                    Gender = member.Gender,
-                    Name = member.Name,
-                    NumPhone = member.NumPhone
-                };
-                _DbContext.Member.Add(item);
-                try
-                {
-                    await _DbContext.SaveChangesAsync().ConfigureAwait(false);
-                }
-                catch (Exception e)
-                {
-                    throw e;
-                }
-                return item;
-                       
+
+            var item = new Member
+            {
+                Id = member.Id,
+                Email = member.Email,
+                FkRole = member.FkRole,
+                Gender = member.Gender,
+                Name = member.Name,
+                NumPhone = member.NumPhone
+            };
+            _DbContext.Member.Add(item);
+            try
+            {
+                await _DbContext.SaveChangesAsync().ConfigureAwait(false);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            return item;
+
         }
 
         public async Task<bool> DeleteMember(string idMember)
@@ -71,7 +71,7 @@ namespace Logic
 
                 throw e;
             }
-            
+
         }
 
         public async Task<bool> Login(string email, string pass)
@@ -89,7 +89,7 @@ namespace Logic
             {
                 throw e;
             }
-            
+
         }
 
         public async Task<Member> GetMember(string email)

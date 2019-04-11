@@ -43,7 +43,7 @@
                 Margin="0,0,50,0"
                 FontSize="40"
                 HorizontalOptions="CenterAndExpand"
-                Text="Scrum Axon"
+                Text="{Binding TitleBindProp}"
                 TextColor="White"
                 VerticalOptions="CenterAndExpand" />
 
@@ -52,9 +52,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
 
             </Grid.RowDefinitions>
@@ -62,8 +62,9 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <!--  Row 0  -->
+            <!--  Row 2  -->
             <tlrPrimitives:RadBorder
+                Grid.Row="2"
                 Grid.ColumnSpan="2"
                 BackgroundColor="Red"
                 BorderThickness="1"
@@ -86,101 +87,99 @@
 
                 </ffImageSvg:SvgCachedImage>
             </tlrPrimitives:RadBorder>
-            <!--  Row 1  -->
+            <!--  Row 3  -->
             <Label
-                Grid.Row="1"
+                Grid.Row="3"
                 Grid.ColumnSpan="2"
                 FontSize="20"
                 HorizontalOptions="CenterAndExpand"
                 Text="Scrum Framework"
                 TextColor="White" />
-            <!--  Row 2  -->
+            <!--  Row 0  -->
             <tlrPrimitives:RadBorder
-                Grid.Row="2"
                 BackgroundColor="Red"
                 BorderThickness="1"
-                CornerRadius="15"
-                StyleClass="TelerikTheme">
-                <ffImage:CachedImage
-                    Margin="10"
+                CornerRadius="100"
+                HorizontalOptions="CenterAndExpand">
+                <ffImageSvg:SvgCachedImage
+                    Margin="20"
                     Aspect="AspectFit"
                     DownsampleToViewSize="true"
-                    HeightRequest="25"
-                    HorizontalOptions="Start"
-                    Source="resource://MyAlarm.Images.scrum.png"
-                    WidthRequest="25">
-                    <ffImage:CachedImage.Transformations>
+                    HeightRequest="70"
+                    Source="resource://MyAlarm.Images.employee.svg"
+                    WidthRequest="70">
+                    <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
-                    </ffImage:CachedImage.Transformations>
+                    </ffImageSvg:SvgCachedImage.Transformations>
 
-                    <ffImage:CachedImage.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
-                    </ffImage:CachedImage.GestureRecognizers>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToMemberCommand}" NumberOfTapsRequired="1" />
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
-                </ffImage:CachedImage>
+                </ffImageSvg:SvgCachedImage>
             </tlrPrimitives:RadBorder>
 
             <tlrPrimitives:RadBorder
-                Grid.Row="2"
+                Grid.Row="0"
                 Grid.Column="1"
                 BackgroundColor="Red"
                 BorderThickness="1"
-                CornerRadius="15"
-                StyleClass="TelerikTheme">
-                <ffImage:CachedImage
-                    Margin="10"
+                CornerRadius="100"
+                HorizontalOptions="CenterAndExpand">
+                <ffImageSvg:SvgCachedImage
+                    Margin="20"
                     Aspect="AspectFit"
                     DownsampleToViewSize="true"
-                    HeightRequest="25"
-                    HorizontalOptions="Start"
-                    Source="resource://MyAlarm.Images.scrum.png"
-                    WidthRequest="25">
-                    <ffImage:CachedImage.Transformations>
+                    HeightRequest="70"
+                    Source="resource://MyAlarm.Images.help.svg"
+                    WidthRequest="70">
+                    <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
-                    </ffImage:CachedImage.Transformations>
+                    </ffImageSvg:SvgCachedImage.Transformations>
 
-                    <ffImage:CachedImage.GestureRecognizers>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
-                    </ffImage:CachedImage.GestureRecognizers>
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
-                </ffImage:CachedImage>
+                </ffImageSvg:SvgCachedImage>
             </tlrPrimitives:RadBorder>
-            <!--  Row 3  -->
+            <!--  Row 1  -->
             <Label
-                Grid.Row="3"
+                Grid.Row="1"
                 FontSize="20"
-                Text="Scrum Framework"
+                HorizontalOptions="CenterAndExpand"
+                Text="Member"
                 TextColor="White" />
             <Label
-                Grid.Row="3"
+                Grid.Row="1"
                 Grid.Column="1"
                 FontSize="20"
-                Text="Scrum Framework"
+                HorizontalOptions="CenterAndExpand"
+                Text="Work"
                 TextColor="White" />
             <!--  Row 4  -->
             <tlrPrimitives:RadBorder
                 Grid.Row="4"
                 BackgroundColor="Red"
                 BorderThickness="1"
-                CornerRadius="15"
-                StyleClass="TelerikTheme">
-                <ffImage:CachedImage
-                    Margin="10"
+                CornerRadius="100"
+                HorizontalOptions="CenterAndExpand">
+                <ffImageSvg:SvgCachedImage
+                    Margin="20"
                     Aspect="AspectFit"
                     DownsampleToViewSize="true"
-                    HeightRequest="25"
-                    HorizontalOptions="Start"
-                    Source="resource://MyAlarm.Images.scrum.png"
-                    WidthRequest="25">
-                    <ffImage:CachedImage.Transformations>
+                    HeightRequest="70"
+                    Source="resource://MyAlarm.Images.role.svg"
+                    WidthRequest="70">
+                    <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
-                    </ffImage:CachedImage.Transformations>
+                    </ffImageSvg:SvgCachedImage.Transformations>
 
-                    <ffImage:CachedImage.GestureRecognizers>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
-                    </ffImage:CachedImage.GestureRecognizers>
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
-                </ffImage:CachedImage>
+                </ffImageSvg:SvgCachedImage>
             </tlrPrimitives:RadBorder>
 
             <tlrPrimitives:RadBorder
@@ -188,37 +187,38 @@
                 Grid.Column="1"
                 BackgroundColor="Red"
                 BorderThickness="1"
-                CornerRadius="15"
-                StyleClass="TelerikTheme">
-                <ffImage:CachedImage
-                    Margin="10"
+                CornerRadius="100"
+                HorizontalOptions="CenterAndExpand">
+                <ffImageSvg:SvgCachedImage
+                    Margin="20"
                     Aspect="AspectFit"
                     DownsampleToViewSize="true"
-                    HeightRequest="25"
-                    HorizontalOptions="Start"
-                    Source="resource://MyAlarm.Images.scrum.png"
-                    WidthRequest="25">
-                    <ffImage:CachedImage.Transformations>
+                    HeightRequest="70"
+                    Source="resource://MyAlarm.Images.interview.svg"
+                    WidthRequest="70">
+                    <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
-                    </ffImage:CachedImage.Transformations>
+                    </ffImageSvg:SvgCachedImage.Transformations>
 
-                    <ffImage:CachedImage.GestureRecognizers>
+                    <ffImageSvg:SvgCachedImage.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
-                    </ffImage:CachedImage.GestureRecognizers>
+                    </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
-                </ffImage:CachedImage>
+                </ffImageSvg:SvgCachedImage>
             </tlrPrimitives:RadBorder>
             <!--  Row 5  -->
             <Label
                 Grid.Row="5"
                 FontSize="20"
-                Text="Scrum Framework"
+                HorizontalOptions="CenterAndExpand"
+                Text="Rollen"
                 TextColor="White" />
             <Label
                 Grid.Row="5"
                 Grid.Column="1"
                 FontSize="20"
-                Text="Scrum Framework"
+                HorizontalOptions="CenterAndExpand"
+                Text="Meeting"
                 TextColor="White" />
         </Grid>
     </Grid>

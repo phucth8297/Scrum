@@ -74,7 +74,7 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            
+
             var member = await logic.GetMember(EmailBindProp);
             if (PresentPassBindProp != member.Password)
             {
@@ -82,7 +82,7 @@ namespace MyAlarm.ViewModels
                 IsBusyBindProp = false;
                 return;
             }
-            if(NewPassBindProp != ConfirmPassBindProp)
+            if (NewPassBindProp != ConfirmPassBindProp)
             {
                 await PageDialogService.DisplayAlertAsync("Thông báo", "Mật khẩu không giống nhau", "Thử lại");
                 IsBusyBindProp = false;

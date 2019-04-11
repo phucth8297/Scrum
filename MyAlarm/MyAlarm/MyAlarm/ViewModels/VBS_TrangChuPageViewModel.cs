@@ -1,4 +1,5 @@
-﻿using Logic;
+﻿using Domain;
+using Logic;
 using MyAlarm.EFStandard;
 using MyAlarm.Helpers;
 using MyAlarm.Model;
@@ -17,7 +18,17 @@ namespace MyAlarm.ViewModels
         public VBS_TrangChuPageViewModel(InitParamVm initParamVm) : base(initParamVm)
         {
         }
-        
+
+        #region TitleBindProp
+        private string _TitleBindProp = "Scrum Axon";
+        public string TitleBindProp
+        {
+            get { return _TitleBindProp; }
+            set { SetProperty(ref _TitleBindProp, value); }
+        }
+        #endregion
+
+
         #region GoToMemberCommand
 
         public DelegateCommand<object> GoToMemberCommand { get; private set; }
@@ -31,7 +42,10 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            await NavigationService.NavigateAsync(nameof(VBS_MemberPage));
+            TitleBindProp = "Member";
+            var param = new NavigationParameters();
+            param.Add(Param.PARAM_TITLE, TitleBindProp);
+            await NavigationService.NavigateAsync(nameof(VBS_MemberPage),param);
 
             IsBusyBindProp = false;
         }
