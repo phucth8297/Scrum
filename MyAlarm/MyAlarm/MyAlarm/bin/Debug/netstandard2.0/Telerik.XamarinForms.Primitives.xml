@@ -220,6 +220,18 @@
             upper edge of the PlacementTarget and constrain its height.
             </summary>
         </member>
+        <member name="F:Telerik.XamarinForms.Primitives.PlacementMode.Center">
+            <summary>
+            A position of the Popup control that aligns at the middle of the PlacementTarget. 
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Primitives.PlacementMode.Relative">
+            <summary>
+            A position of the Popup control that aligns the top left corner of the popip with
+            the top left corner of the placement target with the horizontal and vertical offset
+            considered in the calculations.
+            </summary>
+        </member>
         <member name="E:Telerik.XamarinForms.Primitives.RadScrollView.TopHeaderUnloaded">
             <summary>
             An event needed to work around a peculiarity in UWP where the TopHeader is unloaded while being shown on screen.

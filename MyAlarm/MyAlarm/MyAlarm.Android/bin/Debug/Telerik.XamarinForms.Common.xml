@@ -145,6 +145,21 @@
             Converts a string object to a Size instance.
             </summary>
         </member>
+        <member name="P:Telerik.XamarinForms.Common.DataAnnotations.DisplayOptionsAttribute.HeaderResourceKey">
+            <summary>
+            Gets or sets the key which the DataFormResourceManager will use to extract the header display text from the multi-lingual resource files. See <see href="https://docs.telerik.com/devtools/xamarin/controls/dataform/dataform-overview">DataForm Globalization</see> for more information.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Common.DataAnnotations.DisplayOptionsAttribute.GroupResourceKey">
+            <summary>
+            Gets or sets the key which the DataFormResourceManager will use to extract the group display text from the multi-lingual resource files. See <a href="https://docs.telerik.com/devtools/xamarin/controls/dataform/dataform-overview">DataForm Globalization</a> for more information.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Common.DataAnnotations.DisplayOptionsAttribute.PlaceholderTextResourceKey">
+            <summary>
+            Gets or sets the key which the DataFormResourceManager will use to extract the placeholder display text from the multi-lingual resource files. See <see href="https://docs.telerik.com/devtools/xamarin/controls/dataform/dataform-overview">DataForm Globalization</see> for more information.
+            </summary>
+        </member>
         <member name="T:Telerik.XamarinForms.Common.DataChangeFlags">
             <summary>
             Specifies the possible flags in a data change operation within a data component.
@@ -4358,6 +4373,21 @@
             Display mode.
             </summary>
         </member>
+        <member name="T:Telerik.XamarinForms.Common.ItemReorderPlacement">
+            <summary>
+            Indicates whether the dragged item should be placed before or after the destination item.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Common.ItemReorderPlacement.Before">
+            <summary>
+            The dragged item should be placed before the destination item.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Common.ItemReorderPlacement.After">
+            <summary>
+            The dragged item should be placed after the destination item.
+            </summary>
+        </member>
         <member name="M:Telerik.XamarinForms.Common.RadPlatform.GetRendererObject(Xamarin.Forms.VisualElement)">
             <summary>
             Calls the platform specific Platform.GetRenderer() and returns the renderer, if any, for this visual element.
@@ -4451,28 +4481,28 @@
             because the Thread object can't be accessed in a PCL.
             </summary>
         </member>
-        <member name="T:Telerik.XamarinForms.Common.LocalizationManager">
+        <member name="T:Telerik.XamarinForms.Common.TelerikLocalizationManager">
             <summary>
             Represents a singleton class that manages application string resources.
             </summary>
         </member>
-        <member name="M:Telerik.XamarinForms.Common.LocalizationManager.#ctor">
+        <member name="M:Telerik.XamarinForms.Common.TelerikLocalizationManager.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Common.LocalizationManager" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Common.TelerikLocalizationManager" /> class.
             </summary>
         </member>
-        <member name="P:Telerik.XamarinForms.Common.LocalizationManager.DefaultResourceManager">
+        <member name="P:Telerik.XamarinForms.Common.TelerikLocalizationManager.DefaultResourceManager">
             <summary>
             Default resource manager to follow if the specific one is null.
             This is an easy way to override the resource manager without instantiating a new manager.
             </summary>
         </member>
-        <member name="P:Telerik.XamarinForms.Common.LocalizationManager.ResourceManager">
+        <member name="P:Telerik.XamarinForms.Common.TelerikLocalizationManager.ResourceManager">
             <summary>
             Gets or sets specific resource manager.
             </summary>
         </member>
-        <member name="M:Telerik.XamarinForms.Common.LocalizationManager.GetString(System.String)">
+        <member name="M:Telerik.XamarinForms.Common.TelerikLocalizationManager.GetString(System.String)">
             <summary>
             Returns a string related to the specified key and culture.
             </summary>
@@ -4485,6 +4515,16 @@
               iOS: ms_MY, gsw_CH
               Android: in-ID
             into parts so we can create a .NET culture (or fallback culture)
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Common.LocalizeExtension.Text">
+            <summary>
+            Gets or sets the text that will be localized.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Common.LocalizeExtension.ProvideValue(System.IServiceProvider)">
+            <summary>
+            Returns the localized text.
             </summary>
         </member>
         <member name="T:Telerik.XamarinForms.Common.DynamicHelper">
@@ -4559,6 +4599,16 @@
             Measures the paintable and sets its measureBounds.
             </summary>
             <returns>true if the concrete painter recognizes the paintable, i.e. was able to measure it.</returns>
+        </member>
+        <member name="T:Telerik.XamarinForms.Common.Paintables.PaintableFontStyle">
+            <summary>
+            Works in one of two modes - attributes or slant with weight.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Common.Paintables.PathStrokeProperties.#ctor(System.Double[],System.Double)">
+            <summary>
+            Don't modify the dash array in order to keep the hash code's integrity and proper equality comparison.
+            </summary>
         </member>
         <member name="M:Telerik.XamarinForms.Common.Paintables.Paintable.SetIsVisibleWithCheck(System.Boolean)">
             <summary>
@@ -4680,13 +4730,13 @@
             Assumes a performance penalty when the new value is the same, due to invoking virtual on-changed methods.
             </summary>
         </member>
-        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetFontAttributesWithCheck(Xamarin.Forms.FontAttributes)">
+        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetFontStyleWithCheck(Telerik.XamarinForms.Common.Paintables.PaintableFontStyle)">
             <summary>
             Performs a comparison before calling Set-NoCheck.
             Assumes a performance penalty when new value is different, due to comparison.
             </summary>
         </member>
-        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetFontAttributesNoCheck(Xamarin.Forms.FontAttributes)">
+        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetFontStyleNoCheck(Telerik.XamarinForms.Common.Paintables.PaintableFontStyle)">
             <summary>
             Does not perform a comparison, sets the value and invokes on-changed method.
             Assumes a performance penalty when the new value is the same, due to invoking virtual on-changed methods.
@@ -4723,6 +4773,18 @@
             </summary>
         </member>
         <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetVerticalAlignmentNoCheck(Xamarin.Forms.LayoutAlignment)">
+            <summary>
+            Does not perform a comparison, sets the value and invokes on-changed method.
+            Assumes a performance penalty when the new value is the same, due to invoking virtual on-changed methods.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetTransformWithCheck(Telerik.XamarinForms.Common.Paintables.Transform)">
+            <summary>
+            Performs a comparison before calling Set-NoCheck.
+            Assumes a performance penalty when new value is different, due to comparison.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Common.Paintables.TextPaintable.SetTransformNoCheck(Telerik.XamarinForms.Common.Paintables.Transform)">
             <summary>
             Does not perform a comparison, sets the value and invokes on-changed method.
             Assumes a performance penalty when the new value is the same, due to invoking virtual on-changed methods.

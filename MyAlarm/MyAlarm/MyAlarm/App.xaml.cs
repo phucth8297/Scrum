@@ -51,13 +51,14 @@ namespace MyAlarm
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<VBS_TrangChuPage, VBS_TrangChuPageViewModel>();
+            containerRegistry.RegisterForNavigation<VBS_TrangChuPage>();
             containerRegistry.RegisterForNavigation<VBS_01Page>();
             containerRegistry.RegisterForNavigation<VBS_AddMemberPage>();
             containerRegistry.RegisterForNavigation<VBS_MemberDetailPage>();
             containerRegistry.RegisterForNavigation<VBS_MemberPage>();
             containerRegistry.RegisterForNavigation<VBS_WorkPage>();
             containerRegistry.RegisterForNavigation<VBS_LoginPage>();
+            containerRegistry.RegisterForNavigation<VBS_ChangePass>();
 
         }
     }

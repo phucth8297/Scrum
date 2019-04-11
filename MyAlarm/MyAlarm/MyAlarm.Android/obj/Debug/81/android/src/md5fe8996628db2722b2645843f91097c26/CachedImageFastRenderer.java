@@ -11,6 +11,7 @@ public class CachedImageFastRenderer
 	static {
 		__md_methods = 
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
+			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"";
 		mono.android.Runtime.register ("FFImageLoading.Forms.Platform.CachedImageFastRenderer, FFImageLoading.Forms.Platform", CachedImageFastRenderer.class, __md_methods);
 	}
@@ -54,6 +55,14 @@ public class CachedImageFastRenderer
 	}
 
 	private native boolean n_onTouchEvent (android.view.MotionEvent p0);
+
+
+	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)
+	{
+		n_onLayout (p0, p1, p2, p3, p4);
+	}
+
+	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

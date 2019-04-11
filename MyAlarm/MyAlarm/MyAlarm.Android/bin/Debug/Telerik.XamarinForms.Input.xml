@@ -553,6 +553,45 @@
             </summary>
             <param name="p0">The tapped event.</param>
         </member>
+        <member name="F:Telerik.XamarinForms.Input.AutoCompleteViewEntry.SearchTextProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteViewEntry.SearchText"/> property.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.AutoCompleteViewEntry.SearchText">
+            <summary>
+            Gets the search text.
+            </summary>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.AutoCompleteView.IDisplayTextFormatter">
+            <summary>
+            Interface used by RadAutoCompleteView for providing custom formatting for the selected item that will either be visualized as plain text or as token.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.AutoCompleteView.IDisplayTextFormatter.FormatItem(System.Object)">
+            <summary>
+            Called by RadAutoCompleteView when suggestion is selected. 
+            Using it the format of the text visualized in the entry could be formatted when DisplayMode is Plain.
+            If the DisplayMode is Token you can format the text visualized in the Token itself.
+            </summary>
+            <param name="item">The selected suggestion.</param>
+            <returns>The text that will be visualized in the entry if the DisplayMode is Plain and if the mode is Token this will be text visualized in it.</returns>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.UnformattedTextProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.UnformattedText"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextColor"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightText"/> property.
+            </summary>
+        </member>
         <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.FilterProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.Filter"/> property.
@@ -658,6 +697,11 @@
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestionViewHeight"/> property.
             </summary>
         </member>
+        <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestModeProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestMode"/> property.
+            </summary>
+        </member>
         <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.TextColorProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.TextColor"/> property.
@@ -683,6 +727,16 @@
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.WatermarkTextColor"/> property.
             </summary>
         </member>
+        <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestionViewTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestionViewTemplate"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.DisplayTextFormatterProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.DisplayTextFormatter"/> property.
+            </summary>
+        </member>
         <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.TokensProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.Tokens"/> property.
@@ -691,6 +745,11 @@
         <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.FilteredItemsProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.FilteredItems"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RadAutoCompleteView.SearchTextProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SearchText"/> property.
             </summary>
         </member>
         <member name="E:Telerik.XamarinForms.Input.RadAutoCompleteView.TextChanged">
@@ -813,9 +872,20 @@
             </summary>
             <value>The required SuggestionViewHeight.</value>
         </member>
+        <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestMode">
+            <summary>
+            Gets or sets the SuggestMode of the component.
+            </summary>
+            <value>The SuggestMode.</value>
+        </member>
         <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.Text">
             <summary>
             Gets the visualized Text.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SearchText">
+            <summary>
+            Gets the search Text.
             </summary>
         </member>
         <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.TextColor">
@@ -860,6 +930,17 @@
             <remarks>When true and ShowMoreTemplate is set RadAutoCompleteView will
             hide tokens that are not on the first line and will show the hidden count.</remarks>
         </member>
+        <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.SuggestionViewTemplate">
+            <summary>
+            Gets or sets the template used to visualize the filtered items.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RadAutoCompleteView.DisplayTextFormatter">
+            <summary>
+            Gets or set the formatter of the selected item. Using it the format of the text visualized in the entry could be formated when DisplayMode is Plain.
+            If the DisplayMode is Token you can format the text visualized in the Token itself.
+            </summary>
+        </member>
         <member name="M:Telerik.XamarinForms.Input.RadAutoCompleteView.ShowSuggestions">
             <summary>
             Shows suggestions.
@@ -868,21 +949,6 @@
         <member name="M:Telerik.XamarinForms.Input.RadAutoCompleteView.HideSuggestions">
             <summary>
             Hides suggestions.
-            </summary>
-        </member>
-        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.UnformattedTextProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.UnformattedText"/> property.
-            </summary>
-        </member>
-        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextColorProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextColor"/> property.
-            </summary>
-        </member>
-        <member name="F:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightTextProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.AutoCompleteView.SuggestionItemLabel.HighlightText"/> property.
             </summary>
         </member>
         <member name="T:Telerik.XamarinForms.Input.AutoComplete.AutoCompleteTokenStyle">
@@ -1267,11 +1333,6 @@
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadButton.BorderThickness"/> property.
             </summary>
         </member>
-        <member name="F:Telerik.XamarinForms.Input.RadButton.PaddingProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadButton.Padding"/> property.
-            </summary>
-        </member>
         <member name="F:Telerik.XamarinForms.Input.RadButton.HorizontalContentAlignmentProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadButton.HorizontalContentAlignment"/> property.
@@ -1295,11 +1356,6 @@
         <member name="P:Telerik.XamarinForms.Input.RadButton.BorderThickness">
             <summary>
             Gets or sets the width of all borders separately. The BorderWidth property is with higher precedence and will override the values of this property.
-            </summary>
-        </member>
-        <member name="P:Telerik.XamarinForms.Input.RadButton.Padding">
-            <summary>
-            Gets or sets the Padding of the text.
             </summary>
         </member>
         <member name="P:Telerik.XamarinForms.Input.RadButton.HorizontalContentAlignment">
@@ -1595,6 +1651,16 @@
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadCalendar.MultiDayViewSettings"/> property.
             </summary>
         </member>
+        <member name="F:Telerik.XamarinForms.Input.RadCalendar.ViewModeProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadCalendar.ViewMode"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RadCalendar.SchedulingUiEnabledProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadCalendar.SchedulingUiEnabled"/> property.
+            </summary>
+        </member>
         <member name="E:Telerik.XamarinForms.Input.RadCalendar.ViewChanged">
             <summary>
             Occurs when view mode has changed.
@@ -1763,6 +1829,11 @@
         <member name="P:Telerik.XamarinForms.Input.RadCalendar.MultiDayViewSettings">
             <summary>
             Gets or sets the multi-day view settings.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RadCalendar.SchedulingUiEnabled">
+            <summary>
+            Gets or sets a boolean value indicating if the builtin scheduling modal windows will be visualized.
             </summary>
         </member>
         <member name="M:Telerik.XamarinForms.Input.RadCalendar.ScrollAppointmentIntoView(Telerik.XamarinForms.Input.IAppointment)">
@@ -2576,16 +2647,6 @@
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadEntry.Padding"/> property.
             </summary>
         </member>
-        <member name="F:Telerik.XamarinForms.Input.RadEntry.IsFocusedProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadEntry.IsFocused"/> property. 
-            </summary>
-        </member>
-        <member name="F:Telerik.XamarinForms.Input.RadEntry.IsFocusedPropertyKey">
-            <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.Input.RadEntry.IsFocused"/> property. 
-            </summary>
-        </member>
         <member name="F:Telerik.XamarinForms.Input.RadEntry.CompletedCommandProperty">
             <summary>
             Identifies the <see cref="P:Telerik.XamarinForms.Input.RadEntry.CompletedCommand"/> property. 
@@ -2675,11 +2736,6 @@
         <member name="P:Telerik.XamarinForms.Input.RadEntry.Padding">
             <summary>
             Gets or sets the Padding of the text.
-            </summary>
-        </member>
-        <member name="P:Telerik.XamarinForms.Input.RadEntry.IsFocused">
-            <summary>
-            Gets or sets the IsFocused property.
             </summary>
         </member>
         <member name="P:Telerik.XamarinForms.Input.RadEntry.CompletedCommand">
@@ -3790,6 +3846,453 @@
             <summary>
             Specifies if the current time indicator is visible.
             </summary>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.ExceptionOccurrence">
+            <summary>
+            Provides class for recurrence rule exceptions.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.ExceptionOccurrence.Appointment">
+            <summary>
+            Gets or sets the exception appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.ExceptionOccurrence.ExceptionDate">
+            <summary>
+            Gets or sets the exception date.
+            </summary>
+            <value>The exception date.</value>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.IExceptionOccurrence">
+            <summary>
+            Defines basic properties of a exception from a recurrence pattern.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.IExceptionOccurrence.ExceptionDate">
+            <summary>
+            Gets or sets the exception date.
+            </summary>
+            <value>The exception date.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.IExceptionOccurrence.Appointment">
+            <summary>
+            Gets or sets the exception appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.IRecurrenceRule">
+            <summary>
+            Defines basic properties of a recurrence rule.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.IRecurrenceRule.Pattern">
+            <summary>
+            Gets or sets the recurrence pattern.
+            </summary>
+            <value>The recurrence pattern.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.IRecurrenceRule.Exceptions">
+            <summary>
+            Gets the exceptions from the recurrence pattern.
+            </summary>
+            <value>The exceptions.</value>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.RecurrenceDays">
+            <summary>
+            	<para>Specifies the days of the week. Members might be combined using bitwise
+                operations to specify multiple days.</para>
+            </summary>
+            <remarks>
+                The constants in the <see cref="T:Telerik.XamarinForms.Input.RecurrenceDays"/> enumeration might be combined
+                with bitwise operations to represent any combination of days. It is designed to be
+                used in conjunction with the <see cref="T:Telerik.XamarinForms.Input.RecurrencePattern"/> class to filter
+                the days of the week for which the recurrence pattern applies.
+            </remarks>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.None">
+            <summary>Indicates no selected day.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Sunday">
+            <summary>Indicates Sunday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Monday">
+            <summary>Indicates Monday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Tuesday">
+            <summary>Indicates Tuesday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Wednesday">
+            <summary>Indicates Wednesday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Thursday">
+            <summary>Indicates Thursday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Friday">
+            <summary>Indicates Friday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.Saturday">
+            <summary>Indicates Saturday.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.EveryDay">
+            <summary><para>Indicates the range from Sunday to Saturday inclusive.</para></summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.WeekDays">
+            <summary>Indicates the range from Monday to Friday inclusive.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceDays.WeekendDays">
+            <summary>Indicates the range from Saturday to Sunday inclusive.</summary>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.RecurrenceFrequency">
+            <summary>
+            Specifies the frequency of a recurrence.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceFrequency.None">
+            <summary>Indicates no recurrence.</summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceFrequency.Daily">
+            <summary>
+            A frequency of every day.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceFrequency.Weekly">
+            <summary>
+            A frequency of every week.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceFrequency.Monthly">
+            <summary>
+            A frequency of every month.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.Input.RecurrenceFrequency.Yearly">
+            <summary>
+            A frequency of every year.
+            </summary>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.RecurrencePattern">
+            <summary>
+            Provides the class for recurrence pattern.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Input.RecurrencePattern"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.#ctor(System.Globalization.CultureInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Input.RecurrencePattern"/> class.
+            </summary>
+            <param name="culture">The Culture to use when generating dates. By default the class uses InvariantCulture.</param>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.#ctor(System.Nullable{System.Int32},Telerik.XamarinForms.Input.RecurrenceDays,Telerik.XamarinForms.Input.RecurrenceFrequency,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Input.RecurrencePattern"/> class.
+            </summary>
+            <param name="dayOfMonth">The day of month.</param>
+            <param name="daysOfWeekMask">The days of week mask.</param>
+            <param name="frequency">The frequency.</param>
+            <param name="interval">The interval.</param>
+            <param name="monthOfYear">The month of year.</param>
+            <param name="dayOrdinal">The week of month.</param>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.#ctor(System.Int32[],Telerik.XamarinForms.Input.RecurrenceDays,Telerik.XamarinForms.Input.RecurrenceFrequency,System.Int32,System.Int32[],System.Nullable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Input.RecurrencePattern"/> class.
+            </summary>
+            <param name="daysOfMonth">The days of month.</param>
+            <param name="daysOfWeekMask">The days of week mask.</param>
+            <param name="frequency">The frequency.</param>
+            <param name="interval">The interval.</param>
+            <param name="monthsOfYear">The months of year.</param>
+            <param name="dayOrdinal">The week of month.</param>
+            <param name="hoursOfDay">The hours of day.</param>
+            <param name="minutesOfHour">The minutes of hour.</param>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.DaysOfMonth">
+            <summary>
+            Gets or sets the day of month.
+            </summary>
+            <value>The days of month.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.DayOrdinal">
+            <summary>
+            Gets or sets the day ordinal.
+            </summary>
+            <value>The day ordinal.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.DaysOfWeekMask">
+            <summary>
+            Gets or sets the days of week mask.
+            </summary>
+            <value>The days of week mask.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.FirstDayOfWeek">
+            <summary>Gets or sets the day on which the week starts.</summary>
+            <value>
+                This property is only meaningful when <see cref="T:Telerik.XamarinForms.Input.RecurrenceFrequency"/> is set
+                to <see cref="F:Telerik.XamarinForms.Input.RecurrenceFrequency.Weekly"/> and <see cref="P:Telerik.XamarinForms.Input.RecurrencePattern.Interval"/> is greater than 1.
+            </value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.Frequency">
+            <summary>
+            Gets or sets the frequency.
+            </summary>
+            <value>The frequency.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.Interval">
+            <summary>
+            Gets or sets the interval.
+            </summary>
+            <value>The interval.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.MaxOccurrences">
+            <summary>
+            Optional limit for the number of occurrences. Defaults to no limit
+            (Int32.MaxInt).
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.MonthOfYear">
+            <summary>
+            Gets or sets the month of year.
+            </summary>
+            <value>The month of year.</value>
+            TO-DO: Make the property work with more than one value, analogical to the DaysOfMonth property.
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrencePattern.RecursUntil">
+            <summary>
+            Optional end date for the recurring appointment. Defaults to no end date
+            (<see cref="T:System.DateTime"/>.MaxValue).
+            </summary>
+            <value>The recurs until.</value>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.GetOccurrences(System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            Gets the occurrences.
+            </summary>
+            <param name="start">The start.</param>
+            <param name="from">From.</param>
+            <param name="to">To.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.GetFirstOccurrence(System.DateTime)">
+            <summary>
+            Gets the first occurrence.
+            </summary>
+            <param name="start">The start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.GetOccurrences(System.DateTime)">
+            <summary>
+            Gets the occurrences.
+            </summary>
+            <param name="start">The start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.IsValidPattern(Telerik.XamarinForms.Input.RecurrencePattern)">
+            <summary>
+            Determines whether pattern is valid.
+            </summary>
+            <param name="pattern">The pattern.</param>
+            <returns>
+            	<c>True</c> if pattern is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.MatchDayOfWeekMask(System.DateTime,Telerik.XamarinForms.Input.RecurrenceDays)">
+            <summary>
+            Matches the day of week mask.
+            </summary>
+            <param name="start">The start.</param>
+            <param name="daysOfWeekMask">The days of week mask.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.MatchDayOrdinal(System.DateTime,System.Nullable{System.Int32},Telerik.XamarinForms.Input.RecurrenceDays,System.Globalization.CultureInfo)">
+            <summary>
+            Matches the day ordinal.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="dayOrdinal">The day ordinal.</param>
+            <param name="daysOfWeekMask">The days of week mask.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.GetNextDate(System.DateTime,System.Int32)">
+            <summary>
+            Gets the next date when the rule can match.
+            </summary>
+            <param name="start"></param>
+            <param name="index">The index from the start.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">Invalid <see cref="T:Telerik.XamarinForms.Input.RecurrenceFrequency"/>.</exception>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrencePattern.MatchPattern(System.DateTime,System.DateTime)">
+            <summary>
+            Matches the pattern for a date.
+            </summary>
+            <param name="start"></param>
+            <param name="dateTime">The date to match.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">Invalid <see cref="T:Telerik.XamarinForms.Input.RecurrenceFrequency"/>.</exception>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.RecurrenceRule">
+            <summary>
+            Provides class, working with recurring appointment.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrenceRule.#ctor(Telerik.XamarinForms.Input.RecurrencePattern)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.XamarinForms.Input.RecurrenceRule"/> class.
+            </summary>
+            <param name="pattern">The pattern.</param>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrenceRule.Exceptions">
+            <summary>
+            Gets the exceptions.
+            </summary>
+            <value>The exceptions.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.RecurrenceRule.Pattern">
+            <summary>
+            Gets or sets the recurrence pattern.
+            </summary>
+            <value>The recurrence pattern.</value>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.RecurrenceDaysExtensions">
+            <summary>
+            <see cref="T:Telerik.XamarinForms.Input.RecurrenceDays"/> extensions methods.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrenceDaysExtensions.GetDaysOfWeek(Telerik.XamarinForms.Input.RecurrenceDays)">
+            <summary>
+            Gets the days of week.
+            </summary>
+            <param name="recurrenceDays">The recurrence days.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrenceDaysExtensions.GetRecurrenceDay(System.DayOfWeek)">
+            <summary>
+            Gets the recurrence day.
+            </summary>
+            <param name="dayOfWeek">The day of week.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"><c>dayOfWeek</c> is out of range.</exception>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrenceDaysExtensions.HasDay(Telerik.XamarinForms.Input.RecurrenceDays,Telerik.XamarinForms.Input.RecurrenceDays)">
+            <summary>
+            Determines whether the specified recurrence days has day.
+            </summary>
+            <param name="recurrenceDays">The recurrence days.</param>
+            <param name="dayToCompare">The day to compare.</param>
+            <returns>
+            	<c>true</c> if the specified recurrence days has day; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.RecurrenceDaysExtensions.HasDay(Telerik.XamarinForms.Input.RecurrenceDays,System.DayOfWeek)">
+            <summary>
+            Determines whether the specified recurrence days has day.
+            </summary>
+            <param name="recurrenceDays">The recurrence days.</param>
+            <param name="dayToCompare">The day to compare.</param>
+            <returns>
+            	<c>true</c> if the specified recurrence days has day; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.CalendarHelper">
+            <summary>
+            Holds helper methods for date and time operations.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetDaysOfWeekStartWithFirstDayOfWeek(System.DayOfWeek)">
+            <summary>
+            Gets the days of week start with first day of week.
+            </summary>
+            <param name="firstDayOfWeek">The first day of week.</param>
+            <returns> Ordered <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetEndOfMonth(System.Int32,System.Int32)">
+            <summary>
+            Gets the last date end of the specified month and year.
+            </summary>
+            <param name="year">The year.</param>
+            <param name="month">The month.</param>
+            <returns>The last date of the specified month.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetEndOfMonth(System.DateTime)">
+            <summary>
+            Gets the last date of month for the specified date.
+            </summary>
+            <param name="date">The date.</param>
+            <returns>The last date of the specified month.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetFirstDayOfWeek(System.DateTime,System.DayOfWeek)">
+            <summary>
+            Gets the first day of week.
+            </summary>
+            <param name="dateTime">The date time.</param>
+            <param name="weekStart">The week start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetLastDayOfWeek(System.DateTime,System.DayOfWeek)">
+            <summary>
+            Gets the last day of week.
+            </summary>
+            <param name="dateTime">The date time.</param>
+            <param name="weekStart">The week start.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetNamesOfDays(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the names of days.
+            </summary>
+            <param name="culture">The culture.</param>
+            <returns>Dictionary of <see cref="T:System.DayOfWeek"/>, NameOfDay pair.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetNamesOfMonths(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the names of months.
+            </summary>
+            <param name="culture">The culture.</param>
+            <returns>Dictionary of NumberOfMonth, NameOfMonth pair.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.CalendarHelper.GetStartOfMonth(System.Int32,System.Int32)">
+            <summary>
+            Gets the first date of the specified month and year.
+            </summary>
+            <param name="year">The year.</param>
+            <param name="month">The month.</param>
+            <returns>The first date of the specified month and year.</returns>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.Occurrence.StartDate">
+            <summary>
+            Gets the start <see cref="T:System.DateTime"/> of the <see cref="T:Telerik.XamarinForms.Input.Occurrence"/>.
+            </summary>
+            <value>The start <see cref="T:System.DateTime"/>.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.Occurrence.EndDate">
+            <summary>
+            Gets the end <see cref="T:System.DateTime"/> of the <see cref="T:Telerik.XamarinForms.Input.Occurrence"/>.
+            </summary>
+            <value>The end <see cref="T:System.DateTime"/>.</value>
+        </member>
+        <member name="P:Telerik.XamarinForms.Input.Occurrence.Appointment">
+            <summary>
+            Gets the master appointment for this occurrence. 
+            </summary>
+            <value>The master appointment.</value>
+        </member>
+        <member name="T:Telerik.XamarinForms.Input.ICopyable`1">
+            <summary>
+            A generic interface for copying objects.
+            </summary>
+        </member>
+        <member name="M:Telerik.XamarinForms.Input.ICopyable`1.Copy">
+            <summary>
+            Deep copies this instance.
+            </summary>
+            <returns>
+            A <b>deep</b> copy of the current object.
+            </returns>
         </member>
         <member name="T:Telerik.XamarinForms.Input.TelerikThemeStyles">
             <summary>

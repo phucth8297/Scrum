@@ -185,3 +185,7 @@ D:\Scrum\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Scrum\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.csproj.CopyComplete
 D:\Scrum\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.dll
 D:\Scrum\MyAlarm\MyAlarm\MyAlarm\obj\Debug\netstandard2.0\MyAlarm.pdb
+D:\Scrum\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.Documents.Core.dll
+D:\Scrum\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.Documents.Fixed.dll
+D:\Scrum\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.PdfViewer.dll
+D:\Scrum\MyAlarm\MyAlarm\MyAlarm\bin\Debug\netstandard2.0\Telerik.XamarinForms.PdfViewer.xml

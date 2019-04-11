@@ -29,7 +29,6 @@ Microsoft.Extensions.Logging
 Microsoft.Extensions.Options
 Microsoft.Extensions.Primitives
 MyAlarm
-Newtonsoft.Json
 Prism
 Prism.DryIoc.Forms
 Prism.Forms
@@ -37,7 +36,7 @@ Remotion.Linq
 SkiaSharp
 SkiaSharp.Views.Android
 SkiaSharp.Views.Forms
-SQLitePCLRaw.batteries_green
+SQLitePCLRaw.batteries_e_sqlite3
 SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
@@ -64,6 +63,7 @@ Telerik.XamarinForms.DataControls
 Telerik.XamarinForms.DataGrid
 Telerik.XamarinForms.DataVisualization
 Telerik.XamarinForms.Input
+Telerik.XamarinForms.PdfViewer
 Telerik.XamarinForms.Primitives
 Telerik.XamarinForms.SkiaSharp
 Xamarin.Android.Arch.Core.Common
@@ -91,9 +91,6 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 Logic
 MyAlarm.EFStandard
-System.AppContext
-System.IO.FileSystem
-System.ComponentModel.Annotations
-System.IO.FileSystem.Primitives
-System.Linq.Queryable
 Domain
+System.ComponentModel.Annotations
+System.Linq.Queryable

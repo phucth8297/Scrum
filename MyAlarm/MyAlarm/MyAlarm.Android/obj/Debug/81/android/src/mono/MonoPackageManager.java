@@ -138,7 +138,6 @@ class MonoPackageManager_Resources {
 		"Microsoft.Extensions.Options.dll",
 		"Microsoft.Extensions.Primitives.dll",
 		"MyAlarm.dll",
-		"Newtonsoft.Json.dll",
 		"Prism.dll",
 		"Prism.DryIoc.Forms.dll",
 		"Prism.Forms.dll",
@@ -146,7 +145,7 @@ class MonoPackageManager_Resources {
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",
-		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_e_sqlite3.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
 		"SQLitePCLRaw.lib.e_sqlite3.dll",
@@ -172,6 +171,7 @@ class MonoPackageManager_Resources {
 		"Telerik.XamarinForms.DataGrid.dll",
 		"Telerik.XamarinForms.DataVisualization.dll",
 		"Telerik.XamarinForms.Input.dll",
+		"Telerik.XamarinForms.PdfViewer.dll",
 		"Telerik.XamarinForms.Primitives.dll",
 		"Telerik.XamarinForms.SkiaSharp.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
@@ -200,6 +200,9 @@ class MonoPackageManager_Resources {
 		"Logic.dll",
 		"MyAlarm.EFStandard.dll",
 		"Domain.dll",
+		"Telerik.Documents.Fixed.dll",
+		"Telerik.Documents.Core.dll",
+		"Telerik.Zip.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

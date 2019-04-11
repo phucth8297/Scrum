@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "81019c521d3033750498ca624b23d1961b04e300"
+    "signature": "5f353e25edef4576c4ad67333a2e57a1fa4970e2"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,25 +12,28 @@
           "Logic": "1.0.0",
           "MyAlarm.EFStandard": "1.0.0",
           "NETStandard.Library": "2.0.3",
-          "Prism.DryIoc.Forms": "7.1.0.431",
+          "Prism.DryIoc.Forms": "7.2.0.1038-pre",
           "SkiaSharp.Views.Forms": "1.68.0",
-          "Xamarin.FFImageLoading": "2.4.4.859",
-          "Xamarin.FFImageLoading.Forms": "2.4.4.859",
-          "Xamarin.FFImageLoading.Svg.Forms": "2.4.4.859",
-          "Xamarin.FFImageLoading.Transformations": "2.4.4.859",
-          "Xamarin.Forms": "3.6.0.293080",
-          "Telerik.Documents.SpreadsheetStreaming": "2018.3.1017.310",
-          "Telerik.XamarinForms.Barcode": "2018.3.1018.310",
-          "Telerik.XamarinForms.Chart": "2018.3.1018.310",
-          "Telerik.XamarinForms.Common": "2018.3.1018.310",
-          "Telerik.XamarinForms.ConversationalUI": "2018.3.1018.310",
-          "Telerik.XamarinForms.DataControls": "2018.3.1018.310",
-          "Telerik.XamarinForms.DataGrid": "2018.3.1018.310",
-          "Telerik.XamarinForms.DataVisualization": "2018.3.1018.310",
-          "Telerik.XamarinForms.Input": "2018.3.1018.310",
-          "Telerik.XamarinForms.Primitives": "2018.3.1018.310",
-          "Telerik.XamarinForms.SkiaSharp": "2018.3.1018.310",
-          "Telerik.Zip": "2018.3.1017.310"
+          "Xamarin.FFImageLoading": "2.4.5.880-pre",
+          "Xamarin.FFImageLoading.Forms": "2.4.5.880-pre",
+          "Xamarin.FFImageLoading.Svg.Forms": "2.4.5.880-pre",
+          "Xamarin.FFImageLoading.Transformations": "2.4.5.880-pre",
+          "Xamarin.Forms": "4.0.0.304370-pre8",
+          "Telerik.Documents.Core": "2019.1.220.20",
+          "Telerik.Documents.Fixed": "2019.1.220.20",
+          "Telerik.Documents.SpreadsheetStreaming": "2019.1.220.20",
+          "Telerik.XamarinForms.Barcode": "2019.1.220.340",
+          "Telerik.XamarinForms.Chart": "2019.1.220.340",
+          "Telerik.XamarinForms.Common": "2019.1.220.340",
+          "Telerik.XamarinForms.ConversationalUI": "2019.1.220.340",
+          "Telerik.XamarinForms.DataControls": "2019.1.220.340",
+          "Telerik.XamarinForms.DataGrid": "2019.1.220.340",
+          "Telerik.XamarinForms.DataVisualization": "2019.1.220.340",
+          "Telerik.XamarinForms.Input": "2019.1.220.340",
+          "Telerik.XamarinForms.PdfViewer": "2019.1.220.340",
+          "Telerik.XamarinForms.Primitives": "2019.1.220.340",
+          "Telerik.XamarinForms.SkiaSharp": "2019.1.220.340",
+          "Telerik.Zip": "2019.1.220.20"
         },
         "runtime": {
           "MyAlarm.dll": {}
@@ -44,274 +47,262 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.6.0-preview3.19128.7": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CSharp.dll": {
             "assemblyVersion": "4.0.4.0",
-            "fileVersion": "4.6.26515.6"
+            "fileVersion": "4.7.19.12807"
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/2.2.3": {
+      "Microsoft.Data.Sqlite.Core/3.0.0-preview3.19153.1": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.12"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
-        "dependencies": {
-          "System.AppContext": "4.1.0",
-          "System.Collections": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
-        },
+      "Microsoft.DotNet.PlatformAbstractions/3.0.0-preview3-27503-5": {
         "runtime": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.3": {
+      "Microsoft.EntityFrameworkCore/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.3",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.3",
-          "Microsoft.Extensions.Caching.Memory": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection": "2.2.0",
-          "Microsoft.Extensions.Logging": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Caching.Memory": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.DependencyInjection": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Logging": "3.0.0-preview3.19153.1",
           "Remotion.Linq": "2.2.0",
-          "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
-          "System.Diagnostics.DiagnosticSource": "4.5.0",
+          "System.Collections.Immutable": "1.6.0-preview3.19128.7",
+          "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7",
+          "System.Diagnostics.DiagnosticSource": "4.6.0-preview3.19128.7",
           "System.Interactive.Async": "3.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.3": {
+      "Microsoft.EntityFrameworkCore.Abstractions/3.0.0-preview3.19153.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.3": {},
-      "Microsoft.EntityFrameworkCore.Design/2.2.3": {
+      "Microsoft.EntityFrameworkCore.Analyzers/3.0.0-preview3.19153.1": {},
+      "Microsoft.EntityFrameworkCore.Design/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.2.3"
+          "Microsoft.CSharp": "4.6.0-preview3.19128.7",
+          "Microsoft.EntityFrameworkCore.Relational": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/2.2.3": {
+      "Microsoft.EntityFrameworkCore.Relational/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.2.3"
+          "Microsoft.EntityFrameworkCore": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.2.3",
+          "Microsoft.EntityFrameworkCore.Relational": "3.0.0-preview3.19153.1",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite/2.2.3": {
+      "Microsoft.EntityFrameworkCore.Sqlite/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.2.3",
-          "SQLitePCLRaw.bundle_green": "1.1.12"
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.0.0-preview3.19153.1",
+          "SQLitePCLRaw.bundle_e_sqlite3": "1.1.12"
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/2.2.3": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "2.2.3",
-          "Microsoft.EntityFrameworkCore.Relational": "2.2.3",
-          "Microsoft.Extensions.DependencyModel": "2.1.0"
+          "Microsoft.Data.Sqlite.Core": "3.0.0-preview3.19153.1",
+          "Microsoft.EntityFrameworkCore.Relational": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.DependencyModel": "3.0.0-preview3-27503-5"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
-            "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.19047"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.6": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Design/2.0.0-preview1-final": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
-          "Microsoft.EntityFrameworkCore.Sqlite": "2.2.3",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "2.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.0.0-preview3.19153.1",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
           }
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+      "Microsoft.Extensions.Caching.Abstractions/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
+          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Caching.Memory/2.2.0": {
+      "Microsoft.Extensions.Caching.Memory/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Options": "2.2.0"
+          "Microsoft.Extensions.Caching.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Options": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Configuration/2.2.0": {
+      "Microsoft.Extensions.Configuration/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
+          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Configuration.Binder/2.2.0": {
+      "Microsoft.Extensions.Configuration.Binder/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "2.2.0"
+          "Microsoft.Extensions.Configuration": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/2.2.0": {
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview3.19153.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.DependencyModel/2.1.0": {
+      "Microsoft.Extensions.DependencyModel/3.0.0-preview3-27503-5": {
         "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Linq": "4.1.0"
+          "Microsoft.DotNet.PlatformAbstractions": "3.0.0-preview3-27503-5",
+          "System.Memory": "4.5.2"
         },
         "runtime": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
-      "Microsoft.Extensions.Logging/2.2.0": {
+      "Microsoft.Extensions.Logging/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Options": "2.2.0"
+          "Microsoft.Extensions.Configuration.Binder": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.DependencyInjection": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Options": "3.0.0-preview3.19153.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
+      "Microsoft.Extensions.Logging.Abstractions/3.0.0-preview3.19153.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Options/2.2.0": {
+      "Microsoft.Extensions.Options/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Primitives": "2.2.0",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1",
+          "System.ComponentModel.Annotations": "4.6.0-preview3.19128.7"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
-      "Microsoft.Extensions.Primitives/2.2.0": {
+      "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
         "dependencies": {
-          "System.Memory": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
           }
         }
       },
@@ -322,67 +313,35 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Newtonsoft.Json/9.0.1": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Serialization.Primitives": "4.1.1",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "System.Xml.ReaderWriter": "4.0.11",
-          "System.Xml.XDocument": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.1.19813"
-          }
-        }
-      },
-      "Prism.Core/7.1.0.431": {
+      "Prism.Core/7.2.0.1038-pre": {
         "runtime": {
           "lib/netstandard2.0/Prism.dll": {
-            "assemblyVersion": "7.1.0.431",
-            "fileVersion": "7.1.0.431"
+            "assemblyVersion": "7.2.0.1038",
+            "fileVersion": "7.2.0.1038"
           }
         }
       },
-      "Prism.DryIoc.Forms/7.1.0.431": {
+      "Prism.DryIoc.Forms/7.2.0.1038-pre": {
         "dependencies": {
           "DryIoc.dll": "3.0.2",
-          "Prism.Forms": "7.1.0.431"
+          "Prism.Forms": "7.2.0.1038-pre"
         },
         "runtime": {
           "lib/netstandard2.0/Prism.DryIoc.Forms.dll": {
-            "assemblyVersion": "7.1.0.431",
-            "fileVersion": "7.1.0.431"
+            "assemblyVersion": "7.2.0.1038",
+            "fileVersion": "7.2.0.1038"
           }
         }
       },
-      "Prism.Forms/7.1.0.431": {
+      "Prism.Forms/7.2.0.1038-pre": {
         "dependencies": {
-          "Prism.Core": "7.1.0.431",
-          "Xamarin.Forms": "3.6.0.293080"
+          "Prism.Core": "7.2.0.1038-pre",
+          "Xamarin.Forms": "4.0.0.304370-pre8"
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Forms.dll": {
-            "assemblyVersion": "7.1.0.431",
-            "fileVersion": "7.1.0.431"
+            "assemblyVersion": "7.2.0.1038",
+            "fileVersion": "7.2.0.1038"
           }
         }
       },
@@ -407,12 +366,6 @@
           }
         }
       },
-      "runtime.native.System/4.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1"
-        }
-      },
       "SkiaSharp/1.68.0": {
         "runtime": {
           "lib/netstandard1.3/SkiaSharp.dll": {
@@ -424,7 +377,7 @@
       "SkiaSharp.Views.Forms/1.68.0": {
         "dependencies": {
           "SkiaSharp": "1.68.0",
-          "Xamarin.Forms": "3.6.0.293080"
+          "Xamarin.Forms": "4.0.0.304370-pre8"
         },
         "runtime": {
           "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
@@ -433,13 +386,13 @@
           }
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.12": {
+      "SQLitePCLRaw.bundle_e_sqlite3/1.1.12": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "SQLitePCLRaw.core": "1.1.12"
         },
         "runtime": {
-          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_e_sqlite3.dll": {
             "assemblyVersion": "1.1.12.351",
             "fileVersion": "1.0.0.0"
           },
@@ -460,17 +413,6 @@
           }
         }
       },
-      "System.AppContext/4.1.0": {
-        "dependencies": {
-          "System.Runtime": "4.1.0"
-        },
-        "runtime": {
-          "lib/netstandard1.6/System.AppContext.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "1.0.24212.1"
-          }
-        }
-      },
       "System.Buffers/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
@@ -486,19 +428,19 @@
           "System.Runtime": "4.1.0"
         }
       },
-      "System.Collections.Immutable/1.5.0": {
+      "System.Collections.Immutable/1.6.0-preview3.19128.7": {
         "runtime": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {
-            "assemblyVersion": "1.2.3.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "1.2.4.0",
+            "fileVersion": "4.7.19.12807"
           }
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {
+      "System.ComponentModel.Annotations/4.6.0-preview3.19128.7": {
         "runtime": {
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
-            "assemblyVersion": "4.2.1.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.7.19.12807"
           }
         }
       },
@@ -509,43 +451,11 @@
           "System.Runtime": "4.1.0"
         }
       },
-      "System.Diagnostics.DiagnosticSource/4.5.0": {
+      "System.Diagnostics.DiagnosticSource/4.6.0-preview3.19128.7": {
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.6.26515.6"
-          }
-        }
-      },
-      "System.Diagnostics.Tools/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0"
-        }
-      },
-      "System.Dynamic.Runtime/4.0.11": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Emit": "4.0.1",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
-          "System.Reflection.Primitives": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {
-            "assemblyVersion": "4.0.11.0",
-            "fileVersion": "1.0.24212.1"
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "4.7.19.12807"
           }
         }
       },
@@ -571,29 +481,6 @@
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
-        }
-      },
-      "System.IO.FileSystem/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Text.Encoding": "4.0.11",
-          "System.Threading.Tasks": "4.0.11"
-        }
-      },
-      "System.IO.FileSystem.Primitives/4.0.1": {
-        "dependencies": {
-          "System.Runtime": "4.1.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "1.0.24212.1"
-          }
         }
       },
       "System.Linq/4.1.0": {
@@ -656,16 +543,16 @@
           }
         }
       },
-      "System.Memory/4.5.1": {
+      "System.Memory/4.5.2": {
         "dependencies": {
           "System.Buffers": "4.4.0",
           "System.Numerics.Vectors": "4.4.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.6.26606.5"
+            "fileVersion": "4.6.27129.4"
           }
         }
       },
@@ -785,11 +672,11 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.4.0",
-            "fileVersion": "0.0.0.0"
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.7.19.12807"
           }
         }
       },
@@ -800,75 +687,11 @@
           "System.Runtime": "4.1.0"
         }
       },
-      "System.Runtime.Handles/4.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0"
-        }
-      },
-      "System.Runtime.InteropServices/4.1.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Primitives": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Handles": "4.0.1"
-        }
-      },
-      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Threading": "4.0.11",
-          "runtime.native.System": "4.0.0"
-        }
-      },
-      "System.Runtime.Serialization.Primitives/4.1.1": {
-        "dependencies": {
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {
-            "assemblyVersion": "4.1.1.0",
-            "fileVersion": "1.0.24212.1"
-          }
-        }
-      },
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
-        }
-      },
-      "System.Text.Encoding.Extensions/4.0.11": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Text.Encoding": "4.0.11"
-        }
-      },
-      "System.Text.RegularExpressions/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.6/System.Text.RegularExpressions.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "1.0.24212.1"
-          }
         }
       },
       "System.Threading/4.0.11": {
@@ -890,126 +713,66 @@
           "System.Runtime": "4.1.0"
         }
       },
-      "System.Threading.Tasks.Extensions/4.0.0": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Runtime": "4.1.0",
-          "System.Threading.Tasks": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "1.0.24212.1"
-          }
-        }
-      },
-      "System.Xml.ReaderWriter/4.0.11": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading.Tasks": "4.0.11",
-          "System.Threading.Tasks.Extensions": "4.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {
-            "assemblyVersion": "4.0.11.0",
-            "fileVersion": "1.0.24212.1"
-          }
-        }
-      },
-      "System.Xml.XDocument/4.0.11": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Diagnostics.Tools": "4.0.1",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Threading": "4.0.11",
-          "System.Xml.ReaderWriter": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Xml.XDocument.dll": {
-            "assemblyVersion": "4.0.11.0",
-            "fileVersion": "1.0.24212.1"
-          }
-        }
-      },
-      "Xamarin.FFImageLoading/2.4.4.859": {
+      "Xamarin.FFImageLoading/2.4.5.880-pre": {
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Platform.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           },
           "lib/netstandard1.0/FFImageLoading.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           }
         }
       },
-      "Xamarin.FFImageLoading.Forms/2.4.4.859": {
+      "Xamarin.FFImageLoading.Forms/2.4.5.880-pre": {
         "dependencies": {
-          "Xamarin.FFImageLoading": "2.4.4.859",
-          "Xamarin.Forms": "3.6.0.293080"
+          "Xamarin.FFImageLoading": "2.4.5.880-pre",
+          "Xamarin.Forms": "4.0.0.304370-pre8"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Forms.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           }
         }
       },
-      "Xamarin.FFImageLoading.Svg/2.4.4.859": {
+      "Xamarin.FFImageLoading.Svg/2.4.5.880-pre": {
         "dependencies": {
           "SkiaSharp": "1.68.0",
-          "Xamarin.FFImageLoading": "2.4.4.859"
+          "Xamarin.FFImageLoading": "2.4.5.880-pre"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Svg.Platform.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           }
         }
       },
-      "Xamarin.FFImageLoading.Svg.Forms/2.4.4.859": {
+      "Xamarin.FFImageLoading.Svg.Forms/2.4.5.880-pre": {
         "dependencies": {
-          "Xamarin.FFImageLoading.Forms": "2.4.4.859",
-          "Xamarin.FFImageLoading.Svg": "2.4.4.859"
+          "Xamarin.FFImageLoading.Forms": "2.4.5.880-pre",
+          "Xamarin.FFImageLoading.Svg": "2.4.5.880-pre"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Svg.Forms.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           }
         }
       },
-      "Xamarin.FFImageLoading.Transformations/2.4.4.859": {
+      "Xamarin.FFImageLoading.Transformations/2.4.5.880-pre": {
         "dependencies": {
-          "Xamarin.FFImageLoading": "2.4.4.859"
+          "Xamarin.FFImageLoading": "2.4.5.880-pre"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Transformations.dll": {
-            "assemblyVersion": "2.4.4.859",
-            "fileVersion": "2.4.4.859"
+            "assemblyVersion": "2.4.5.880",
+            "fileVersion": "2.4.5.880"
           }
         }
       },
-      "Xamarin.Forms/3.6.0.293080": {
+      "Xamarin.Forms/4.0.0.304370-pre8": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -1041,108 +804,132 @@
       },
       "MyAlarm.EFStandard/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.2.3",
-          "Microsoft.EntityFrameworkCore.Sqlite": "2.2.3",
-          "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.6",
-          "Prism.Core": "7.1.0.431"
+          "Microsoft.EntityFrameworkCore.Design": "3.0.0-preview3.19153.1",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.0.0-preview3.19153.1",
+          "Microsoft.EntityFrameworkCore.Sqlite.Design": "2.0.0-preview1-final",
+          "Prism.Core": "7.2.0.1038-pre"
         },
         "runtime": {
           "MyAlarm.EFStandard.dll": {}
         }
       },
-      "Telerik.Documents.SpreadsheetStreaming/2018.3.1017.310": {
+      "Telerik.Documents.Core/2019.1.220.20": {
+        "runtime": {
+          "Telerik.Documents.Core.dll": {
+            "assemblyVersion": "2019.1.220.20",
+            "fileVersion": "2019.1.220.20"
+          }
+        }
+      },
+      "Telerik.Documents.Fixed/2019.1.220.20": {
+        "runtime": {
+          "Telerik.Documents.Fixed.dll": {
+            "assemblyVersion": "2019.1.220.20",
+            "fileVersion": "2019.1.220.20"
+          }
+        }
+      },
+      "Telerik.Documents.SpreadsheetStreaming/2019.1.220.20": {
         "runtime": {
           "Telerik.Documents.SpreadsheetStreaming.dll": {
-            "assemblyVersion": "2018.3.1017.310",
-            "fileVersion": "2018.3.1017.310"
+            "assemblyVersion": "2019.1.220.20",
+            "fileVersion": "2019.1.220.20"
           }
         }
       },
-      "Telerik.XamarinForms.Barcode/2018.3.1018.310": {
+      "Telerik.XamarinForms.Barcode/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.Barcode.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.Chart/2018.3.1018.310": {
+      "Telerik.XamarinForms.Chart/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.Chart.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.Common/2018.3.1018.310": {
+      "Telerik.XamarinForms.Common/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.Common.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.ConversationalUI/2018.3.1018.310": {
+      "Telerik.XamarinForms.ConversationalUI/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.ConversationalUI.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.DataControls/2018.3.1018.310": {
+      "Telerik.XamarinForms.DataControls/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.DataControls.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.DataGrid/2018.3.1018.310": {
+      "Telerik.XamarinForms.DataGrid/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.DataGrid.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.DataVisualization/2018.3.1018.310": {
+      "Telerik.XamarinForms.DataVisualization/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.DataVisualization.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.Input/2018.3.1018.310": {
+      "Telerik.XamarinForms.Input/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.Input.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.Primitives/2018.3.1018.310": {
+      "Telerik.XamarinForms.PdfViewer/2019.1.220.340": {
+        "runtime": {
+          "Telerik.XamarinForms.PdfViewer.dll": {
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
+          }
+        }
+      },
+      "Telerik.XamarinForms.Primitives/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.Primitives.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.XamarinForms.SkiaSharp/2018.3.1018.310": {
+      "Telerik.XamarinForms.SkiaSharp/2019.1.220.340": {
         "runtime": {
           "Telerik.XamarinForms.SkiaSharp.dll": {
-            "assemblyVersion": "2018.3.1018.310",
-            "fileVersion": "2018.3.1018.310"
+            "assemblyVersion": "2019.1.220.340",
+            "fileVersion": "2019.1.220.340"
           }
         }
       },
-      "Telerik.Zip/2018.3.1017.310": {
+      "Telerik.Zip/2019.1.220.20": {
         "runtime": {
           "Telerik.Zip.dll": {
-            "assemblyVersion": "2018.3.1017.310",
-            "fileVersion": "2018.3.1017.310"
+            "assemblyVersion": "2019.1.220.20",
+            "fileVersion": "2019.1.220.20"
           }
         }
       }
@@ -1161,173 +948,173 @@
       "path": "dryioc.dll/3.0.2",
       "hashPath": "dryioc.dll.3.0.2.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.5.0": {
+    "Microsoft.CSharp/4.6.0-preview3.19128.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yWWeTbGCzBOlRPWDCIxiTZW1ecZiMbao0ZT97KKEWdBhrLvUqU8RdzkhzuCRQzvoxzxlR7vytO43OOgFdkxv6g==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-9yECMX2xrjv0+4CNKxB8BwgMu8q7q7pu6UdlGhYQcbuPaFyy/eBzCeIzC/5oYBIqHReUHracsVrL7hrwnbjoMg==",
+      "path": "microsoft.csharp/4.6.0-preview3.19128.7",
+      "hashPath": "microsoft.csharp.4.6.0-preview3.19128.7.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/2.2.3": {
+    "Microsoft.Data.Sqlite.Core/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WVhNky8hr/k6+PfwOz5yJzNe4CPCkyOnYI4nAwfY2qm54/thGGXLwgga+i07lvLryThCOJ4JaQfJg1iZLzlP5Q==",
-      "path": "microsoft.data.sqlite.core/2.2.3",
-      "hashPath": "microsoft.data.sqlite.core.2.2.3.nupkg.sha512"
+      "sha512": "sha512-0qCgUjlUPX2tRJa/BC55DFcYTUK16veD/KjFZeF+7cxZX038wvgn9Xzl230qwDm2cz9lK+CO84oLSHSTylI77Q==",
+      "path": "microsoft.data.sqlite.core/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.data.sqlite.core.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+    "Microsoft.DotNet.PlatformAbstractions/3.0.0-preview3-27503-5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cQ5Rjim727izat8rE1HiJkJn9HMdy+XoDty1RTgIvbTYIb6cEkPzFJRF6ae2XI0hljcSy9hGLjChgCcUqMunqA==",
-      "path": "microsoft.dotnet.platformabstractions/2.1.0",
-      "hashPath": "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512"
+      "sha512": "sha512-HHx32KCjhk1mla2EaVQJGpr+ffa0MthreI2+4SW83xsuLKY9I0DYLA7SZJbZNX2qKZPE+W6p2E/xYrJkh9NXiA==",
+      "path": "microsoft.dotnet.platformabstractions/3.0.0-preview3-27503-5",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.0.0-preview3-27503-5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/2.2.3": {
+    "Microsoft.EntityFrameworkCore/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0VOFOuIMLE3ZA9yAWPbEe48pe+3pFi1CmyI4bh6rLtdTgCa5fa5TWqsbDCeZl13rjSoENPuOq6InYGSiKTR0+g==",
-      "path": "microsoft.entityframeworkcore/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.2.2.3.nupkg.sha512"
+      "sha512": "sha512-byvyvCyC/BwPpfeo79WoyxQ9yQb05yTUlo+TUQdKrJ1rt4Q/DhnLjdZxCkEzW/B2w5oNENBXeAFiDeKd7y1oOA==",
+      "path": "microsoft.entityframeworkcore/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Abstractions/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-75qgcAJOIJrNtxeYkhQx8O2goAYkb/u7r1tQOk8Xs5YjAf39zkeNfl9QRBS0GIDtffD/wGpq7jJrMS/dN3TUfQ==",
-      "path": "microsoft.entityframeworkcore.abstractions/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.2.2.3.nupkg.sha512"
+      "sha512": "sha512-2hu4T54xQY7hy+6IZhbrb+7cWHvHoBStqaW42f5ouMQDXJgM10O0mfWCe3gNX4m+b0xzIGtWNU/g/uQOURX7fg==",
+      "path": "microsoft.entityframeworkcore.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Analyzers/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AktkwwjsxeM5+CUOVKz2E/zQvEyFCaTSokbqJx643pSEckjReIDgCqgUV8rvZsGPpPm/RXIhhOXDrB/a+BEkXA==",
-      "path": "microsoft.entityframeworkcore.analyzers/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.2.2.3.nupkg.sha512"
+      "sha512": "sha512-Tdr7VB/BD2RfqKUW5KgugD1qrLmlX5yzaJYjwOdVvk8ttW4LYLX9LLRZstOORz+Su0zZrDDCwyuop7mqsFWmVQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Design/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ieO8DTCxp5fe39pv0C8UljOqRVyeYgNNB52vkwYyTIZdPnjEVbTot4GsubHy3JspmvG09uYgU64Ll9/LYDjkiA==",
-      "path": "microsoft.entityframeworkcore.design/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.design.2.2.3.nupkg.sha512"
+      "sha512": "sha512-BUO/APqjraAnQ9WW3yx3z6AY+P4pCa+8TKqbQrJhjzH8K0L/Qd5wwk2Gf+P8u1SuyjVJyIPP3NuwHws5On+Ftw==",
+      "path": "microsoft.entityframeworkcore.design/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.design.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Relational/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-addZBOfkWf/6ZkWAs/eJMu25iFUiqSHJKmETRfrI2XqzgBZwYgV5DxgmqkhMXgkjZ9prgZ9uD6I6pwQXJTbIqQ==",
-      "path": "microsoft.entityframeworkcore.relational/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.relational.2.2.3.nupkg.sha512"
+      "sha512": "sha512-79lR6iGnTGc9VC7lyIkMNIvkyhylidOhlroK3Kfpoy8Vu1rnF5tYNwyzIqbBBZLTkzt72se/gjPLGdIPWWJUBQ==",
+      "path": "microsoft.entityframeworkcore.relational/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.relational.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+    "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UVq94HrsK/eUSo4bkYBYW30UQ/uH2GoXcjTv7oIdeMKnAjLE3jm3C/BmftkQpr9beQCSbbcEySaVDhjlhrcQJQ==",
-      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512"
+      "sha512": "sha512-3BtBHSgNJaUrj+r5ARBTeRxjMq/og8NdzzdfuyYjwLT6QCX79mCAQ44/MMl5NfwRmPRIerCTUifunQmEZtMQ/w==",
+      "path": "microsoft.entityframeworkcore.relational.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.2.0.0-preview1-final.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Sqlite/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XYAorAbpuWow4tFugdOvZJq8nlXSkA1/FdZYltFc/t73t2Ay0hjeCDuyQSFG14sjVokG0R3eefkgkiBzTcbBBQ==",
-      "path": "microsoft.entityframeworkcore.sqlite/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.2.2.3.nupkg.sha512"
+      "sha512": "sha512-QiBMqzmcd9j+GQPyxECV8Ahw7NoNoDtrqXx+dy+iPdvweYzwD0IJpvlIcTKCLkO9p3+VvhdWcBNVS65MqpIJLg==",
+      "path": "microsoft.entityframeworkcore.sqlite/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/2.2.3": {
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-H5J7VCqFsCy69QAxer4CuNVRthbKRx8zxdQoDsM35oorUe9mcY66TFc/L7wu9RdMgrYuBHZWTYQ8TQdbtPSQGA==",
-      "path": "microsoft.entityframeworkcore.sqlite.core/2.2.3",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.core.2.2.3.nupkg.sha512"
+      "sha512": "sha512-0dB9MAueC4dhIIOUoDHPe58sWmD5vDucYSVmNWSx20P2hdmxpKq9xX4+zEYUuy+jW9757ET7rWIAN2bgOqRnDQ==",
+      "path": "microsoft.entityframeworkcore.sqlite.core/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.core.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.6": {
+    "Microsoft.EntityFrameworkCore.Sqlite.Design/2.0.0-preview1-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EfZa+dhD6KhiVk83d28rGgrcAlPw4d7I1FIA6dZyxqjblQ4VbwNufn1CqZ6XDc9qIUiD5GO53vGS0/Vh9MMM2w==",
-      "path": "microsoft.entityframeworkcore.sqlite.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.design.1.1.6.nupkg.sha512"
+      "sha512": "sha512-mhNMzaMRYI3vwpSXCUnRabAwqtK/VVNOCWZe1VMaOmtaLQ9AmUZdLcwM1NRncDlzWssRN9by6ebLVlvBjImGog==",
+      "path": "microsoft.entityframeworkcore.sqlite.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.design.2.0.0-preview1-final.nupkg.sha512"
     },
-    "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
+    "Microsoft.Extensions.Caching.Abstractions/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L82fEbPUzi8K6+p4olT8BHtV5SWaIbQg/UGFcsq0STRXJ9I4XR2BazCKJF95Crqn0djENa3qC761eTnOuh+u1w==",
-      "path": "microsoft.extensions.caching.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-1rQJFuaTL0on87VsopEF+OdOh+8oc/X0W9EI+WcPFni0gRsb5gRtzu6KdcCXDVxTmrC1XpLzs7SmfEs3loqZDg==",
+      "path": "microsoft.extensions.caching.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.caching.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Caching.Memory/2.2.0": {
+    "Microsoft.Extensions.Caching.Memory/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p0IHvn/uCWZNavHf9EqT1kmZByzSbeqBXbn7Yo13RLIZhCVUsdik4v4gMEgAC+nN0zaTuBwLRysAB1+MFmIUng==",
-      "path": "microsoft.extensions.caching.memory/2.2.0",
-      "hashPath": "microsoft.extensions.caching.memory.2.2.0.nupkg.sha512"
+      "sha512": "sha512-FlmjiieJyDVt3PD0zSDS6y+GT9V+8ERh/uA8sm/6SVFgQ+jYI+rek1K9BPEPUyFsh4GuvmWPUU9RVej3E1eldA==",
+      "path": "microsoft.extensions.caching.memory/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.caching.memory.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration/2.2.0": {
+    "Microsoft.Extensions.Configuration/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0MtJgCZ5tIw7LoxOlXlifwVTwfMd4YdMJ9+DVZyX/fqqXO9zseZ8hH2WxbJzDbBDp45nA8rwHlL4JH/6Z98B4w==",
-      "path": "microsoft.extensions.configuration/2.2.0",
-      "hashPath": "microsoft.extensions.configuration.2.2.0.nupkg.sha512"
+      "sha512": "sha512-C23llDGJ6LiG44DLsYamSY4wJLlfGPTC7xXBhGIpU9nXkmibZleW//JV4lItSun3vNZVJ+pyGAJoCJZk38/95w==",
+      "path": "microsoft.extensions.configuration/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.configuration.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+    "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M6u4cMWXxPtqyJJ03oezyqTORmSgTPpa2gZRKkEGCXXHhyGnM1cHjPTzq5sevYS1VJEMb2TZj60mAc+hDoPPcQ==",
-      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-oWXkB7qyUrBgOY7OABBWhAY/lg0J99p2kfkBKlh6W11rhdz8zVnGaovIWRv+sEtLUgFDn+devlTJHLI0QriPmw==",
+      "path": "microsoft.extensions.configuration.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.Binder/2.2.0": {
+    "Microsoft.Extensions.Configuration.Binder/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6ANwTuQZqIIt0guKAdS9Mn6c+PfhOBpqRm7FslUJqtG000uo0Cd3pAndk92RQq0ygDFRub/ftiRy8DukWXqNzQ==",
-      "path": "microsoft.extensions.configuration.binder/2.2.0",
-      "hashPath": "microsoft.extensions.configuration.binder.2.2.0.nupkg.sha512"
+      "sha512": "sha512-tnOsqQ6WoNt+ZRZ2uiXoebDZjQrl3kYrn7cziAalvrDI+OKFKLd0tx4/A7QrnXrjEW2xyWdmwfdhDwCR1nJOfg==",
+      "path": "microsoft.extensions.configuration.binder/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.configuration.binder.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/2.2.0": {
+    "Microsoft.Extensions.DependencyInjection/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ASF77AJjnyi9hL7IJU1KCAvnCTgI3JEwkU+D4gnKd53nFIYpibVjR6SW8tdTkkuZ+QkmIx2rPvKdTMNVPfVU9A==",
-      "path": "microsoft.extensions.dependencyinjection/2.2.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512"
+      "sha512": "sha512-DXQ9evKR74d+HSLpPVuvtDe4d+Q+JyY2m/NSRbN7eJP6Lun7yBubYoBMYQBp2IKlmiLecBxaar6LfoOBLZBTmw==",
+      "path": "microsoft.extensions.dependencyinjection/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2xMk9LHz1EY+7gVG0lG4qBvkUiVjg8QNPqd2HYmEP5+PL7Ayo96EhBieAhd++Gx4yM+xN8kNqmhZdFMBHeG0HQ==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-ZBMloIoZwQr+xbkkSobDqpgsr/njMd1r3jqKdpnXEcl0436abevrsQlfijYBu5qSUf6OfcKTluSzO75iCAhkeQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyModel/2.1.0": {
+    "Microsoft.Extensions.DependencyModel/3.0.0-preview3-27503-5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mVZxmcJki6aiLkM8p1bDKzCzDsLqktMzvsPBKus/eCJeTVg+XTQ86q7j5wbYxeDJKnwWpUbFySmt8em/tylXrw==",
-      "path": "microsoft.extensions.dependencymodel/2.1.0",
-      "hashPath": "microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512"
+      "sha512": "sha512-EBVnytb8pqSIFxf3xXQz0YjfiIY2unZjOhJhlXwFtMXR9kCBDMXh3NFljwv/jgYMzQx+itfDBHrr3qJzizrBrg==",
+      "path": "microsoft.extensions.dependencymodel/3.0.0-preview3-27503-5",
+      "hashPath": "microsoft.extensions.dependencymodel.3.0.0-preview3-27503-5.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging/2.2.0": {
+    "Microsoft.Extensions.Logging/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wa1Uk8sVuEzHtwZPoDNhQiFDjlDe9t74+Iess26uqhIwn02T79v/GB/pLCJ08MOvuM953LfleJW6VPr/wVXCJw==",
-      "path": "microsoft.extensions.logging/2.2.0",
-      "hashPath": "microsoft.extensions.logging.2.2.0.nupkg.sha512"
+      "sha512": "sha512-ycIEXpbJVPt52OmiU7UsSGUdEoHtAyEinQ8BfOrhTL40ifQkeF0M+SmvpsyOY0uTmVAlF+vvmrKltshaRgKmYA==",
+      "path": "microsoft.extensions.logging/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.logging.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
+    "Microsoft.Extensions.Logging.Abstractions/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1iYT6BAnJZGebfclQXiM/drK+JUztSikkpT3xcASBQW4og877bsXtjqrMM4EI71nf8UVtvHt6O8pMdYDEE8/Lw==",
-      "path": "microsoft.extensions.logging.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-3QaXTy2sCChMiyX/e4cz29zGWlOHaZP58uGgibAbp0Mj4k/I2b2YoZaQtNyq6ba09yySEGrym9dLSq4Ooquwew==",
+      "path": "microsoft.extensions.logging.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options/2.2.0": {
+    "Microsoft.Extensions.Options/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-67zpvElD/YPcfRs1Qm58LSntnSm+kYSA+0PA4+0Abo7NEH4RAvUkV54krspsa0+S4yBZ/m39gUOdn3PSzffazQ==",
-      "path": "microsoft.extensions.options/2.2.0",
-      "hashPath": "microsoft.extensions.options.2.2.0.nupkg.sha512"
+      "sha512": "sha512-n2CSA3oWS+9/6jcHTTH0db0v0YU4OG62XKAsDze0H2gkNkhOqXeGr98cmJ2u1pXBsFKHkI+J7FMFQYA/PsfoAQ==",
+      "path": "microsoft.extensions.options/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.options.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/2.2.0": {
+    "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vpH+o7f8obVx65PiEtBXxTwL5RosK60fNIMy/y8WGE4/r4IvAqQGukOzMhxsp//Accvd7kmukyQTVkqVYdaDyA==",
-      "path": "microsoft.extensions.primitives/2.2.0",
-      "hashPath": "microsoft.extensions.primitives.2.2.0.nupkg.sha512"
+      "sha512": "sha512-HG3Fk+VxJPdqPWIUbvOUBBLCGmz5esbJlmvq986v7mkJvdpa6zcPdIkfhaJ9zoWh81YhOt2y1KdvYNL7l6qXmQ==",
+      "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1350,33 +1137,26 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/9.0.1": {
+    "Prism.Core/7.2.0.1038-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
-      "path": "newtonsoft.json/9.0.1",
-      "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+      "sha512": "sha512-EuUGbcFT0NfkN/mFfNpr3ZS0PIAFZlOzi6XJESwIR1K/Tmh5WsBYxSDIvqiHJHH8bZQHiidewN304d4JJDsP0Q==",
+      "path": "prism.core/7.2.0.1038-pre",
+      "hashPath": "prism.core.7.2.0.1038-pre.nupkg.sha512"
     },
-    "Prism.Core/7.1.0.431": {
+    "Prism.DryIoc.Forms/7.2.0.1038-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tBkEf4cDYn2oQfW1wPem4jJK/H1Z4mJsnndO04n2oZyIql7Bj3OVlpfQ6vbPgbtlkEN0oyn02XVurZba3DYqmQ==",
-      "path": "prism.core/7.1.0.431",
-      "hashPath": "prism.core.7.1.0.431.nupkg.sha512"
+      "sha512": "sha512-5hIvGH9KERyPLPTKMgRI+q4aJ7KGNXHOg3UC8e7/A9wuLvicXcSUrvTz63wV+QaGPAtk1QLlJo3lGpHLAY8Sdg==",
+      "path": "prism.dryioc.forms/7.2.0.1038-pre",
+      "hashPath": "prism.dryioc.forms.7.2.0.1038-pre.nupkg.sha512"
     },
-    "Prism.DryIoc.Forms/7.1.0.431": {
+    "Prism.Forms/7.2.0.1038-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NSl5T0XIYJ35MceKd7rKEwyDel5pAKU3RY/++eGWQG44hWaacJmzI2WMJqYdbqYrBNiUZlhaBVKW1KlwTMSNGA==",
-      "path": "prism.dryioc.forms/7.1.0.431",
-      "hashPath": "prism.dryioc.forms.7.1.0.431.nupkg.sha512"
-    },
-    "Prism.Forms/7.1.0.431": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sbwu3Ao4yUPVQ4gln1EA5N9vOj/NkaOEYNoCvuY5BOGlkTQod5gPnGJST2ZFsj1gHLJHSdvlT5OP+RKEeqo7pQ==",
-      "path": "prism.forms/7.1.0.431",
-      "hashPath": "prism.forms.7.1.0.431.nupkg.sha512"
+      "sha512": "sha512-zDuLD/nk9k0gHw0srUC7IB8VhMgmoFeECvAG7s5MjN/u57Toha49LdpmNPZh/F23Cgqs4E9G+TqRNLX5xSlnOg==",
+      "path": "prism.forms/7.2.0.1038-pre",
+      "hashPath": "prism.forms.7.2.0.1038-pre.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -1384,13 +1164,6 @@
       "sha512": "sha512-twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
-    },
-    "runtime.native.System/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QfS/nQI7k/BLgmLrw7qm7YBoULEvgWnPI+cYsbfCVFTW8Aj+i8JhccxcFMu1RWms0YZzF+UHguNBK4Qn89e2Sg==",
-      "path": "runtime.native.system/4.0.0",
-      "hashPath": "runtime.native.system.4.0.0.nupkg.sha512"
     },
     "SkiaSharp/1.68.0": {
       "type": "package",
@@ -1406,12 +1179,12 @@
       "path": "skiasharp.views.forms/1.68.0",
       "hashPath": "skiasharp.views.forms.1.68.0.nupkg.sha512"
     },
-    "SQLitePCLRaw.bundle_green/1.1.12": {
+    "SQLitePCLRaw.bundle_e_sqlite3/1.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-U5lZv+E0JBCG5uQngaRgyIAlbzIwRczb0m46XJfLGXovtfVOaMNRY/oGyKAJjdexVrfqLRd+JyopGMySpAZRGQ==",
-      "path": "sqlitepclraw.bundle_green/1.1.12",
-      "hashPath": "sqlitepclraw.bundle_green.1.1.12.nupkg.sha512"
+      "sha512": "sha512-S3eJftnfXbHnbPPuwet2S4frSAuTcQ8F1zFRhpsnHeGaFlgXuUDFO4/DEnHr22ece6RT7l1bafWAUSuQHGYMFA==",
+      "path": "sqlitepclraw.bundle_e_sqlite3/1.1.12",
+      "hashPath": "sqlitepclraw.bundle_e_sqlite3.1.1.12.nupkg.sha512"
     },
     "SQLitePCLRaw.core/1.1.12": {
       "type": "package",
@@ -1419,13 +1192,6 @@
       "sha512": "sha512-S4hr+tE275ran5jyKFW/FYPG6Bz6nsHUp9H8chqKxzk21PxJadLd9LnvLe6LMRP/IqY5+LOIIDQF3m/2iDlZ7Q==",
       "path": "sqlitepclraw.core/1.1.12",
       "hashPath": "sqlitepclraw.core.1.1.12.nupkg.sha512"
-    },
-    "System.AppContext/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3QjO4jNV7PdKkmQAVp9atA+usVnKRwI3Kx1nMwJ93T0LcQfx7pKAYk0nKz5wn1oP5iqlhZuy6RXOFdhr7rDwow==",
-      "path": "system.appcontext/4.1.0",
-      "hashPath": "system.appcontext.4.1.0.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
@@ -1441,19 +1207,19 @@
       "path": "system.collections/4.0.11",
       "hashPath": "system.collections.4.0.11.nupkg.sha512"
     },
-    "System.Collections.Immutable/1.5.0": {
+    "System.Collections.Immutable/1.6.0-preview3.19128.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-erLSnZLBCA8EKIE2bKtXynjWBWSoMlmCFrOOYN+sPKCeYd3oGj9h8hqRPODtsRlPANkOW7L8tEQlEadHbUXC6A==",
-      "path": "system.collections.immutable/1.5.0",
-      "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
+      "sha512": "sha512-84yrlNUoiJdAP0zQzuua6nydYvbGxW3EnJAtfksgkOguwVp7y09AHofMrrlOR9D0scACu1ncMmYpMOcaAcBiWA==",
+      "path": "system.collections.immutable/1.6.0-preview3.19128.7",
+      "hashPath": "system.collections.immutable.1.6.0-preview3.19128.7.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
+    "System.ComponentModel.Annotations/4.6.0-preview3.19128.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rQj1sVZa0jtt+RObqgxvBBm6Pwigmuq+cobsLG65487uuwPTl2eg1ksjmErJUyozRmwamo2KZN8Vyveif0edWA==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+      "sha512": "sha512-xvIg6dDkmz4HGE1L/HY71qpMt4jeiG9xSfAZqwrNuVJTQ+azwSDhAjy0o13VrngAcQ3hKRQKqjTnBgYymu3i4Q==",
+      "path": "system.componentmodel.annotations/4.6.0-preview3.19128.7",
+      "hashPath": "system.componentmodel.annotations.4.6.0-preview3.19128.7.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
@@ -1462,26 +1228,12 @@
       "path": "system.diagnostics.debug/4.0.11",
       "hashPath": "system.diagnostics.debug.4.0.11.nupkg.sha512"
     },
-    "System.Diagnostics.DiagnosticSource/4.5.0": {
+    "System.Diagnostics.DiagnosticSource/4.6.0-preview3.19128.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1cpU+cbnj4zamChxbdZ+06lkYJjDs46XoIw8EQN/cicVWSW3y9eRF5mLnwRLUQ5LsVpCVa/1vA70B0uEMLfkIg==",
-      "path": "system.diagnostics.diagnosticsource/4.5.0",
-      "hashPath": "system.diagnostics.diagnosticsource.4.5.0.nupkg.sha512"
-    },
-    "System.Diagnostics.Tools/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xBfJ8pnd4C17dWaC9FM6aShzbJcRNMChUMD42I6772KGGrqaFdumwhn9OdM68erj1ueNo3xdQ1EwiFjK5k8p0g==",
-      "path": "system.diagnostics.tools/4.0.1",
-      "hashPath": "system.diagnostics.tools.4.0.1.nupkg.sha512"
-    },
-    "System.Dynamic.Runtime/4.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QqCP+dPZdg6M21Zm4+beCoJHLNR3tJ82uvgd/9cQBeXZTFJVLyI/hosKuuFfdEyBwcadHdBOXbpaAn+XEo3skQ==",
-      "path": "system.dynamic.runtime/4.0.11",
-      "hashPath": "system.dynamic.runtime.4.0.11.nupkg.sha512"
+      "sha512": "sha512-hU/DHA4wgbcfarWo9CV4tF5mmoEhOCKwTFUGIigNKK+ELSORkMKK8oP+i+OnDkf82jfxn3oPRUUkRNGS1KECig==",
+      "path": "system.diagnostics.diagnosticsource/4.6.0-preview3.19128.7",
+      "hashPath": "system.diagnostics.diagnosticsource.4.6.0-preview3.19128.7.nupkg.sha512"
     },
     "System.Globalization/4.0.11": {
       "type": "package",
@@ -1504,20 +1256,6 @@
       "path": "system.io/4.1.0",
       "hashPath": "system.io.4.1.0.nupkg.sha512"
     },
-    "System.IO.FileSystem/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IBErlVq5jOggAD69bg1t0pJcHaDbJbWNUZTPI96fkYWzwYbN6D9wRHMULLDd9dHsl7C2YsxXL31LMfPI1SWt8w==",
-      "path": "system.io.filesystem/4.0.1",
-      "hashPath": "system.io.filesystem.4.0.1.nupkg.sha512"
-    },
-    "System.IO.FileSystem.Primitives/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kWkKD203JJKxJeE74p8aF8y4Qc9r9WQx4C0cHzHPrY3fv/L/IhWnyCHaFJ3H1QPOH6A93whlQ2vG5nHlBDvzWQ==",
-      "path": "system.io.filesystem.primitives/4.0.1",
-      "hashPath": "system.io.filesystem.primitives.4.0.1.nupkg.sha512"
-    },
     "System.Linq/4.1.0": {
       "type": "package",
       "serviceable": true,
@@ -1539,12 +1277,12 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
-    "System.Memory/4.5.1": {
+    "System.Memory/4.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
-      "path": "system.memory/4.5.1",
-      "hashPath": "system.memory.4.5.1.nupkg.sha512"
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.4.0": {
       "type": "package",
@@ -1623,12 +1361,12 @@
       "path": "system.runtime/4.1.0",
       "hashPath": "system.runtime.4.1.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+      "sha512": "sha512-6pNB8NAgWC/uTy52WX/gCz9b5FSy27Fti0IrYvF1+L07RR8KKCVjyWdyQxB7lFUz0hij5lP83Ob9OPkVzSGA7g==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview3.19128.7",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview3.19128.7.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.1.0": {
       "type": "package",
@@ -1637,54 +1375,12 @@
       "path": "system.runtime.extensions/4.1.0",
       "hashPath": "system.runtime.extensions.4.1.0.nupkg.sha512"
     },
-    "System.Runtime.Handles/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nCJvEKguXEvk2ymk1gqj625vVnlK3/xdGzx0vOKicQkoquaTBJTP13AIYkocSUwHCLNBwUbXTqTWGDxBTWpt7g==",
-      "path": "system.runtime.handles/4.0.1",
-      "hashPath": "system.runtime.handles.4.0.1.nupkg.sha512"
-    },
-    "System.Runtime.InteropServices/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-16eu3kjHS633yYdkjwShDHZLRNMKVi/s0bY8ODiqJ2RfMhDMAwxZaUaWVnZ2P71kr/or+X9o/xFWtNqz8ivieQ==",
-      "path": "system.runtime.interopservices/4.1.0",
-      "hashPath": "system.runtime.interopservices.4.1.0.nupkg.sha512"
-    },
-    "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vMoSAMtzOedZjsFyVSeSV9nUBxPqO/Q7NeIYuuhlDzyDW4TdVV9aUU1qJsUW7LK0ctzcnJeWlVPaLnnS/N4SIw==",
-      "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
-      "hashPath": "system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512"
-    },
-    "System.Runtime.Serialization.Primitives/4.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
-      "path": "system.runtime.serialization.primitives/4.1.1",
-      "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
-    },
     "System.Text.Encoding/4.0.11": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-U3gGeMlDZXxCEiY4DwVLSacg+DFWCvoiX+JThA/rvw37Sqrku7sEFeVBBBMBnfB6FeZHsyDx85HlKL19x0HtZA==",
       "path": "system.text.encoding/4.0.11",
       "hashPath": "system.text.encoding.4.0.11.nupkg.sha512"
-    },
-    "System.Text.Encoding.Extensions/4.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jtbiTDtvfLYgXn8PTfWI+SiBs51rrmO4AAckx4KR6vFK9Wzf6tI8kcRdsYQNwriUeQ1+CtQbM1W4cMbLXnj/OQ==",
-      "path": "system.text.encoding.extensions/4.0.11",
-      "hashPath": "system.text.encoding.extensions.4.0.11.nupkg.sha512"
-    },
-    "System.Text.RegularExpressions/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-i88YCXpRTjCnoSQZtdlHkAOx4KNNik4hMy83n0+Ftlb7jvV6ZiZWMpnEZHhjBp6hQVh8gWd/iKNPzlPF7iyA2g==",
-      "path": "system.text.regularexpressions/4.1.0",
-      "hashPath": "system.text.regularexpressions.4.1.0.nupkg.sha512"
     },
     "System.Threading/4.0.11": {
       "type": "package",
@@ -1700,68 +1396,47 @@
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
-    "System.Threading.Tasks.Extensions/4.0.0": {
+    "Xamarin.FFImageLoading/2.4.5.880-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pH4FZDsZQ/WmgJtN4LWYmRdJAEeVkyriSwrv2Teoe5FOU0Yxlb6II6GL8dBPOfRmutHGATduj3ooMt7dJ2+i+w==",
-      "path": "system.threading.tasks.extensions/4.0.0",
-      "hashPath": "system.threading.tasks.extensions.4.0.0.nupkg.sha512"
+      "sha512": "sha512-/iY3nK6toKT29CuqP5tYSCkP6H2AFlxs9riRW9cOqZapq9UW0LZbVlUj7G+xRjr9r7cJgUyFlHPoAK3y6o8dIA==",
+      "path": "xamarin.ffimageloading/2.4.5.880-pre",
+      "hashPath": "xamarin.ffimageloading.2.4.5.880-pre.nupkg.sha512"
     },
-    "System.Xml.ReaderWriter/4.0.11": {
+    "Xamarin.FFImageLoading.Forms/2.4.5.880-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZIiLPsf67YZ9zgr31vzrFaYQqxRPX9cVHjtPSnmx4eN6lbS/yEyYNr2vs1doGDEscF0tjCZFsk9yUg1sC9e8tg==",
-      "path": "system.xml.readerwriter/4.0.11",
-      "hashPath": "system.xml.readerwriter.4.0.11.nupkg.sha512"
+      "sha512": "sha512-1Q4USs2OMdUcAKXxoHE7zq6OmpBKd+otUMKeRUfLUbFEUQQJ7JswahKuygZ/uUMvYDQrQmXhD1Qm6xD632Bq7Q==",
+      "path": "xamarin.ffimageloading.forms/2.4.5.880-pre",
+      "hashPath": "xamarin.ffimageloading.forms.2.4.5.880-pre.nupkg.sha512"
     },
-    "System.Xml.XDocument/4.0.11": {
+    "Xamarin.FFImageLoading.Svg/2.4.5.880-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
-      "path": "system.xml.xdocument/4.0.11",
-      "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
+      "sha512": "sha512-8GApWL8SJzQtU0/ukp6XEvfWD78KQ9bGfwTjjS8+u22rEDUnw3eUFcuYTkmtkRA5WZeB4hUdb7mE54IIuBCyiQ==",
+      "path": "xamarin.ffimageloading.svg/2.4.5.880-pre",
+      "hashPath": "xamarin.ffimageloading.svg.2.4.5.880-pre.nupkg.sha512"
     },
-    "Xamarin.FFImageLoading/2.4.4.859": {
+    "Xamarin.FFImageLoading.Svg.Forms/2.4.5.880-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/U71/oKIKL+ompfmdYsIYYi3+r3Sj+81zUxg29M1RuNPywKsPKbHIndGiRw8bEYi1CX6meeidIeBpetjnN/ETw==",
-      "path": "xamarin.ffimageloading/2.4.4.859",
-      "hashPath": "xamarin.ffimageloading.2.4.4.859.nupkg.sha512"
+      "sha512": "sha512-NvZPdYiyxj2bAHQN+e2IKc0DYY7ivwS8zedIbCD91VkTdLFF1749N49QyDBIGh6iN5gOtYd1FXAX0yjI+folvQ==",
+      "path": "xamarin.ffimageloading.svg.forms/2.4.5.880-pre",
+      "hashPath": "xamarin.ffimageloading.svg.forms.2.4.5.880-pre.nupkg.sha512"
     },
-    "Xamarin.FFImageLoading.Forms/2.4.4.859": {
+    "Xamarin.FFImageLoading.Transformations/2.4.5.880-pre": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OGCxTJQ7IlbRC7jo6HsdAkTdShjkED2aZXRFX1zeWJ9+9R8bm+FseLaWXVdUyKAD9jisQj4TpGHXsv9ZmtJ3CA==",
-      "path": "xamarin.ffimageloading.forms/2.4.4.859",
-      "hashPath": "xamarin.ffimageloading.forms.2.4.4.859.nupkg.sha512"
+      "sha512": "sha512-YQkEwEvFSnCHzT3AjW91iegd6SR9DvkCEXyfCXwuT6opjJZqfF0HI7/fMUOe2dEPw9AX1f50n6jw2NClfIIrWg==",
+      "path": "xamarin.ffimageloading.transformations/2.4.5.880-pre",
+      "hashPath": "xamarin.ffimageloading.transformations.2.4.5.880-pre.nupkg.sha512"
     },
-    "Xamarin.FFImageLoading.Svg/2.4.4.859": {
+    "Xamarin.Forms/4.0.0.304370-pre8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tYrFIIBnsZZp0CeMpTLwSTVxJ8L7QVol01ZDKrnwFKclJJrfzXrvKPOhROJ4SU+aNnDD7ZV3SjIYFuY8g1wCxw==",
-      "path": "xamarin.ffimageloading.svg/2.4.4.859",
-      "hashPath": "xamarin.ffimageloading.svg.2.4.4.859.nupkg.sha512"
-    },
-    "Xamarin.FFImageLoading.Svg.Forms/2.4.4.859": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-h+eho0j01VHCFPxs9i4VACrUxWcF9f6EBulDhH6yG/DmLXCQRBdl+iJQ7LhFRW2Ah5F8YoUn9i6oLlAby++FXQ==",
-      "path": "xamarin.ffimageloading.svg.forms/2.4.4.859",
-      "hashPath": "xamarin.ffimageloading.svg.forms.2.4.4.859.nupkg.sha512"
-    },
-    "Xamarin.FFImageLoading.Transformations/2.4.4.859": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gmeAyshnir81mc6z3DpkRNh+cg+UDNIbgoCfuFh0wJJ1w+5HxpJ+Hj1B+rD9AOx71O0FVL/ilJ/zFXushEr0+g==",
-      "path": "xamarin.ffimageloading.transformations/2.4.4.859",
-      "hashPath": "xamarin.ffimageloading.transformations.2.4.4.859.nupkg.sha512"
-    },
-    "Xamarin.Forms/3.6.0.293080": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5o6pS3kbFwWDiTpywz0UasLwn9Ay5/1eGH8JWXBV0N2lDkZauOgTZaMIE/Rdjz2bLhMturwzI1/DFuNxdSidFw==",
-      "path": "xamarin.forms/3.6.0.293080",
-      "hashPath": "xamarin.forms.3.6.0.293080.nupkg.sha512"
+      "sha512": "sha512-jZAIU0HltG7fp9YZZckGjF1kiTwhsgpc2HFpbSO2pKYhW48WfS5kD6w5U0qpZMh7jvQvM/VCvTDBVAJBiJ0r9g==",
+      "path": "xamarin.forms/4.0.0.304370-pre8",
+      "hashPath": "xamarin.forms.4.0.0.304370-pre8.nupkg.sha512"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -1778,62 +1453,77 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.Documents.SpreadsheetStreaming/2018.3.1017.310": {
+    "Telerik.Documents.Core/2019.1.220.20": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.Barcode/2018.3.1018.310": {
+    "Telerik.Documents.Fixed/2019.1.220.20": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.Chart/2018.3.1018.310": {
+    "Telerik.Documents.SpreadsheetStreaming/2019.1.220.20": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.Common/2018.3.1018.310": {
+    "Telerik.XamarinForms.Barcode/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.ConversationalUI/2018.3.1018.310": {
+    "Telerik.XamarinForms.Chart/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.DataControls/2018.3.1018.310": {
+    "Telerik.XamarinForms.Common/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.DataGrid/2018.3.1018.310": {
+    "Telerik.XamarinForms.ConversationalUI/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.DataVisualization/2018.3.1018.310": {
+    "Telerik.XamarinForms.DataControls/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.Input/2018.3.1018.310": {
+    "Telerik.XamarinForms.DataGrid/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.Primitives/2018.3.1018.310": {
+    "Telerik.XamarinForms.DataVisualization/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.XamarinForms.SkiaSharp/2018.3.1018.310": {
+    "Telerik.XamarinForms.Input/2019.1.220.340": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telerik.Zip/2018.3.1017.310": {
+    "Telerik.XamarinForms.PdfViewer/2019.1.220.340": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.Primitives/2019.1.220.340": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.SkiaSharp/2019.1.220.340": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.Zip/2019.1.220.20": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -105,6 +105,31 @@
             Gets the item.
             </summary>
         </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.Commands.ReorderEndedCommandContext.Item">
+            <summary>
+            Gets the data item that is being interacted with.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.Commands.ReorderEndedCommandContext.DestinationItem">
+            <summary>
+            Gets the data item that corresponds to the location where the dragged item has been released.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.Commands.ReorderEndedCommandContext.Group">
+            <summary>
+            Gets the data group containing the data item that is being interacted with.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.Commands.ReorderEndedCommandContext.DestinationGroup">
+            <summary>
+            Gets the data group that corresponds to the location where the dragged item has been released.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.Commands.ReorderEndedCommandContext.Placement">
+            <summary>
+            Gets a value indicating whether the dargged item should be placed before or after the destination item.
+            </summary>
+        </member>
         <member name="T:Telerik.XamarinForms.DataControls.ListView.Commands.ItemTapCommandContext">
             <summary>
             Represents the context that is passed as a parameter of a <see cref="!:ItemTapCommand"/>.
@@ -201,6 +226,31 @@
             Gets the item.
             </summary>
         </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.ReorderEndedEventArgs.Item">
+            <summary>
+            Gets the data item that is being interacted with.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.ReorderEndedEventArgs.DestinationItem">
+            <summary>
+            Gets the data item that corresponds to the location where the dragged item has been released.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.ReorderEndedEventArgs.Group">
+            <summary>
+            Gets the data group containing the data item that is being interacted with.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.ReorderEndedEventArgs.DestinationGroup">
+            <summary>
+            Gets the data group that corresponds to the location where the dragged item has been released.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.ListView.ReorderEndedEventArgs.Placement">
+            <summary>
+            Gets a value indicating whether the dargged item should be placed before or after the destination item.
+            </summary>
+        </member>
         <member name="T:Telerik.XamarinForms.DataControls.ListView.GroupHeaderContext">
             <summary>
             Represents the context that is passed to a <see cref="T:Telerik.XamarinForms.DataControls.ListView.ListViewGroupHeaderCell"/> control that represents a group within a <see cref="T:Telerik.XamarinForms.DataControls.RadListView"/> instance.
@@ -255,6 +305,26 @@
             Gets the collection with all the custom commands registered with the <see cref="P:Telerik.XamarinForms.DataControls.RadListView.CommandService"/>. Custom commands have higher priority than the built-in (default) ones.
             </summary>
         </member>
+        <member name="F:Telerik.XamarinForms.DataControls.RadListView.HeaderTemplateProperty">
+            <summary>
+            Identifies the <see cref="!:Header"/> property.
+            </summary>
+        </member>
+        <member name="F:Telerik.XamarinForms.DataControls.RadListView.FooterTemplateProperty">
+            <summary>
+            Identifies the <see cref="!:Footer"/> property.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadListView.HeaderTemplate">
+            <summary>
+            Specifies a <see cref="T:Xamarin.Forms.DataTemplate"/> to be displayed as a header before all items.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadListView.FooterTemplate">
+            <summary>
+            Specifies a <see cref="T:Xamarin.Forms.DataTemplate"/> to be displayed as a footer after all items.
+            </summary>
+        </member>
         <member name="M:Telerik.XamarinForms.DataControls.RadListView.UpdateItemIsSelected(System.Object,System.Boolean)">
             <summary>
             A mechanism to change the item selected state that is not triggered
@@ -289,6 +359,7 @@
             CheckBoxes are visible. Checking one affects its parents and children.
             </summary>
         </member>
+        <!-- Badly formed XML comment ignored for member "T:Telerik.XamarinForms.DataControls.TreeView.CheckedItemsCollection" -->
         <member name="T:Telerik.XamarinForms.DataControls.TreeView.Commands.TreeViewUserCommand">
             <summary>
             Represents a predefined command that aggregates a custom ICommand implementation, which may be used to perform additional action over the default implementation.
@@ -489,9 +560,9 @@
             Gets a boolean value indicating if the lazy loading feature is enabled for the respective <see cref="T:Telerik.XamarinForms.DataControls.TreeView.TreeViewDataItem"/>.
             </summary>
         </member>
-        <member name="T:Telerik.XamarinForms.DataControls.TreeView.TreeViewItemsCollection">
+        <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItemsProperty">
             <summary>
-             A custom implementation of the <see cref="T:System.Collections.Specialized.INotifyCollectionChanged"/> and <see cref="T:System.Collections.ICollection"/> interfaces to serve the needs of the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> collection.
+            Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> property.
             </summary>
         </member>
         <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.CheckBoxModeProperty">
@@ -499,41 +570,9 @@
             Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckBoxMode"/> property.
             </summary>
         </member>
-        <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItemsProperty">
+        <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.DescriptorsProperty">
             <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> property.
-            </summary>
-        </member>
-        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckBoxMode">
-            <summary>
-            Gets or sets a value controlling the behavior of the CheckBoxes.
-            </summary>
-        </member>
-        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems">
-            <summary>
-            Gets a collection of items which are checked in UI.
-            </summary>
-        </member>
-        <member name="M:Telerik.XamarinForms.DataControls.RadTreeView.CheckItem(System.Object)">
-            <summary>
-            Attempts to add an item to the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> collection.
-            </summary>
-            <param name="item">The item to be added.</param>
-        </member>
-        <member name="M:Telerik.XamarinForms.DataControls.RadTreeView.UncheckItem(System.Object)">
-            <summary>
-            Attempts to remove an item from the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> collection.
-            </summary>
-            <param name="item">The item to be removed.</param>
-        </member>
-        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService">
-            <summary>
-            Gets the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService"/> instance that manages the commanding behavior of this instance.
-            </summary>
-        </member>
-        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.Commands">
-            <summary>
-            Gets the collection with all the custom commands registered with the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService"/>. Custom commands have higher priority than the built-in (default) ones.
+            Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.Descriptors"/> property.
             </summary>
         </member>
         <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.ItemsSourceProperty">
@@ -551,6 +590,21 @@
             Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.ItemStyleSelector"/> property.
             </summary>
         </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckBoxMode">
+            <summary>
+            Gets or sets a value controlling the behavior of the CheckBoxes.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems">
+            <summary>
+            Gets a collection of items which are checked in UI.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.Descriptors">
+            <summary>
+            Gets a collection of <see cref="T:Telerik.XamarinForms.DataControls.TreeViewDescriptor"/>.
+            </summary>
+        </member>
         <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.ItemsSource">
             <summary>
             Gets or sets the data that will be visualized.
@@ -564,6 +618,16 @@
         <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.ItemStyleSelector">
             <summary>
             Gets or sets <see cref="T:Telerik.XamarinForms.DataControls.TreeView.TreeViewStyleSelector"/> class which selects a <see cref="T:Telerik.XamarinForms.DataControls.TreeView.TreeViewItemStyle"/> for each item separately.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService">
+            <summary>
+            Gets the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService"/> instance that manages the commanding behavior of this instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.Commands">
+            <summary>
+            Gets the collection with all the custom commands registered with the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CommandService"/>. Custom commands have higher priority than the built-in (default) ones.
             </summary>
         </member>
         <member name="M:Telerik.XamarinForms.DataControls.RadTreeView.Collapse(System.Object)">
@@ -588,15 +652,17 @@
             Sends all items in their expanded state.
             </summary>
         </member>
-        <member name="F:Telerik.XamarinForms.DataControls.RadTreeView.DescriptorsProperty">
+        <member name="M:Telerik.XamarinForms.DataControls.RadTreeView.CheckItem(System.Object)">
             <summary>
-            Identifies the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.Descriptors"/> property.
+            Attempts to add an item to the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> collection.
             </summary>
+            <param name="item">The item to be added.</param>
         </member>
-        <member name="P:Telerik.XamarinForms.DataControls.RadTreeView.Descriptors">
+        <member name="M:Telerik.XamarinForms.DataControls.RadTreeView.UncheckItem(System.Object)">
             <summary>
-            Gets a collection of <see cref="T:Telerik.XamarinForms.DataControls.TreeViewDescriptor"/>.
+            Attempts to remove an item from the <see cref="P:Telerik.XamarinForms.DataControls.RadTreeView.CheckedItems"/> collection.
             </summary>
+            <param name="item">The item to be removed.</param>
         </member>
         <member name="T:Telerik.XamarinForms.DataControls.TreeViewDescriptor">
             <summary>
