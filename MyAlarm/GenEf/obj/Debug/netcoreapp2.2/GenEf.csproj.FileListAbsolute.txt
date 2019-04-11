@@ -40,3 +40,17 @@ D:\Scrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.AssemblyInfo.cs
 D:\Scrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.csproj.CopyComplete
 D:\Scrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.dll
 D:\Scrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.pdb
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\GenEf.deps.json
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\GenEf.runtimeconfig.json
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\GenEf.runtimeconfig.dev.json
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\GenEf.dll
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\GenEf.pdb
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\MyAlarm.EFStandard.dll
+E:\AppAxonScrum\MyAlarm\GenEf\bin\Debug\netcoreapp2.2\MyAlarm.EFStandard.pdb
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.csprojAssemblyReference.cache
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.csproj.CoreCompileInputs.cache
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.AssemblyInfoInputs.cache
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.AssemblyInfo.cs
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.csproj.CopyComplete
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.dll
+E:\AppAxonScrum\MyAlarm\GenEf\obj\Debug\netcoreapp2.2\GenEf.pdb
