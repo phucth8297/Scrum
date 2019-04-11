@@ -6,8 +6,8 @@ namespace MyAlarm.Domain
 {
     public enum ConstRole
     {
-        SCRUM_MASTER,
-        PRODUCT_OWER,
-        DEVELOPER
+        R01,
+        R02,
+        R03
     }
 }

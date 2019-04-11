@@ -1,12 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyAlarm.Views.VBS_LoginPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:MyAlarm"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    Title="Đăng nhập"
+    BackgroundColor="Black"
+    NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            BackgroundColor="Red"
+            HeightRequest="80"
+            Orientation="Horizontal">
+            <ffImageSvg:SvgCachedImage
+                Margin="50,15,0,15"
+                Aspect="AspectFit"
+                DownsampleToViewSize="true"
+                HeightRequest="30"
+                HorizontalOptions="Start"
+                Source="resource://MyAlarm.Images.left-arrow.svg"
+                WidthRequest="30">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+
+                <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBackCommand}" NumberOfTapsRequired="1" />
+                </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                Margin="0,0,50,0"
+                FontSize="40"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding TitleBindProp}"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" />
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Grid.Row="2" Margin="100,100,100,50">
+            <tlrPrimitives:RadBorder
+                Padding="5"
+                BorderColor="#EEEEEE"
+                CornerRadius="5"
+                HeightRequest="60">
+                <local1:CustomEntry
+                    Placeholder="Username"
+                    PlaceholderColor="White"
+                    Text="{Binding EmailBindProp, Mode=TwoWay}"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+            </tlrPrimitives:RadBorder>
+            <tlrPrimitives:RadBorder
+                Padding="5"
+                BorderColor="#EEEEEE"
+                CornerRadius="5"
+                HeightRequest="60">
+                <local1:CustomEntry
+                    IsPassword="True"
+                    Placeholder="Password"
+                    PlaceholderColor="White"
+                    Text="{Binding PassBindProp, Mode=TwoWay}"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+            </tlrPrimitives:RadBorder>
+            <tlrInput:RadButton
+                BackgroundColor="Red"
+                Command="{Binding LoginCommand, Mode=OneWay}"
+                CornerRadius="10"
+                FontSize="25"
+                HeightRequest="80"
+                Text="Next"
+                TextColor="White" />
+        </StackLayout>
+    </Grid>
 </ContentPage>

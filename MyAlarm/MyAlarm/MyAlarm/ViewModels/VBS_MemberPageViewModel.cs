@@ -53,14 +53,7 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
-        #region TitleBindProp
-        private string _TitleBindProp = "";
-        public string TitleBindProp
-        {
-            get { return _TitleBindProp; }
-            set { SetProperty(ref _TitleBindProp, value); }
-        }
-        #endregion
+        
 
         #region GoToAddMemberCommand
 
@@ -75,20 +68,23 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            if (EmailBindProp == null)
+            if (EmailBindProp == "")
             {
                 await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn cần phải đăng nhập để thực hiện chức năng này", "Đồng ý");
-                await NavigationService.NavigateAsync(nameof(VBS_LoginPage));
+                var param = new NavigationParameters();
+                param.Add(Param.PARAM_TITLE, TitleBindProp);
+                await NavigationService.NavigateAsync(nameof(VBS_LoginPage), param);
 
             }
             else
             {
                 var member = await logic.GetMember(EmailBindProp);
                 var role = logic.CheckRole(member);
-                if (role == ConstRole.SCRUM_MASTER.ToString() || role == ConstRole.PRODUCT_OWER.ToString())
+                if (role == ConstRole.R01.ToString() || role == ConstRole.R02.ToString())
                 {
                     ModeNewBindProp = true;
                     var param = new NavigationParameters();
+                    param.Add(Param.PARAM_TITLE, TitleBindProp);
                     param.Add(Param.PARAM_MODE, ModeNewBindProp);
                     await NavigationService.NavigateAsync(nameof(VBS_AddMemberPage), param);
                 }
@@ -196,7 +192,7 @@ namespace MyAlarm.ViewModels
             {
                 var member = await logic.GetMember(EmailBindProp);
                 var role = logic.CheckRole(member);
-                if (role == ConstRole.SCRUM_MASTER.ToString() || role == ConstRole.PRODUCT_OWER.ToString())
+                if (role == ConstRole.R01.ToString() || role == ConstRole.R02.ToString())
                 {
                     ModeNewBindProp = false;
 
@@ -252,7 +248,7 @@ namespace MyAlarm.ViewModels
                     if (parameters.ContainsKey(Param.PARAM_TITLE))
                     {
                         TitleBindProp = parameters[Param.PARAM_TITLE] as string;
-
+                        TitleBindProp = "Member";
                     }
                     if (parameters.ContainsKey(Param.PARAM_ADD_MEMBER))
                     {

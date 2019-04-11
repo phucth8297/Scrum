@@ -42,7 +42,6 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            TitleBindProp = "Member";
             var param = new NavigationParameters();
             param.Add(Param.PARAM_TITLE, TitleBindProp);
             await NavigationService.NavigateAsync(nameof(VBS_MemberPage),param);
@@ -72,7 +71,9 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            await NavigationService.NavigateAsync(nameof(VBS_WorkPage));
+            var param = new NavigationParameters();
+            param.Add(Param.PARAM_TITLE, TitleBindProp);
+            await NavigationService.NavigateAsync(nameof(VBS_WorkPage),param);
 
             IsBusyBindProp = false;
         }
@@ -85,8 +86,35 @@ namespace MyAlarm.ViewModels
         }
 
         #endregion
-        
 
-        
+        #region GoToScrumFrameworkCommand
+
+        public DelegateCommand<object> GoToScrumFrameworkCommand { get; private set; }
+        private async void OnGoToScrumFramework(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            var param = new NavigationParameters();
+            param.Add(Param.PARAM_TITLE, TitleBindProp);
+            await NavigationService.NavigateAsync(nameof(VBS_ScrumFrameworkPage), param);
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitGoToScrumFrameworkCommand()
+        {
+            GoToScrumFrameworkCommand = new DelegateCommand<object>(OnGoToScrumFramework);
+            GoToScrumFrameworkCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
+
+
     }
 }
