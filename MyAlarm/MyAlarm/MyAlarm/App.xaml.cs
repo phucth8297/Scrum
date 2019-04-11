@@ -44,7 +44,7 @@ namespace MyAlarm
                     File.WriteAllBytes(DbPath, reader.GetBuffer());
                 }
             }
-            await NavigationService.NavigateAsync("NavigationPage/VBS_TrangChuPage");
+            await NavigationService.NavigateAsync("NavigationPage/VBS_ScrumFrameworkDetailPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -59,7 +59,9 @@ namespace MyAlarm
             containerRegistry.RegisterForNavigation<VBS_WorkPage>();
             containerRegistry.RegisterForNavigation<VBS_LoginPage>();
             containerRegistry.RegisterForNavigation<VBS_ChangePass>();
-
+            containerRegistry.RegisterForNavigation<VBS_ScrumFrameworkDetailPage>();
+            containerRegistry.RegisterForNavigation<VBS_ScrumFrameworkPage>();
+            containerRegistry.RegisterForNavigation<VBS_WorkDetailPage>();
         }
     }
 }

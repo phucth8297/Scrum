@@ -26,11 +26,11 @@ namespace MyAlarm.ViewModels
                     break;
                 case NavigationMode.New:
 
-                    if (parameters.ContainsKey(Helper.KEY_SCRUMFRAMEWORK_OBJECT))
-                    {
-                        var scrumFramework = parameters[Helper.KEY_SCRUMFRAMEWORK_OBJECT] as ScrumFramework;
+                    //if (parameters.ContainsKey(Helper.KEY_SCRUMFRAMEWORK_OBJECT))
+                    //{
+                    //    var scrumFramework = parameters[Helper.KEY_SCRUMFRAMEWORK_OBJECT] as ScrumFramework;
 
-                    };
+                    //};
 
                     break;
                 case NavigationMode.Forward:
