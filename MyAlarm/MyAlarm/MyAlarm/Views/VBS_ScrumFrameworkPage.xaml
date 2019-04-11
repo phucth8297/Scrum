@@ -22,22 +22,23 @@
         </Grid.RowDefinitions>
         <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
             <ffImageSvg:SvgCachedImage
-                HeightRequest="30" WidthRequest="30"
-                Margin="50,15,0,15" HorizontalOptions="Start"
-                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                HeightRequest="40" WidthRequest="40"
+                Margin="10" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.left-arrow.svg">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>
 
                 <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding GoBackCommand, Mode=OneWay}" NumberOfTapsRequired="1" />
                 </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
 
             </ffImageSvg:SvgCachedImage>
 
             <Label
                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
-                Text="Scrum detail" TextColor="White"
+                Text="Scrum Framework" TextColor="White"
                 FontSize="40" />
         </StackLayout>
         <Grid Grid.Row="1" Margin="10">
@@ -63,18 +64,18 @@
             <Label
                 Grid.Row="1"
                 HorizontalOptions="CenterAndExpand"
-                Text="Scrum" TextColor="White"
+                Text="Định nghĩa" TextColor="White"
                 FontSize="30" FontAttributes="Bold" />
         </Grid>
 
         <tlrDataControls:RadListView
             Grid.Row="2"
-            Margin="50"
+            Margin="10"
             StyleClass="TelerikTheme"
             ItemsSource="{Binding ListScrumFrameworkBindProp, Mode=OneWay}">
-            <!--<tlrDataControls:RadListView.Commands>
-                    <telerikListViewCommands:ListViewUserCommand Command="{Binding TranferLibraryCommand, Mode=OneWay}" Id="ItemTap" />
-                </tlrDataControls:RadListView.Commands>-->
+            <tlrDataControls:RadListView.Commands>
+                <telerikListViewCommands:ListViewUserCommand Command="{Binding TranferScrumFrameworkDetailCommand, Mode=OneWay}" Id="ItemTap" />
+            </tlrDataControls:RadListView.Commands>
             <tlrDataControls:RadListView.ItemTemplate>
                 <DataTemplate>
                     <tlrListView:ListViewTemplateCell>
@@ -99,8 +100,9 @@
                                 Grid.Column="1"
                                 VerticalOptions="Center"
                                 Text="{Binding Name, Mode=OneWay}"
-                                FontSize="15" />
-                            <ffImageSvg:SvgCachedImage
+                                TextColor="White"
+                                FontSize="Medium" />
+                            <!--<ffImageSvg:SvgCachedImage
                                 Grid.Column="2"
                                 HeightRequest="25" WidthRequest="25"
                                 HorizontalOptions="End"
@@ -108,7 +110,7 @@
                                 <ffImageSvg:SvgCachedImage.Transformations>
                                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#000000" />
                                 </ffImageSvg:SvgCachedImage.Transformations>
-                            </ffImageSvg:SvgCachedImage>
+                            </ffImageSvg:SvgCachedImage>-->
                         </Grid>
                     </tlrListView:ListViewTemplateCell>
                 </DataTemplate>

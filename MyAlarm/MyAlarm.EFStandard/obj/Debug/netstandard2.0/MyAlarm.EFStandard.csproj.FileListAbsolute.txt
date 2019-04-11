@@ -28,7 +28,6 @@ D:\Scrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.deps.json
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.dll
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\bin\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
-E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.csprojAssemblyReference.cache
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.csproj.CoreCompileInputs.cache
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfoInputs.cache
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfo.cs

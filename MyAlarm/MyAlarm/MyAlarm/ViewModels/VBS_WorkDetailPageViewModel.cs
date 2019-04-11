@@ -16,6 +16,15 @@ namespace MyAlarm.ViewModels
         {
         }
 
+        #region TitleBindProp
+        private string _TitleBindProp = null;
+        public string TitleBindProp
+        {
+            get { return _TitleBindProp; }
+            set { SetProperty(ref _TitleBindProp, value); }
+        }
+        #endregion
+
 
 
         #region Override
@@ -35,6 +44,8 @@ namespace MyAlarm.ViewModels
 
                         var logic = new WorkDetailLogic(Helper.GetConnectionString());
                         var workDetail = await logic.GetAsync(work.Id);
+
+                        TitleBindProp = workDetail.Name;
                     }
 
                     break;

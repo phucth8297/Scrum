@@ -68,6 +68,32 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
+        #region GoBackCommand
+
+        public DelegateCommand<object> GoBackCommand { get; private set; }
+        private async void OnGoBack(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            await NavigationService.GoBackAsync();
+
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitGoBackCommand()
+        {
+            GoBackCommand = new DelegateCommand<object>(OnGoBack);
+            GoBackCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
 
         #region Override
         public override void OnNavigatedTo(INavigationParameters parameters)
@@ -79,10 +105,10 @@ namespace MyAlarm.ViewModels
                 case NavigationMode.Back:
                     break;
                 case NavigationMode.New:
-                    //var logic = new ScrumFrameworkLogic(Helper.GetConnectionString());
-                    //var listScrumFramework = logic.GetAllAsync();
+                    var logic = new ScrumFrameworkLogic(Helper.GetConnectionString());
+                    var listScrumFramework = logic.GetAllAsync();
 
-                    //ListScrumFrameworkBindProp = new ObservableCollection<ScrumFramework>(listScrumFramework);
+                    ListScrumFrameworkBindProp = new ObservableCollection<ScrumFramework>(listScrumFramework);
 
                     break;
                 case NavigationMode.Forward:

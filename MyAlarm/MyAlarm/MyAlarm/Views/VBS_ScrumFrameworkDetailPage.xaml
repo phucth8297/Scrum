@@ -19,22 +19,22 @@
         </Grid.RowDefinitions>
         <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
             <ffImageSvg:SvgCachedImage
-                HeightRequest="30" WidthRequest="30"
-                Margin="50,15,0,15" HorizontalOptions="Start"
-                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                HeightRequest="40" WidthRequest="40"
+                Margin="10" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.left-arrow.svg">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>
 
                 <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding GoBackCommand, Mode=OneWay}" NumberOfTapsRequired="1" />
                 </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
             </ffImageSvg:SvgCachedImage>
 
             <Label
                 HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
-                Text="Scrum detail" TextColor="White"
+                Text="Scrum Detail" TextColor="White"
                 FontSize="40" />
         </StackLayout>
 
@@ -60,14 +60,19 @@
             <Label
                 Grid.Row="1"
                 HorizontalOptions="CenterAndExpand"
-                Text="Scrum Detail" TextColor="White"
+                Text="{Binding TitleBindProp, Mode=OneWay}"
+                TextColor="White"
                 FontSize="30" FontAttributes="Bold" />
         </Grid>
 
-        <StackLayout Grid.Row="2" Margin="50">
+        <StackLayout Grid.Row="2" Margin="10">
             <tlrPrimitives:RadBorder HeightRequest="400" BorderColor="White" CornerRadius="5">
                 <ScrollView>
-                    <Label Margin="5,0,5,0" Text="Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên" TextColor="White" />
+                    <Label
+                        Margin="5"
+                        Text="{Binding DetailBindProp, Mode=OneWay}"
+                        TextColor="White"
+                        FontSize="Medium" />
                 </ScrollView>
             </tlrPrimitives:RadBorder>
 

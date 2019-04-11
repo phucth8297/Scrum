@@ -68,7 +68,6 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
-
         #region GoBackCommand
 
         public DelegateCommand<object> GoBackCommand { get; private set; }

@@ -28,7 +28,6 @@ D:\Scrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.
 E:\AppAxonScrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.deps.json
 E:\AppAxonScrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.dll
 E:\AppAxonScrum\MyAlarm\Domain\bin\Debug\netstandard2.0\Domain.pdb
-E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs

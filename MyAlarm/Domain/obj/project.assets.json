@@ -179,30 +179,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PhucTH\\.nuget\\packages\\": {},
+    "C:\\Users\\Tran Dinh Hoa\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Scrum\\MyAlarm\\Domain\\Domain.csproj",
+      "projectUniqueName": "E:\\AppAxonScrum\\MyAlarm\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Scrum\\MyAlarm\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\PhucTH\\.nuget\\packages\\",
-      "outputPath": "D:\\Scrum\\MyAlarm\\Domain\\obj\\",
+      "projectPath": "E:\\AppAxonScrum\\MyAlarm\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Tran Dinh Hoa\\.nuget\\packages\\",
+      "outputPath": "E:\\AppAxonScrum\\MyAlarm\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\PhucTH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Tran Dinh Hoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "F:\\TelerikASP.NET\\wrappers\\aspnetcore\\Binaries\\AspNet.Core": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
