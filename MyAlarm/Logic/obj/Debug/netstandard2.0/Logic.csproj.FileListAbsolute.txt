@@ -40,3 +40,17 @@ D:\Scrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfo.cs
 D:\Scrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
 D:\Scrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.dll
 D:\Scrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.pdb
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\Logic.deps.json
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\Logic.dll
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\Logic.pdb
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\Domain.dll
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\MyAlarm.EFStandard.dll
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\Domain.pdb
+E:\AppAxonScrum\MyAlarm\Logic\bin\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.csprojAssemblyReference.cache
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.csproj.CoreCompileInputs.cache
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfoInputs.cache
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfo.cs
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.dll
+E:\AppAxonScrum\MyAlarm\Logic\obj\Debug\netstandard2.0\Logic.pdb
