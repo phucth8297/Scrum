@@ -149,13 +149,21 @@ namespace MyAlarm.ViewModels
             // Thuc hien cong viec tai day
             if (obj is Member member)
             {
-                var resultConfirm = await PageDialogService.DisplayAlertAsync("Xác nhận", "Bạn có chắc muốn xóa thành viên này không?", "Có", "Không");
-                if (resultConfirm)
+                var role = logic.CheckRole(member);
+                if (role == ConstRole.R01.ToString() || role == ConstRole.R02.ToString())
                 {
-                    var item = logic.DeleteMember(member.Id);
-                    ListMemberBindProp.Remove(member);
-                }
+                    var resultConfirm = await PageDialogService.DisplayAlertAsync("Xác nhận", "Bạn có chắc muốn xóa thành viên này không?", "Có", "Không");
 
+                    if (resultConfirm)
+                    {
+                        var item = logic.DeleteMember(member.Id);
+                        ListMemberBindProp.Remove(member);
+                    }
+                }
+                else
+                {
+                    await PageDialogService.DisplayAlertAsync("Thông báo", "Bạn không có quyền thực hiện chức năng này", "Đồng ý");
+                }
             }
             IsBusyBindProp = false;
         }

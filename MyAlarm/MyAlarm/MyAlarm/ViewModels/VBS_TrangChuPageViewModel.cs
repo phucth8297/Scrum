@@ -115,6 +115,59 @@ namespace MyAlarm.ViewModels
 
         #endregion
 
+        #region GotoHelperCommand
+
+        public DelegateCommand<object> GotoHelperCommand { get; private set; }
+        private async void OnGotoHelper(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            await NavigationService.NavigateAsync(nameof(VBS_HelperPage));
+
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitGotoHelperCommand()
+        {
+            GotoHelperCommand = new DelegateCommand<object>(OnGotoHelper);
+            GotoHelperCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
+
+        #region GoToAlarmCommand
+
+        public DelegateCommand<object> GoToAlarmCommand { get; private set; }
+        private async void On(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            await NavigationService.NavigateAsync(nameof(MainPage));
+
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitCommand()
+        {
+            GoToAlarmCommand = new DelegateCommand<object>(On);
+            GoToAlarmCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
 
     }
 }

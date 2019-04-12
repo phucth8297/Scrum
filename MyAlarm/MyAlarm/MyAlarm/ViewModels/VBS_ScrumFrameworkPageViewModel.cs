@@ -82,7 +82,7 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            await NavigationService.GoBackAsync();
+            await NavigationService.NavigateAsync(nameof(VBS_TrangChuPage));
 
             IsBusyBindProp = false;
         }

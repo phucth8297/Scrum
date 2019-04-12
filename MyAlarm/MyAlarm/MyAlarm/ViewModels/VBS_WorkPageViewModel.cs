@@ -49,15 +49,25 @@ namespace MyAlarm.ViewModels
             }
 
             IsBusyBindProp = true;
-
-            if (obj is ItemTapCommandContext objTap && objTap.Item is Work work)
+            try
             {
-                var param = new NavigationParameters();
-                param.Add(Helper.KEY_WORK_OBJECT, work);
-                await NavigationService.NavigateAsync(nameof(VBS_WorkDetailPage), param);
-            }
+                if (obj is ItemTapCommandContext objTap && objTap.Item is Work work)
+                {
+                    var param = new NavigationParameters();
+                    param.Add(Helper.KEY_WORK_OBJECT, work);
+                    await NavigationService.NavigateAsync(nameof(VBS_WorkDetailPage), param);
+                }
+            }catch(Exception e)
+            {
 
-            IsBusyBindProp = false;
+            }
+            finally
+            {
+             IsBusyBindProp = false;
+
+            }
+           
+
         }
 
         [Initialize]
@@ -82,7 +92,7 @@ namespace MyAlarm.ViewModels
             IsBusyBindProp = true;
 
             // Thuc hien cong viec tai day
-            await NavigationService.GoBackAsync();
+            await NavigationService.NavigateAsync(nameof(VBS_TrangChuPage));
 
             IsBusyBindProp = false;
         }

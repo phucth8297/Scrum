@@ -130,14 +130,10 @@ namespace Logic
             }
         }
 
-        public Task<Member> GetAsync(System.String id)
+        public async Task<Member> GetAsync(System.String id)
         {
 
-            IQueryable<Member> query = _DbContext.Member;
-
-            var item = query.FirstOrDefaultAsync(h => h.Id == id);
-
-            return item;
+            return await _DbContext.Member.FirstOrDefaultAsync(h => h.Id == id); 
         }
     }
 }

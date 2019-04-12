@@ -26,14 +26,9 @@ namespace Logic
             return query;
         }
 
-        public Task<WorkDetail> GetAsync(System.String id)
+        public async Task<WorkDetail> GetAsync(System.String id)
         {
-
-            IQueryable<WorkDetail> query = _DbContext.WorkDetail;
-
-            var item = query.FirstOrDefaultAsync(h => h.FkWork == id);
-
-            return item;
+            return await _DbContext.WorkDetail.FirstOrDefaultAsync(h => h.Id == id); ;
         }
     }
 }

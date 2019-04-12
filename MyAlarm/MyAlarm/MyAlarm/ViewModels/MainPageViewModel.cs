@@ -27,7 +27,7 @@ namespace MyAlarm.ViewModels
         private void OnCommandName(object obj)
         {
             var dateTime = DateTime.UtcNow;
-            dateTime.AddSeconds(30);
+            dateTime.AddSeconds(10);
             _alarm.SetAlarm(dateTime);
         }
     }

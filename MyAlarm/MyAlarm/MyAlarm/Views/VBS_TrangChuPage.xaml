@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="MyAlarm.Views.VBS_TrangChuPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ffImage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
@@ -16,37 +15,35 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions />
-        <StackLayout
-            BackgroundColor="Red"
-            HeightRequest="80"
-            Orientation="Horizontal">
+        <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
 
             <ffImageSvg:SvgCachedImage
-                Margin="50,15,0,15"
-                Aspect="AspectFit"
-                DownsampleToViewSize="true"
-                HeightRequest="30"
-                HorizontalOptions="Start"
-                Source="resource://MyAlarm.Images.icon_menu.svg"
-                WidthRequest="30">
+                HeightRequest="30" WidthRequest="30"
+                Margin="50,15,0,15" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>
 
                 <ffImageSvg:SvgCachedImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GotoUnitCommand}" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding GotoHelperCommand}" NumberOfTapsRequired="1" />
                 </ffImageSvg:SvgCachedImage.GestureRecognizers>
 
             </ffImageSvg:SvgCachedImage>
 
             <Label
-                Margin="0,0,50,0"
-                FontSize="40"
-                HorizontalOptions="CenterAndExpand"
+                Margin="0,0,50,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
                 Text="{Binding TitleBindProp}"
                 TextColor="White"
-                VerticalOptions="CenterAndExpand" />
-
+                FontSize="40" />
+            <Label
+                HorizontalOptions="End"
+                Text="Set Alarm" TextColor="White" BackgroundColor="Red"
+                FontSize="25" FontAttributes="Bold">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToAlarmCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
         <Grid Grid.Row="1" Margin="50,30">
             <Grid.RowDefinitions>
@@ -64,19 +61,14 @@
             </Grid.ColumnDefinitions>
             <!--  Row 2  -->
             <tlrPrimitives:RadBorder
-                Grid.Row="2"
-                Grid.ColumnSpan="2"
-                BackgroundColor="Red"
-                BorderThickness="1"
-                CornerRadius="100"
-                HorizontalOptions="CenterAndExpand">
+                Grid.Row="2" Grid.ColumnSpan="2"
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red">
                 <ffImageSvg:SvgCachedImage
+                    HeightRequest="70" WidthRequest="70"
                     Margin="20"
-                    Aspect="AspectFit"
-                    DownsampleToViewSize="true"
-                    HeightRequest="70"
-                    Source="resource://MyAlarm.Images.3d-modeling.svg"
-                    WidthRequest="70">
+                    Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.3d-modeling.svg">
                     <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                     </ffImageSvg:SvgCachedImage.Transformations>
@@ -89,25 +81,19 @@
             </tlrPrimitives:RadBorder>
             <!--  Row 3  -->
             <Label
-                Grid.Row="3"
-                Grid.ColumnSpan="2"
-                FontSize="20"
+                Grid.Row="3" Grid.ColumnSpan="2"
                 HorizontalOptions="CenterAndExpand"
-                Text="Scrum Framework"
-                TextColor="White" />
+                Text="Scrum Framework" TextColor="White"
+                FontSize="20" />
             <!--  Row 0  -->
             <tlrPrimitives:RadBorder
-                BackgroundColor="Red"
-                BorderThickness="1"
-                CornerRadius="100"
-                HorizontalOptions="CenterAndExpand">
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red">
                 <ffImageSvg:SvgCachedImage
+                    HeightRequest="70" WidthRequest="70"
                     Margin="20"
-                    Aspect="AspectFit"
-                    DownsampleToViewSize="true"
-                    HeightRequest="70"
-                    Source="resource://MyAlarm.Images.employee.svg"
-                    WidthRequest="70">
+                    Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.employee.svg">
                     <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                     </ffImageSvg:SvgCachedImage.Transformations>
@@ -120,19 +106,14 @@
             </tlrPrimitives:RadBorder>
 
             <tlrPrimitives:RadBorder
-                Grid.Row="0"
-                Grid.Column="1"
-                BackgroundColor="Red"
-                BorderThickness="1"
-                CornerRadius="100"
-                HorizontalOptions="CenterAndExpand">
+                Grid.Row="0" Grid.Column="1"
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red">
                 <ffImageSvg:SvgCachedImage
+                    HeightRequest="70" WidthRequest="70"
                     Margin="20"
-                    Aspect="AspectFit"
-                    DownsampleToViewSize="true"
-                    HeightRequest="70"
-                    Source="resource://MyAlarm.Images.help.svg"
-                    WidthRequest="70">
+                    Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.help.svg">
                     <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                     </ffImageSvg:SvgCachedImage.Transformations>
@@ -146,31 +127,24 @@
             <!--  Row 1  -->
             <Label
                 Grid.Row="1"
-                FontSize="20"
                 HorizontalOptions="CenterAndExpand"
-                Text="Member"
-                TextColor="White" />
+                Text="Member" TextColor="White"
+                FontSize="20" />
             <Label
-                Grid.Row="1"
-                Grid.Column="1"
-                FontSize="20"
+                Grid.Row="1" Grid.Column="1"
                 HorizontalOptions="CenterAndExpand"
-                Text="Work"
-                TextColor="White" />
+                Text="Work" TextColor="White"
+                FontSize="20" />
             <!--  Row 4  -->
             <tlrPrimitives:RadBorder
                 Grid.Row="4"
-                BackgroundColor="Red"
-                BorderThickness="1"
-                CornerRadius="100"
-                HorizontalOptions="CenterAndExpand">
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red">
                 <ffImageSvg:SvgCachedImage
+                    HeightRequest="70" WidthRequest="70"
                     Margin="20"
-                    Aspect="AspectFit"
-                    DownsampleToViewSize="true"
-                    HeightRequest="70"
-                    Source="resource://MyAlarm.Images.role.svg"
-                    WidthRequest="70">
+                    Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.role.svg">
                     <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                     </ffImageSvg:SvgCachedImage.Transformations>
@@ -183,19 +157,14 @@
             </tlrPrimitives:RadBorder>
 
             <tlrPrimitives:RadBorder
-                Grid.Row="4"
-                Grid.Column="1"
-                BackgroundColor="Red"
-                BorderThickness="1"
-                CornerRadius="100"
-                HorizontalOptions="CenterAndExpand">
+                Grid.Row="4" Grid.Column="1"
+                HorizontalOptions="CenterAndExpand"
+                BorderThickness="1" CornerRadius="100"
+                BackgroundColor="Red">
                 <ffImageSvg:SvgCachedImage
+                    HeightRequest="70" WidthRequest="70"
                     Margin="20"
-                    Aspect="AspectFit"
-                    DownsampleToViewSize="true"
-                    HeightRequest="70"
-                    Source="resource://MyAlarm.Images.interview.svg"
-                    WidthRequest="70">
+                    Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.interview.svg">
                     <ffImageSvg:SvgCachedImage.Transformations>
                         <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                     </ffImageSvg:SvgCachedImage.Transformations>
@@ -209,17 +178,14 @@
             <!--  Row 5  -->
             <Label
                 Grid.Row="5"
-                FontSize="20"
                 HorizontalOptions="CenterAndExpand"
-                Text="Rollen"
-                TextColor="White" />
+                Text="Rollen" TextColor="White"
+                FontSize="20" />
             <Label
-                Grid.Row="5"
-                Grid.Column="1"
-                FontSize="20"
+                Grid.Row="5" Grid.Column="1"
                 HorizontalOptions="CenterAndExpand"
-                Text="Meeting"
-                TextColor="White" />
+                Text="Meeting" TextColor="White"
+                FontSize="20" />
         </Grid>
     </Grid>
 </ContentPage>

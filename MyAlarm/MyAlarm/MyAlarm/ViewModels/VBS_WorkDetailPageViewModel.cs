@@ -5,6 +5,7 @@ using Logic;
 using MyAlarm.EFStandard;
 using MyAlarm.Helpers;
 using MyAlarm.Model;
+using Prism.Commands;
 using Prism.Navigation;
 
 namespace MyAlarm.ViewModels
@@ -79,7 +80,32 @@ namespace MyAlarm.ViewModels
         }
         #endregion
 
+        #region GoBackCommand
 
+        public DelegateCommand<object> GoBackCommand { get; private set; }
+        private async void OnGoBack(object obj)
+        {
+            if (IsBusyBindProp)
+            {
+                return;
+            }
+
+            IsBusyBindProp = true;
+
+            // Thuc hien cong viec tai day
+            await NavigationService.NavigateAsync(nameof(VBS_WorkPageViewModel));
+
+            IsBusyBindProp = false;
+        }
+
+        [Initialize]
+        private void InitGoBackCommand()
+        {
+            GoBackCommand = new DelegateCommand<object>(OnGoBack);
+            GoBackCommand.ObservesCanExecute(() => IsNotBusyBindProp);
+        }
+
+        #endregion
 
         #region Override
         public async override void OnNavigatedTo(INavigationParameters parameters)

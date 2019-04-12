@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyAlarm.Views.VBS_HelperPage"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffImageSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransform="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:local1="clr-namespace:MyAlarm"
+    xmlns:tlrInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:tlrPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    Title="Đăng nhập"
+    BackgroundColor="Black"
+    NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout HeightRequest="80" BackgroundColor="Red" Orientation="Horizontal">
+            <ffImageSvg:SvgCachedImage
+                HeightRequest="30" WidthRequest="30"
+                Margin="50,15,0,15" HorizontalOptions="Start"
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.left-arrow.svg">
+                <ffImageSvg:SvgCachedImage.Transformations>
+                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
+                </ffImageSvg:SvgCachedImage.Transformations>
+
+                <ffImageSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBackCommand}" NumberOfTapsRequired="1" />
+                </ffImageSvg:SvgCachedImage.GestureRecognizers>
+
+            </ffImageSvg:SvgCachedImage>
+
+            <Label
+                Margin="0,0,50,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                Text="{Binding TitleBindProp}"
+                TextColor="White"
+                FontSize="40" />
+        </StackLayout>
+        <tlrPrimitives:RadBorder
+            Grid.Row="1"
+            HeightRequest="100" WidthRequest="100"
+            Margin="0,50,0,0" HorizontalOptions="CenterAndExpand"
+            BorderThickness="1" CornerRadius="70"
+            BackgroundColor="Red">
+            <Label
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                Text="VBS" TextColor="White"
+                FontSize="30" FontAttributes="Bold" />
+        </tlrPrimitives:RadBorder>
+
+        <StackLayout Grid.Row="2" Margin="0,50,0,0" HorizontalOptions="CenterAndExpand">
+            <tlrInput:RadButton
+                HeightRequest="80" WidthRequest="300"
+                Padding="5"
+                CornerRadius="5"
+                Text="Login" TextColor="Red" BackgroundColor="White"
+                FontSize="25" FontAttributes="Bold"
+                Command="{Binding GoToLoginCommand}" />
+            <tlrInput:RadButton
+                HeightRequest="80" WidthRequest="300"
+                Padding="5"
+                CornerRadius="5"
+                Text="Change password" TextColor="White" BackgroundColor="Red"
+                FontSize="25" FontAttributes="Bold"
+                Command="{Binding GoToChangePassCommand}" />
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>

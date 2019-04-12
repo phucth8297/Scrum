@@ -62,6 +62,8 @@ namespace MyAlarm
             containerRegistry.RegisterForNavigation<VBS_ScrumFrameworkDetailPage>();
             containerRegistry.RegisterForNavigation<VBS_ScrumFrameworkPage>();
             containerRegistry.RegisterForNavigation<VBS_WorkDetailPage>();
+            containerRegistry.RegisterForNavigation<VBS_HelperPage>();
+
         }
     }
 }
