@@ -32,7 +32,7 @@ namespace MyAlarm
             DbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "data.db");
             DbConnectionString = $"Data Source={DbPath};";
 
-            //File.Delete(DbPath);
+            File.Delete(DbPath);
             if (File.Exists(DbPath) == false)
             {
                 var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
@@ -44,7 +44,7 @@ namespace MyAlarm
                     File.WriteAllBytes(DbPath, reader.GetBuffer());
                 }
             }
-            await NavigationService.NavigateAsync("NavigationPage/VBS_ScrumFrameworkPage");
+            await NavigationService.NavigateAsync("NavigationPage/VBS_TrangChuPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

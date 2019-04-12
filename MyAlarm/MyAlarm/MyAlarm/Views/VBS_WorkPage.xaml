@@ -80,15 +80,14 @@
                     <tlrListView:ListViewTemplateCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="5*" />
+                                <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
                             <ffImageSvg:SvgCachedImage
                                 HeightRequest="40" WidthRequest="40"
                                 Margin="5" HorizontalOptions="Start"
-                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.help.svg">
                                 <ffImageSvg:SvgCachedImage.Transformations>
                                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#cccccc" />
                                 </ffImageSvg:SvgCachedImage.Transformations>
@@ -96,10 +95,10 @@
                             <Label
                                 Grid.Column="1"
                                 VerticalOptions="Center"
-                                Text="{Binding UpdateSourceEventName, Mode=OneWay}"
+                                Text="{Binding Name, Mode=OneWay}"
                                 TextColor="White"
                                 FontSize="Medium" />
-                            
+
                         </Grid>
                     </tlrListView:ListViewTemplateCell>
                 </DataTemplate>

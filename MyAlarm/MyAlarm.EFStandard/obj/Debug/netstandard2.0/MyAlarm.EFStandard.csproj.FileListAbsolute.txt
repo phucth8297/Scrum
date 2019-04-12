@@ -33,3 +33,4 @@ E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFSt
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.AssemblyInfo.cs
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.dll
 E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.pdb
+E:\AppAxonScrum\MyAlarm\MyAlarm.EFStandard\obj\Debug\netstandard2.0\MyAlarm.EFStandard.csprojAssemblyReference.cache

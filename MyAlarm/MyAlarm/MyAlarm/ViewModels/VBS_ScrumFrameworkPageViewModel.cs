@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using Logic;
+using Microsoft.EntityFrameworkCore;
 using MyAlarm.EFStandard;
 using MyAlarm.Helpers;
 using MyAlarm.Model;
@@ -96,7 +97,7 @@ namespace MyAlarm.ViewModels
         #endregion
 
         #region Override
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public async override void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
@@ -106,7 +107,7 @@ namespace MyAlarm.ViewModels
                     break;
                 case NavigationMode.New:
                     var logic = new ScrumFrameworkLogic(Helper.GetConnectionString());
-                    var listScrumFramework = logic.GetAllAsync();
+                    var listScrumFramework = await logic.GetAllAsync().ToListAsync();
 
                     ListScrumFrameworkBindProp = new ObservableCollection<ScrumFramework>(listScrumFramework);
 

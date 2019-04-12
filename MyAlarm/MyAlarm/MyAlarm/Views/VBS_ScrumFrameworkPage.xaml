@@ -81,16 +81,14 @@
                     <tlrListView:ListViewTemplateCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="5*" />
+                                <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-
                             <ffImageSvg:SvgCachedImage
                                 HeightRequest="40" WidthRequest="40"
-                                Margin="5,5,0,5" HorizontalOptions="Start"
-                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                                Margin="10" HorizontalOptions="Start"
+                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_library.svg">
                                 <ffImageSvg:SvgCachedImage.Transformations>
                                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#cccccc" />
                                 </ffImageSvg:SvgCachedImage.Transformations>
@@ -102,15 +100,7 @@
                                 Text="{Binding Name, Mode=OneWay}"
                                 TextColor="White"
                                 FontSize="Medium" />
-                            <!--<ffImageSvg:SvgCachedImage
-                                Grid.Column="2"
-                                HeightRequest="25" WidthRequest="25"
-                                HorizontalOptions="End"
-                                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
-                                <ffImageSvg:SvgCachedImage.Transformations>
-                                    <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#000000" />
-                                </ffImageSvg:SvgCachedImage.Transformations>
-                            </ffImageSvg:SvgCachedImage>-->
+
                         </Grid>
                     </tlrListView:ListViewTemplateCell>
                 </DataTemplate>

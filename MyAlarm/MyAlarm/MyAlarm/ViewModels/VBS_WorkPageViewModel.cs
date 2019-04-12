@@ -1,4 +1,5 @@
 ﻿using Logic;
+using Microsoft.EntityFrameworkCore;
 using MyAlarm.EFStandard;
 using MyAlarm.Helpers;
 using MyAlarm.Model;
@@ -96,7 +97,7 @@ namespace MyAlarm.ViewModels
         #endregion
 
         #region Override
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public async override void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
 
@@ -107,7 +108,7 @@ namespace MyAlarm.ViewModels
                 case NavigationMode.New:
 
                     var logic = new WorkLogic(Helper.GetConnectionString());
-                    var listWork = logic.GetAllAsync();
+                    var listWork = await logic.GetAllAsync().ToListAsync();
 
                     ListWorkBindProp = new ObservableCollection<Work>(listWork);
 

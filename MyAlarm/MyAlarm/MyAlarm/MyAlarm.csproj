@@ -12,6 +12,7 @@
     <None Remove="Images\edit.svg" />
     <None Remove="Images\employee.svg" />
     <None Remove="Images\help.svg" />
+    <None Remove="Images\icon_library.svg" />
     <None Remove="Images\icon_menu.svg" />
     <None Remove="Images\icon_menu1.svg" />
     <None Remove="Images\interview.svg" />
@@ -32,6 +33,7 @@
     <EmbeddedResource Include="Images\edit.svg" />
     <EmbeddedResource Include="Images\employee.svg" />
     <EmbeddedResource Include="Images\help.svg" />
+    <EmbeddedResource Include="Images\icon_library.svg" />
     <EmbeddedResource Include="Images\icon_menu.svg" />
     <EmbeddedResource Include="Images\icon_menu1.svg" />
     <EmbeddedResource Include="Images\interview.svg" />

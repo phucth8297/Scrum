@@ -53,7 +53,7 @@
             <ffImageSvg:SvgCachedImage
                 HeightRequest="50" WidthRequest="50"
                 HorizontalOptions="CenterAndExpand"
-                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.help.svg">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>
@@ -68,15 +68,54 @@
         </Grid>
 
 
-        <StackLayout Grid.Row="2" Margin="10">
-            <tlrPrimitives:RadBorder HeightRequest="400" BorderColor="White" CornerRadius="5">
-                <ScrollView>
-                    <Label Margin="5,0,5,0" Text="Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên Nguyễn Thị Cẩm Tuyên" TextColor="White" />
-                </ScrollView>
-            </tlrPrimitives:RadBorder>
+        <Grid Grid.Row="2" Margin="20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <!--<tlrInput:RadButton
-                BackgroundColor="Red" CornerRadius="10" FontSize="25" HeightRequest="80" Text="Tiếp theo" TextColor="White" />-->
-        </StackLayout>
+            <Label Text="{Binding TitleBindProp, Mode=OneWay}" TextColor="White" FontSize="17" />
+            <Label
+                Grid.Column="1"
+                Text="{Binding DescriptionBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+            <Label
+                Grid.Column="2"
+                Text="{Binding WorkerBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+
+            <Label
+                Grid.Column="3"
+                Text="{Binding StatusBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+
+            <Label
+                Grid.Column="4"
+                Text="{Binding StartDateBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+
+            <Label
+                Grid.Column="5"
+                Text="{Binding EndDateBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+
+            <Label
+                Grid.Column="6"
+                Text="{Binding WoorkHourBindProp, Mode=OneWay}"
+                TextColor="White"
+                FontSize="17" />
+
+
+        </Grid>
     </Grid>
 </ContentPage>

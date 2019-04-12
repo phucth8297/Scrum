@@ -51,7 +51,7 @@
             <ffImageSvg:SvgCachedImage
                 HeightRequest="50" WidthRequest="50"
                 HorizontalOptions="CenterAndExpand"
-                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_menu.svg">
+                Aspect="AspectFit" DownsampleToViewSize="true" Source="resource://MyAlarm.Images.icon_library.svg">
                 <ffImageSvg:SvgCachedImage.Transformations>
                     <ffTransform:TintTransformation EnableSolidColor="True" HexColor="#ffffff" />
                 </ffImageSvg:SvgCachedImage.Transformations>

@@ -33,3 +33,4 @@ E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInput
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.dll
 E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.pdb
+E:\AppAxonScrum\MyAlarm\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache

@@ -129,5 +129,15 @@ namespace Logic
                 throw e;
             }
         }
+
+        public Task<Member> GetAsync(System.String id)
+        {
+
+            IQueryable<Member> query = _DbContext.Member;
+
+            var item = query.FirstOrDefaultAsync(h => h.Id == id);
+
+            return item;
+        }
     }
 }

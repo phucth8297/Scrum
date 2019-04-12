@@ -21,7 +21,7 @@ namespace Logic
         public IQueryable<ScrumFramework> GetAllAsync()
         {
             IQueryable<ScrumFramework> query = _DbContext.ScrumFramework;
-            query = query.AsNoTracking();
+            query = query.AsNoTracking().OrderBy(h => h.Name);
             return query;
         }
 
